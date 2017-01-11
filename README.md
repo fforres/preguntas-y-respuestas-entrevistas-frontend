@@ -7,3 +7,10 @@
 - [CS (Computer Science)](./cs)
 - [Performance]('./performance')
 - [Redes]('./redes')
+
+----
+Realización de la entrevista:
+
+- [Preguntas Truculentas]('./tricky')
+- [Preguntas Simpáticas/Divertidas]('./fun')
+- [Tips]('./fun')
