@@ -6,7 +6,7 @@
 1. [¿Para que sirven los atributos `data-`?](#4)
 1. [¿Cuál es la diferencia entre `cookie` `localStorage`, `sessionStorage` e `indexedDB`?](#5)
 1. [¿Qué diferencias existen entre `<script>`, `<script async>` y `<script defer>`?](#6)
-1. [¿Puedo poner un tag `<link>` dentro del body?](#7)
+1. [¿Puedo poner un tag `<link>` dentro del body?¿Porqué no es recomendado?](#7)
 1. [¿Donde es recomendado poner los tag `<script/>` después o antes del body? ¿Existen excepciones?](#8)
 1. [¿Que es el Rendering Progresivo?](#9)
 1. [¿Qué son y como afectan al performance el `Reflow` y `Repaint`?](#10)
@@ -20,14 +20,15 @@
 
 
 #### Respuestas
-    1. ##### [¿Qué hace un `doctype`  (`<!DOCTYPE html>`)?](#1)
-    <div id="#1" /> Es una declaración al comienzo de un documento HTML (previo al tag `<html>`), es una instrución que le deja saber al navegador en que version de HTML está este documento para interpretarlo correctamente.
-Definir `<!Doctype html>` le dice al navegador que tiene que parsear el html basándose en el estandar HTML5.
-En el caso de navegadores más viejos, interpretaran el html en un modo "compatible con html5" pero ignorarán las features que no soporten.
-Es mucho más simple que las definiciones de doctype anteriores.
-`<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-"http://www.w3.org/TR/html4/strict.dtd">
-`
+1. ##### [¿Qué hace un `doctype`  (`<!DOCTYPE html>`)?](#1)
+  <div id="#1" />
+  Es una declaración al comienzo de un documento HTML (previo al tag `<html>`), es una instrución que le deja saber al navegador en que version de HTML está este documento para interpretarlo correctamente.
+  Definir `<!Doctype html>` le dice al navegador que tiene que parsear el html basándose en el estandar HTML5.
+  En el caso de navegadores más viejos, interpretaran el html en un modo "compatible con html5" pero ignorarán las features que no soporten.
+  Es mucho más simple que las definiciones de doctype anteriores.
+  `<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+  `
 
 1. ##### [¿Qué elemento componen "HTML5"?](#2)
     <div id="#2" />
@@ -115,7 +116,11 @@ Es mucho más simple que las definiciones de doctype anteriores.
 
   - ** sessionStorage: **
     La propiedad `sessionStorage` permite acceder al objeto local `Storage`, pero solo durante la sesion del usuario.
-    Una sesión dura hasta que el navegador es cerrado. La data sobrevive a recargas de página.
+
+    Una sesión dura hasta que el navegador es cerrado.
+
+    La data sobrevive a recargas de página.
+
     Una nueva "tab" o "ventana", genera una nueva sesión.
     ```javascript
     sessionStorage.setItem('usuario', 'fforres');
@@ -133,6 +138,7 @@ Es mucho más simple que las definiciones de doctype anteriores.
 
   - ** localStorage: **
     La propiedad `localStorage` permite acceder al objeto local `Storage`
+
     La data no tiene una fecha de expiración y es accesible desde multiples ventanas o tabs del mismo dominio y navegador.
     ```javascript
     const miStorage = localStorage;
@@ -143,20 +149,45 @@ Es mucho más simple que las definiciones de doctype anteriores.
 
     miStorage.usuario  // retorna "fforres"
     ```
-    ~5MB de storage por dominio
-    El acceso a localStorage diferencia por protocolo, si bien es posible compartir la data por dominio, la data queda aislada entre dominios iguales que usen `https` y `http`
+
+    ~5MB de storage por dominio.
+
+    El acceso a localStorage diferencia por protocolo, si bien es posible compartir la data por dominio, la data queda aislada entre dominios iguales que usen `https` y `http`.
 
 1. ##### [¿Qué diferencias existen entre `<script>`, `<script async>` y `<script defer>`?](#6)
   <div id="#6" />
-  -
+  - ** script ** -> Descarga el file y ejecuta el file, pero tnto como la descarga como ejecucuión se desarrollan secuencialmente, por lo tanto detienen el parseo del HTML.
 
-1. ##### [¿Puedo poner un tag `<link>` dentro del body?](#7)
+  - ** script async ** -> Descarga el file paralelamente a la descarga/parseo del resto del documento/assets, pero al momento de ejecturalo, detiene el parseo del HTML.
+
+  - ** script defer ** -> Descarga el file paralelamente a la descarga/parseo del resto del documento/assets, pero pero espera hasta que todo el HTML esté parseado antes de ejectuar el script
+
+
+1. ##### [¿Puedo poner un tag `<link>` dentro del body? ¿Porqué no es recomendado?](#7)
   <div id="#7" />
-  -
+  - Si. No es recomendado, aunque posible.
+  - Ejemplo de un proceso de descarga de un file html, con un css una imagen y un archivo JS
+    - Descarga el "html"
+    - Se parsea el HTML y ve que hay un archivo css, un archivo JS y una imagen
+    - Se inicia la descarga de la imagen
+    - Browser decide que no puede mostrar la página sin antes descargar el CSS y JS
+      - Esta decisión se toma porque ambos archivos podrían alterar la visualizacion del DOM causando reflow o Repaint si el css tuviese un `display: none` o el JS un `Node.remove()`, por ejemplo.
+    - Descarga por orden de aparicion (Css o JS)
+    - Al descargar el CSS, lo lee, parsea, y se asegura que no llame nada más (un `@import` o `background:url('./imagen.jpg')`)
+    - Al descargar el JS, lo lee, interpreta y ejecuta.
+    - El browser decide que ahora si puede mostrar el DOM, por lo que empieza a pintar y estilar el DOM
+
+  En este ejemplo, en el caso de tener un segundo `<link />` dentro del body, el proceso se ejecuta normalmente hasta que se parsea el DOM, dentro del body se encuentra con el `<link />`, y se detiene el parseo y pintado del DOM para descargar, parsear el CSS.
+
+  Luego de eso y luego resumir el trabajo con el DOM y aplicar estilos de ser necesario.
+
+  + Mas info sobre el [Critical Rendering Path acá](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/) y [acá](https://varvy.com/pagespeed/critical-render-path.html)
 
 1. ##### [¿Donde es recomendado poner los tag `<script/>` después o antes del body? ¿Existen excepciones?](#8)
   <div id="#8" />
-  -
+  - Depende mucho del contenido y acciones que ejecutarán dichos scripts.
+  - Es más una "buena practica legacy" hoy en dia, se colocaban posterior al body para priorizar el mostrar contenido estilado y no detener la ejecución del sitio mientras se descargaba el css.
+  - Actualment existen los atributos `async` o `defer`, que nos ayudan a definir descargas, parseos y ejecución diferidos.
 
 1. ##### [¿Que es el Rendering Progresivo?](#9)
   <div id="#9" />
