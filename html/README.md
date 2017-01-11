@@ -1,6 +1,6 @@
 # Preguntas para entrevista de frontend
-### HTML
-#### Preguntas
+## HTML
+### Preguntas
 1. [¿Qué hace un `doctype`  (`<!DOCTYPE html>`)?](#1)
 1. [¿Qué elementos componen HTML5?](#2)
 1. [¿Para que sirven los atributos `data-`?](#4)
@@ -19,8 +19,8 @@
 1. [¿Qué es un meta tag?](#17)
 
 
-#### Respuestas
-1. ##### [¿Qué hace un `doctype`  (`<!DOCTYPE html>`)?](#1)
+### Respuestas
+- #### [¿Qué hace un `doctype`  (`<!DOCTYPE html>`)?](#1)
   <div id="#1" />
   Es una declaración al comienzo de un documento HTML (previo al tag `<html>`), es una instrución que le deja saber al navegador en que version de HTML está este documento para interpretarlo correctamente.
   Definir `<!Doctype html>` le dice al navegador que tiene que parsear el html basándose en el estandar HTML5.
@@ -30,9 +30,11 @@
   "http://www.w3.org/TR/html4/strict.dtd">
   `
 
-1. ##### [¿Qué elemento componen "HTML5"?](#2)
+
+
+- #### [¿Qué elemento componen "HTML5"?](#2)
     <div id="#2" />
-      - Semántica - Text Markup más semántico (Mejor accesibilidad y descripción en el contenido web ... y facilidad en el SEO).
+  - Semántica - Text Markup más semántico (Mejor accesibilidad y descripción en el contenido web ... y facilidad en el SEO).
     - `<footer>`
     - `<canvas>`
     - `<article>`
@@ -78,7 +80,9 @@
     - WebVR
   - CSS3
 
-1. ##### [¿Para que sirven los atributos `data-`?](#4)
+
+
+- #### [¿Para que sirven los atributos `data-`?](#4)
   <div id="#4" />
   Es un atributo de HTML, un estándar que permite adjuntar o guardar información extra en un elemento.
   ```html
@@ -95,7 +99,7 @@
     article.dataset.usuarioCorreo // "felipe.torressepulveda@gmail.com"
   ```
 
-1. ##### [¿Cuál es la diferencia una `cookie` `localStorage` y `sessionStorage`?](#5)
+- #### [¿Cuál es la diferencia una `cookie` `localStorage` y `sessionStorage`?](#5)
   <div id="#5" />
   - ** Cookie: **
     Pequeño set de información enviada por un sitio web y almacenado en el navegador de un usuario.
@@ -154,7 +158,10 @@
 
     El acceso a localStorage diferencia por protocolo, si bien es posible compartir la data por dominio, la data queda aislada entre dominios iguales que usen `https` y `http`.
 
-1. ##### [¿Qué diferencias existen entre `<script>`, `<script async>` y `<script defer>`?](#6)
+
+
+
+- #### [¿Qué diferencias existen entre `<script>`, `<script async>` y `<script defer>`?](#6)
   <div id="#6" />
   - ** script ** -> Descarga el file y ejecuta el file, pero tnto como la descarga como ejecucuión se desarrollan secuencialmente, por lo tanto detienen el parseo del HTML.
 
@@ -163,7 +170,9 @@
   - ** script defer ** -> Descarga el file paralelamente a la descarga/parseo del resto del documento/assets, pero pero espera hasta que todo el HTML esté parseado antes de ejectuar el script
 
 
-1. ##### [¿Puedo poner un tag `<link>` dentro del body? ¿Porqué no es recomendado?](#7)
+
+
+- #### [¿Puedo poner un tag `<link>` dentro del body? ¿Porqué no es recomendado?](#7)
   <div id="#7" />
   - Si. No es recomendado, aunque posible.
   - Ejemplo de un proceso de descarga de un file html, con un css una imagen y un archivo JS
@@ -183,44 +192,82 @@
 
   + Mas info sobre el [Critical Rendering Path acá](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/) y [acá](https://varvy.com/pagespeed/critical-render-path.html)
 
-1. ##### [¿Donde es recomendado poner los tag `<script/>` después o antes del body? ¿Existen excepciones?](#8)
+
+
+
+- #### [¿Donde es recomendado poner los tag `<script/>` después o antes del body? ¿Existen excepciones?](#8)
   <div id="#8" />
   - Depende mucho del contenido y acciones que ejecutarán dichos scripts.
   - Es más una "buena practica legacy" hoy en dia, se colocaban posterior al body para priorizar el mostrar contenido estilado y no detener la ejecución del sitio mientras se descargaba el css.
   - Actualment existen los atributos `async` o `defer`, que nos ayudan a definir descargas, parseos y ejecución diferidos.
 
-1. ##### [¿Que es el Rendering Progresivo?](#9)
+- #### [¿Que es el Rendering Progresivo?](#9)
   <div id="#9" />
-  -
+  - Un conjunto de técnicas y decisiones tomadas y aplicadas a fin de priorizar mostrar de una parte del contenido web lo mas rapidamente posible (El contenido de una noticia, el landing en un sitio web), y despriorizar la carga de otras secciones (Footer, banners, side-menus, etc).
 
-1. ##### [¿Qué son y como afectan al performance el `Reflow` y `Repaint`?](#10)
+
+
+
+
+- #### [¿Qué son y como afectan al performance el `Reflow` y `Paint`/`RePaint` ?](#10)
   <div id="#10" />
-  -
+  - `RePaint` es el nombre que se le da al proceso que ejecuta el navegador cuando realiza cambios visuales a un elemento, pero no cambia su `layout`. (Color de fondo, visibilidad, outline)
 
-1. ##### [¿Qué estructura tiene el `DOM`?](#11)
+  - `Reflow` es el proceso que ejecuta el navegador cuando los cambios que realiza a un elemento, cambian su layout (posicion, tamaño, etc) que obligan a recalcular y posiblemente reposicionar otros elementos en el documento.
+
+  Ambos procesos son críticos a la hora de analizar y optimizar la performance, donde `ReFlow` afecta de manera mucho mayor.
+
+  - Al mover un elemento que cause `ReFlow`, es necesario recalcular ** todos ** los otros elementos del DOM que podrían verse afectados por este cambio.
+
+  - `RePaint` necesita verificar la visibilidad de todos los otros nodos y como estos afectan a la visibilidad de el/los nodos iniciales.
+    - Ejemplo:
+
+      El cambiar el color de fondo de un `<div id="#a" />` sobre el que hay un `<div id="b">` con una opacidad `0.5`, fuerza a recalcular el color de fondo y los efectos que tiene el `<div id="b">` sobre el A
+
+
+
+- #### [¿Qué estructura tiene el `DOM`?](#11)
   <div id="#11" />
   -
 
-1. ##### [¿Qué diferencia existe entre `DOM` y `HTML`?](#12)
+
+
+
+- #### [¿Qué diferencia existe entre `DOM` y `HTML`?](#12)
   <div id="#12" />
   -
 
-1. ##### [¿Porqué usar tags como `<Section>` o `<Article>` pudiendo usar `<div />`?](#13)
+
+
+
+- #### [¿Porqué usar tags como `<Section>` o `<Article>` pudiendo usar `<div />`?](#13)
   <div id="#13" />
   -
 
-1. ##### [Si tengo 3 tags estilados exactamente iguales (`<button />`, `<a />` y `<div />`) ¿Qué debería elegir para interactuar con un usuario y porqué?](#14)
+
+
+
+- #### [Si tengo 3 tags estilados exactamente iguales (`<button />`, `<a />` y `<div />`) ¿Qué debería elegir para interactuar con un usuario y porqué?](#14)
   <div id="#14" />
   -
 
-1. ##### [¿Cómo puedes entregar una pagina con contenido en varios lenguajes?](#15)
+
+
+
+- #### [¿Cómo puedes entregar una pagina con contenido en varios lenguajes?](#15)
   <div id="#15" />
   -
 
-1. ##### [¿Qué cosas debería tener en consideraración para tener una página con contenido en varios lenguajes?](#16)
+
+
+
+- #### [¿Qué cosas debería tener en consideraración para tener una página con contenido en varios lenguajes?](#16)
   <div id="#16" />
   -
 
-1. ##### [¿Qué es un meta tag?](#17)
+
+
+
+- #### [¿Qué es un meta tag?](#17)
   <div id="#17" />
   -
