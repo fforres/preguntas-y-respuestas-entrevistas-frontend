@@ -15,7 +15,7 @@
 1. [¿Porqué usar tags como `<Section>` o `<Article>` pudiendo usar `<div />`?](#13)
 1. [Si tengo 3 tags estilados exactamente iguales (`<button />`, `<a />` y `<div />`) ¿Qué debería elegir para interactuar con un usuario y porqué?](#14)
 1. [¿Qué es un meta tag?](#17)
-1. [¿Qué es y cuales son las ventajas del Shadow Dom?](#17)
+1. [¿Qué es y cuales son las ventajas del Shadow Dom?](#18)
 
 
 ### Respuestas
@@ -302,3 +302,9 @@
     El tag no contiene información concreta del sitio como lo sería una noticia, un título, una imagen o un link, pero entrega información sobre el formato de encoding del sitio.
 
     ***Información sobre el contenido (o la información) del sitio.***
+
+
+
+
+- #### [¿Qué es y cuales son las ventajas del Shadow Dom?](#18)
+  <div id="#18" />
