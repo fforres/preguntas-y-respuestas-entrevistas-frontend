@@ -14,9 +14,8 @@
 1. [¿Qué diferencia existe entre `DOM` y `HTML`?](#12)
 1. [¿Porqué usar tags como `<Section>` o `<Article>` pudiendo usar `<div />`?](#13)
 1. [Si tengo 3 tags estilados exactamente iguales (`<button />`, `<a />` y `<div />`) ¿Qué debería elegir para interactuar con un usuario y porqué?](#14)
-1. [¿Cómo puedes entregar una pagina con contenido en varios lenguajes?](#15)
-1. [¿Qué cosas debería tener en consideraración para tener una página con contenido en varios lenguajes?](#16)
 1. [¿Qué es un meta tag?](#17)
+1. [¿Qué es y cuales son las ventajas del Shadow Dom?](#17)
 
 
 ### Respuestas
@@ -226,48 +225,80 @@
 
 
 
+
 - #### [¿Qué estructura tiene el `DOM`?](#11)
   <div id="#11" />
-  -
+  - Un árbol
+  - Un árbol imperfecto y desbalanceado
+
+  *Puede ser interesante tomarse de este tema para iniciar una conversacion sobre CS (Computer Science), estructuras de datos. El porque usualmente los frontend engineers / frontend developers no buscan conocimientos de CS (Computer Science))*
 
 
 
 
 - #### [¿Qué diferencia existe entre `DOM` y `HTML`?](#12)
   <div id="#12" />
-  -
+  - HTML - (Hyper Text Markup Language) Es un lenguaje de marcado (*markup*) que define una sintaxis específica para representar un cierto tipo de componentes que luego el navegaor interpreta y transforma en el DOM.
+  - DOM - (Document Object Model) - Es el modelo de la interpretación de un HTML. El DOM és (y expone) una API para un documento de HTML válido, que permite interactuar realizar acciones programáticas sobre él.
+    ejemplo:
+      ```javascript
+        if (a) {
+          const texto = document.createTextNode(" Hola :-) ");
+          document.body.appendChild(texto);
+        }
+      ```
+
+  + Más información [acá (mozilla)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) y [acá (w3.org)](https://www.w3.org/TR/DOM-Level-2-Core/introduction.html)
+
 
 
 
 
 - #### [¿Porqué usar tags como `<Section>` o `<Article>` pudiendo usar `<div />`?](#13)
   <div id="#13" />
-  -
+  - En primera instancia, por accesibilidad, utilizar elementos como `<article> <details> <footer> o <nav>` a los screenreaders a mapear e interpretar correctamente el DOM.
+  - Tocando el tema de la accesibilidad, de nada sirve usar atributos como `role` o `aria-*` de manera conflictiva.
+  ```html
+    <!-- MAL! :( -->
+    <button role="header"/>
+
+    <!-- Mucho Mejor :) -->
+    <header role="header"/>
+  ```
+
+  + Para conocer más de [Aria y document conformance, acá](https://www.w3.org/TR/html-aria/#docconformance)
+
 
 
 
 
 - #### [Si tengo 3 tags estilados exactamente iguales (`<button />`, `<a />` y `<div />`) ¿Qué debería elegir para interactuar con un usuario y porqué?](#14)
   <div id="#14" />
-  -
+  - Una pregunta un poco capciosa, principalmente la decisión pasa por accesibilidad.
+
+    La idea primaria es usar elementos concretos para las interacciones que se realizarán.
+    Por ejemplo, si se busca hacer un submit a un formulario, es mejor usar un `<button />` que un `<span />` estilado.
+    Esto último, aunque ambos realicen la acción mediante una función de JavaScript, screenreaders pueden considerar de manera distinta ambos elementos.
+
+    Como caveat, es posible usar atributos como `role=""` o `aria-*` para especificar el rol de un elemento, pero no es bueno usarlos de manera conflictiva.
 
 
+  + Para conocer más de [Aria y document conformance, acá](https://www.w3.org/TR/html-aria/#docconformance)
 
-
-- #### [¿Cómo puedes entregar una pagina con contenido en varios lenguajes?](#15)
-  <div id="#15" />
-  -
-
-
-
-
-- #### [¿Qué cosas debería tener en consideraración para tener una página con contenido en varios lenguajes?](#16)
-  <div id="#16" />
-  -
 
 
 
 
 - #### [¿Qué es un meta tag?](#17)
   <div id="#17" />
-  -
+  - Son Elementos o Tags, usados en HTML que proveen metadata del sitio. o "Información sobre la información (o el contenido) del mismo sito.
+
+  EJEMPLO:
+
+    Consideremos este meta tag:
+    ```html
+    <meta charset=“utf-8”>
+    ```
+    El tag no contiene información concreta del sitio como lo sería una noticia, un título, una imagen o un link, pero entrega información sobre el formato de encoding del sitio.
+
+    ***Información sobre el contenido (o la información) del sitio.***
