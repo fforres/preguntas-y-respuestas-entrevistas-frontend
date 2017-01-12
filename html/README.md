@@ -24,7 +24,7 @@
   Es una declaración al comienzo de un documento HTML (previo al tag `<html>`), es una instrución que le deja saber al navegador en que version de HTML está este documento para interpretarlo correctamente.
   Definir `<!Doctype html>` le dice al navegador que tiene que parsear el html basándose en el estandar HTML5.
   En el caso de navegadores más viejos, interpretaran el html en un modo "compatible con html5" pero ignorarán las features que no soporten.
-  Es mucho más simple que las definiciones de doctype anteriores.
+  Es mucho más simple que las definiciones de doctype anteriores.ce
   `<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
   "http://www.w3.org/TR/html4/strict.dtd">
   `
@@ -274,7 +274,7 @@
 
 - #### [Si tengo 3 tags estilados exactamente iguales (`<button />`, `<a />` y `<div />`) ¿Qué debería elegir para interactuar con un usuario y porqué?](#14)
   <div id="#14" />
-  - Una pregunta un poco capciosa, principalmente la decisión pasa por accesibilidad.
+  - Una pregunta un poco capciosa, principalmente porque la decisión pasa por accesibilidad más que por otra cosa.
 
     La idea primaria es usar elementos concretos para las interacciones que se realizarán.
     Por ejemplo, si se busca hacer un submit a un formulario, es mejor usar un `<button />` que un `<span />` estilado.
@@ -308,3 +308,44 @@
 
 - #### [¿Qué es y cuales son las ventajas del Shadow Dom?](#18)
   <div id="#18" />
+  El ShadowDom es una funcionalidad que permite injectar un sub-árbol de elementos DOM (un SUB-DOM) en el documento actualmente renderizado en el navegador.
+
+  *(El Shadow Dom asocia un nuevo tipo de Nodo asociado que se puede asociar con los elementos llamado el "Shadow Root", el elemento al que se le asocia este "Shadow Root" se le dice "Shadow Host")*
+
+  La idea del ShadowDOM es crear elementos web con estilo y funcionalidades auto-contenidos (o encapsulados), por lo que reglas de estilo como `#contenedor { background: red; }` definidas dentro del Shadow Dom, no afectará elementos que cumplan con esa condición que estén fuera de el.
+
+  Ejemplo:
+
+  ```html
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <script defer src="./index.js" charset="utf-8"></script>
+      <style media="screen">
+        #shadow {
+          color: green;
+        }
+      </style>
+    </head>
+    <body>
+      <h1 id="shadow">Hello Shadow DOM</h1>
+    </body>
+  </html>
+  ```
+  ```javascript
+  const header = document.createElement('header');
+  const shadowRoot = header.attachShadow({mode: 'open'});
+  shadowRoot.innerHTML = `
+    <style>
+    #shadow {
+      color: red;
+    }
+    </style>
+    <h1 id="shadow">Hello Shadow DOM</h1>`; // Could also use appendChild().
+  document.body.appendChild(header);
+  ```
+
+  Teniendo estos 2 elementos `<h1 id="shadow">Hello Shadow DOM</h1>`, uno siendo creado y estilado mediante el uso de ShadowDom, y el otro siendo creado por la interpretación del DOM, el navegador muestra lo siguiente.
+
+  ![](./shadow_dom.png)
