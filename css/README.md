@@ -1,9 +1,6 @@
 # Preguntas para entrevista de frontend
 ## CSS
 ### Preguntas
-1. [¿Qué hace un `doctype`  (`<!DOCTYPE html>`)?](#1)
-
-### Respuestas
 
 1. [¿Cuál es la diferencia entre selectores de ID o CSS?](#1)
 1. [¿Cuál es la diferencia entre "resetear" y "normalizar" el CSS (reset.css y normalize.css)? ¿Cuándo elegirias uno u otro?](#2)
@@ -37,3 +34,5 @@
 1. [¿Qué puedes contarme de postCSS?](#34)
 1. [¿Qué puedes contarme de cssNext?](#35)
 1. [¿Cómo el CSS afecta al `critical-render-path`? (El proceso de "carga, analisis y renderizado" de un sitio web)](#36)
+
+### Respuestas
