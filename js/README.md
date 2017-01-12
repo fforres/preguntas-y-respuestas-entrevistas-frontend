@@ -46,7 +46,7 @@
     }
     ```
 
-    Que debería hacer para poder usar promesas con esa función?
+    Que debería hacer para poder usar la misma funcionalidad pero con promesas?
 
 1. ¿Porqué debería usar o no usar un lenguaje que transpile o compile a JavaScript? ¿Qué ventajas o desventajas existen?
 1. ¿Como debugueas tu código de JavaScript?
@@ -61,3 +61,5 @@
   1. ¿Cual es la diferencia entre `call stack` y `task queue`?
 1. Además de "porque se ve más bonito" ¿Por que debería usar arrow functions `() => {}`?
 1. Qué diferencia existe en el uso de `hola` entre `function hola(){}`, `var hola = function(){}` y `var hola = ()=>{}`
+1. ¿Qué es y Porqué usar o no Babel?
+1. ¿Que proposals de JavaScript es la que más te gustaría/interesa que sea aprobada?
