@@ -12,7 +12,7 @@
 1. ¿Qué es una función anónima? ¿Dónde usarías una? ¿Cual es la desventaja de ellas?
 1. ¿Cual es la diferencia entre un objeto "host" y un objeto "nativo"?](#9) http://stackoverflow.com/questions/7614317/what-is-the-difference-between-native-objects-and-h
 1. ¿En qué difieren las siguientes expresiones `function Hola() {}`, `var hola = new Hola()` y `var hola = Hola()`?
-1. ¿En que se diferencias `.call` y .`apply`?
+1. ¿En que se diferencias `Function.call()0` y `Function.apply`?
 1. ¿Explícame `Function.prototype.bind` ?
 1. ¿Cuál es la diferencia entre deteccion de features, inferencia de features y usar el string UA?
 1. ¿Explícame AJAX?
