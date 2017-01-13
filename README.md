@@ -22,6 +22,8 @@
 - [CSS (Cascading Style Sheets)](./css) **30%**
 - [CS (Computer Science)](./cs) **0%**
 - [Performance]('./performance') **0%**
+
+#
 - [Preguntas Truculentas/Divertidas]('./tricky') **0%**
 - [Tips para entrevistados]('./tips_interviewees') **0%**
 - [Tips para entrevistadores y recruiters]('./tips_interviewers_and_recruiters') **0%**
