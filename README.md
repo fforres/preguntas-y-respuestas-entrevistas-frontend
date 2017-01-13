@@ -28,6 +28,10 @@
 1. "OpenSourcear" las respuestas :)
 
 
+
+### ¿Cómo Vamos?
+##### *o "Donde contribuir"*
+
 Item                  | Preguntas | Respuestas
 --------------------- | :-------: | ---------:
 Generales             |    20     |          0
