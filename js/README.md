@@ -9,8 +9,8 @@
 1. Porqué este snippet no funciona como una funcion autoejecutable: `function hola(){console.log('mundo')}()` si tiene el paréntesis al final? ¿Como debería ser?
 1. ¿Cuál es la diferencia entre una variable: `null`, `undefined` y no declarada?
 1. ¿Qué es un closure? ¿Cómo y porqué usarías uno? ¿Podrías darme un ejemplo de uso?
-1. ¿Qué es una función anónima? ¿Dónde usarías una? ¿Cual es la desventaja de ellas?
-1. ¿Cual es la diferencia entre un objeto "host" y un objeto "nativo"?](#9) http://stackoverflow.com/questions/7614317/what-is-the-difference-between-native-objects-and-h
+1. ¿Qué es una función anónima? ¿Dónde usarías una? ¿Cuál es la desventaja de ellas?
+1. ¿Cuál es la diferencia entre un objeto "host" y un objeto "nativo"?](#9) http://stackoverflow.com/questions/7614317/what-is-the-difference-between-native-objects-and-h
 1. ¿En qué difieren las siguientes expresiones `function Hola() {}`, `var hola = new Hola()` y `var hola = Hola()`?
 1. ¿En que se diferencias `Function.call()` y `Function.apply()`?
 1. ¿Explícame `Function.prototype.bind` ?
@@ -19,7 +19,7 @@
 1. ¿Qué ventajas y desventajas tiene el usar AJAX?
 1. ¿Qué es JSONP?
 1. ¿Explícame Hoisting?
-1. ¿Cuales son las ventajas/desventajas de usar clases en ES6?
+1. ¿Cuáles son las ventajas/desventajas de usar clases en ES6?
 1. ¿Describe el 'event bubbling'?
 1. ¿Cuál es la diferencia entre `==` y `===`?
 1. Has que esto funcione:
@@ -58,7 +58,7 @@
 1. Explícame la diferencia entre `let`, `const` y `var`.
 1. Explícame la diferencia entre síncrono y asíncrono.
 1. ¿Qué es event loop?
-  1. ¿Cual es la diferencia entre `call stack` y `task queue`?
+  1. ¿Cuál es la diferencia entre `call stack` y `task queue`?
 1. Además de "porque se ve más bonito" ¿Por que debería usar arrow functions `() => {}`?
 1. Qué diferencia existe en el uso de `hola` entre `function hola(){}`, `var hola = function(){}` y `var hola = ()=>{}`
 1. ¿Qué es y Porqué usar o no Babel?
