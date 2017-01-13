@@ -21,10 +21,10 @@
 ### Respuestas
 - #### [¿Qué hace un `doctype`  (`<!DOCTYPE html>`)?](#1)
   <div id="#1" />
-  Es una declaración al comienzo de un documento HTML (previo al tag `<html>`), es una instrución que le deja saber al navegador en que version de HTML está este documento para interpretarlo correctamente.
+  Es una declaración al comienzo de un documento HTML (previo al tag `<html>`), es una instrucción que le deja saber al navegador en que version de HTML está este documento para interpretarlo correctamente.
   Definir `<!Doctype html>` le dice al navegador que tiene que parsear el html basándose en el estandar HTML5.
-  En el caso de navegadores más viejos, interpretaran el html en un modo "compatible con html5" pero ignorarán las features que no soporten.
-  Es mucho más simple que las definiciones de doctype anteriores.ce
+  En el caso de navegadores más viejos, interpretarán el html en un modo "compatible con html5" pero ignorarán las features que no soporten.
+  Es mucho más simple que las definiciones de doctype anteriores.
   `<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
   "http://www.w3.org/TR/html4/strict.dtd">
   `
@@ -162,11 +162,11 @@
 
 - #### [¿Qué diferencias existen entre `<script>`, `<script async>` y `<script defer>`?](#6)
   <div id="#6" />
-  - ** script ** -> Descarga el file y ejecuta el file, pero tnto como la descarga como ejecucuión se desarrollan secuencialmente, por lo tanto detienen el parseo del HTML.
+  - ** script ** -> Descarga el file y ejecuta el file, pero tanto la descarga como la ejecución se desarrollan secuencialmente, por lo tanto detienen el parseo del HTML.
 
   - ** script async ** -> Descarga el file paralelamente a la descarga/parseo del resto del documento/assets, pero al momento de ejecturalo, detiene el parseo del HTML.
 
-  - ** script defer ** -> Descarga el file paralelamente a la descarga/parseo del resto del documento/assets, pero pero espera hasta que todo el HTML esté parseado antes de ejectuar el script
+  - ** script defer ** -> Descarga el file paralelamente a la descarga/parseo del resto del documento/assets, pero espera hasta que todo el HTML esté parseado antes de ejectuar el script
 
 
 

@@ -1,7 +1,7 @@
 # Preguntas para entrevista de frontend
 
 - [GENERALES](./generales) **(0%)**
-- [HTML (Hyper Text Markup Protocol)](./html)
+- [HTML (Hyper Text Markup Language)](./html)
 - [JS (JavaScript)](./js) **(30%)**
 - [CSS (Cascading Style Sheets)](./css) **(30%)**
 - [CS (Computer Science)](./cs) **(0%)**
