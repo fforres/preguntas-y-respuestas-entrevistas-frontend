@@ -52,7 +52,7 @@ foo[100] = 0;
 console.log(foo.length); // ??
 ```
 
-1. ¿Cual es el valor de `foo.x`?
+1. ¿Cuál es el valor de `foo.x`?
 ```javascript
 var foo = {n: 1};
 foo.x = foo = {n: 2};

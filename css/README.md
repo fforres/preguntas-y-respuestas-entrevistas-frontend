@@ -8,7 +8,7 @@
 1. [¿Como funciona el z-index y el context stacking (contexto de apilamiento) de elementos está formado?](#4)
 1. [¿Conoces alguna "técnicas de limpieza" de estilos (clearing techniques)?](#6)
 1. [Como funcionas los sprites de CSS, y como lo podrías implementar?](#7)
-1. [¿Cual sería tu approach para solucionar problemas con un browser específico?](#9)
+1. [¿Cuál sería tu approach para solucionar problemas con un browser específico?](#9)
 1. [¿Cómo desarrollas sitios para features específicas por navegadores?](#10)
 1. [¿Cómo visualizas o ocultas visualemente el contenido (o habilitas la visualización solo para sceenreaders)?](#12)
 1. [¿Has usado un sistema de grid? ¿Cuáles prefieres y porqué?](#13)
@@ -70,7 +70,7 @@
 
 
 
-- #### [¿Cual sería tu approach para solucionar problemas con un browser específico?](#9)
+- #### [¿Cuál sería tu approach para solucionar problemas con un browser específico?](#9)
   <div id="9" />
 
 
