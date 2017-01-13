@@ -14,7 +14,7 @@
 - [HTML (Hyper Text Markup Protocol)](./html) - **100%**
 - [JS (JavaScript)](./js) **30%**
 - [CSS (Cascading Style Sheets)](./css) **30%**
-- [CS (Computer Science)](./cs) **0%**
+- [Código y CS (Computer Science)](./cs) **30%**
 - [Performance]('./performance') **0%**
 
 
@@ -25,6 +25,6 @@
 
 
 ### ¿Por qué este repo?
-Estudiar
-Queremos generar un lugar en español donde encontrar y subir preguntas de entrevistas que nos realizaron y que hemos realizado
-Hicimos el trabajo de recorrer por entrevistas de puestos de frontend, y vemos que el rango de preguntas es bastante amplio.
+1. Queremos generar un lugar en español donde encontrar y subir preguntas de entrevistas que nos realizaron y que hemos realizado.
+1. Hicimos el trabajo de recorrer por entrevistas de puestos de frontend, y vemos que el rango de preguntas es bastante amplio.
+1. Contenido donde estudiar
