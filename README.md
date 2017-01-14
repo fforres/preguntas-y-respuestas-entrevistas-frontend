@@ -19,7 +19,7 @@
 
   ----
 
-- [Tips para entrevistados]('./tips_interviewees')
+- [Tips para postulantes]('./tips_interviewees')
 - [Tips para entrevistadores y recruiters]('./tips_interviewers_and_recruiters')
 
 

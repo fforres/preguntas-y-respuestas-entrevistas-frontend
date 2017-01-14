@@ -1,6 +1,10 @@
 # Preguntas para entrevista de frontend
 ## Generales
 
+*** Este set de preguntas generales considera preguntas abiertas a propósito. ***
+*** Busca generar una conversación, más que escuchar al entrevistado dar una respuesta unitaria o exacta ***
+*** La idea es que con estas preguntas pueda el entrevistado expresarse y mostrar su conocimiento de una manera relajada y con menos presión ***
+
 ### Preguntas
 1. [ ] [¿Qué es lo que más te gusta de codear / programar?](#1)
 1. [ ] [¿Cuál fue el último desafío técnico que tuviste?](#2)
