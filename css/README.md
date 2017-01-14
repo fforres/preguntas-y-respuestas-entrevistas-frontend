@@ -42,15 +42,29 @@
 
 - #### [¿Cuál es la diferencia entre selectores de ID o CSS?](#1)
   <div id="1" />
+  - La primera diferencia es en sintaxis, tanto al definirlos en el HTML como en el CSS.
+    ```html
+    <div id="hola"/>
+    <div class="hola mundo"/>
+    ```
+    ```css
+    #hola { }
+    .hola { }
+    .mundo { }
+    ```
 
-
+  - Un elemento puede tener solo 1 ID, pero múltiples clases.
+  - Dentro de un DOM, los ID's son únicos, pero las clases pueden repetirse entre elementos
+  - Los ID's funcionan como identificador único para scrollear una web.
+    - Al entrar a `http://www.ejemplo.com#hola_mundo` el navegador reconocerá el hash value `hola_mundo` e intentará encontrar el elemento con ID `hola_mundo` y scrollear el sitio hasta él.
+  - Al estilar, los ID's tienen precedencia sobre las clases.
 
 - #### [¿Cuál es la diferencia entre "resetear" y "normalizar" el CSS (reset.css y normalize.css)? ¿Cuándo elegirias uno u otro?](#2)
   <div id="2" />
+  - Al *resetear* el css (`reset.css`) se busca remover todo el estilado por defecto que los browsers realizan a un DOM, mientras que al *normalizarlo* (`normalize.css`) busca generar un estilo consistente a lo largo de todos los navegadores.
 
 
-
-- #### [Describe la propiedad "float" y como funciona](#3)
+- #### [Describe la propiedad "float" y como funciona. Hay alguna alternativa?](#3)
   <div id="3" />
 
 
@@ -125,9 +139,60 @@
 
 
 
-- #### [¿Sabes cómo un browser determina que elementos emparejar con que reglas de CSS?](#21)
+- #### [¿Sabes cómo un browser determina que elementos emparejar con que reglas de CSS? (Especificidad de selectores)](#21)
   <div id="21" />
 
+  Imaginemos un array de 4 espacios en 0 `[0,0,0,0]` donde las reglas de CSS para un elemento se analizan así:
+
+  - Por cada selector de **tag** o **pseudo selector** `*, li, :nth-child(), :nth-of-type()`, se le suma 1 a la cuarta (4ta) posición
+  - Por cada **clase** o **pseudo clase** se le suma 1 a la tercera (3era) posición.
+  - Por cada **ID** se le suma 1 a la segunda (2da) posición.
+  - Por un **atributo "style"** en el css, se le suma a la primera (1era) posición,
+
+
+  ```CSS
+  *             {}  /* especificidad = 0,0,0,0 */
+  li            {}  /* especificidad = 0,0,0,1 */
+  li:first-line {}  /* especificidad = 0,0,0,2 */
+  ul li         {}  /* especificidad = 0,0,0,2 */
+  ul ol+li      {}  /* especificidad = 0,0,0,3 */
+  h1 + *[rel=up]{}  /* especificidad = 0,0,1,1 */
+  ul ol li.red  {}  /* especificidad = 0,0,1,3 */
+  li.red.level  {}  /* especificidad = 0,0,2,1 */
+  #x34y         {}  /* especificidad = 0,1,0,0 */
+  #x34y #press  {}  /* especificidad = 0,2,0,0 */
+  style=""          /* especificidad = 1,0,0,0 */
+  ```
+
+ Luego de adjuntar todos los estilos necesarios a un elemento, se adjuntan los estilos de menor prioridad a mayor, y se sobre-escriben, por ejemplo:
+
+   ```html
+   <html>
+    <head>
+      <style>
+        p {
+          color: red;
+        }
+        #mi_id {
+          color: grey;
+        }
+      </style>
+    </head>
+    <body>
+      <p id="mi_id" style="color: blue"> </p>
+    </body>
+  </html>
+  ```
+  En este caso la especificidad sería:
+
+  ```CSS
+  p             {}  /* especificidad = 0,0,0,1 */
+  #mi_id        {}  /* especificidad = 0,1,0,0 */
+  style=""          /* especificidad = 1,0,0,0 */
+  ```
+  Finalmente, el color del contenido de `<p id="mi_id" style="color: blue"> </p>` es azul.
+
+  OJO: `!important`, toma precedencia por sobre otras reglas del mismo nivel solamente.
 
 
 - #### [¿Que son los pseudo-elementos, para que sirven, dónde y cómo se utilizan?](#22)
@@ -137,6 +202,8 @@
 
 - #### [Explica el modelo de cajas.](#23)
   <div id="23" />
+  
+  ![box_model]('.\box_model.png')
 
 
 
