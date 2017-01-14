@@ -4,7 +4,7 @@
 - Con `Stars`, `forks`.
 - Compartiendo el repo en redes sociales.
   - *Mientras más seamos, mejores preguntas y respuestas.*
-- Si tienes alguna idea o sugerencia, crea un issue con el tag `IDEA`
+- Si tienes alguna idea o sugerencia, [crea un issue](https://github.com/fforres/preguntas-y-respuestas-entrevistas-frontend/issues/new) con el tag `IDEA`
 - Sube un **Pull Request** para sugerir una pregunta nueva, agregar una respuesta, o complementar/fixear una existente.
 
 
