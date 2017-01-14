@@ -8,28 +8,41 @@
 - [Performance]('./performance') **(0%)**
 ----
 ### ¿Como contribuir?
-- Con `Stars`, `forks` o compartiendo el repo en redes sociales. *Mientras más seamos, mejores preguntas y respuestas.*
-- Si tienes alguna idea o sugerencia, crea un issue con el tag `IDEA`.
-- Si quieres subir una pregunta nueva, agregar una respuesta, o complementar/fixear una existente, aceptamos pull requests!
+- Con `Stars`, `forks`.
+- Compartiendo el repo en redes sociales.
+  - *Mientras más seamos, mejores preguntas y respuestas.*
+- Si tienes alguna idea o sugerencia, crea un issue con el tag `IDEA`
+- Sube un **Pull Request** para sugerir una pregunta nueva, agregar una respuesta, o complementar/fixear una existente.
 
-- *Mantengamos el nivel de la conversación*
-----
 
 ### Índice
-- [GENERALES](./generales) **0%**
-- [HTML (Hyper Text Markup Protocol)](./html) - **100%**
-- [JS (JavaScript)](./js) **30%**
-- [CSS (Cascading Style Sheets)](./css) **30%**
-- [CS (Computer Science)](./cs) **0%**
-- [Performance]('./performance') **0%**
-
-#
-- [Preguntas Truculentas/Divertidas]('./tricky') **0%**
-- [Tips para entrevistados]('./tips_interviewees') **0%**
-- [Tips para entrevistadores y recruiters]('./tips_interviewers_and_recruiters') **0%**
+- [Preguntas Generales](./generales)
+- [HTML (Hyper Text Markup Protocol)](./html)
+- [JS (JavaScript)](./js)
+- [CSS (Cascading Style Sheets)](./css)
+- [Código y CS (Computer Science)](./cs)
+- [Performance]('./performance'
+- [Preguntas Truculentas/Divertidas]('./tricky'
+  - ---
+- [Tips para entrevistados]('./tips_interviewees')
+- [Tips para entrevistadores y recruiters]('./tips_interviewers_and_recruiters')
 
 
 ### ¿Por qué este repo?
-Estudiar
-Queremos generar un lugar en español donde encontrar y subir preguntas de entrevistas que nos realizaron y que hemos realizado
-Hicimos el trabajo de recorrer por entrevistas de puestos de frontend, y vemos que el rango de preguntas es bastante amplio.
+1. Queremos generar un lugar en español donde recolectar preguntas de entrevistas que nos realizaron y que hemos realizado.
+1. Contar con preguntas para realizar en entrevistas para FrontEnd Engineers y Developers.
+1. "OpenSourcear" las respuestas :)
+
+
+### ¿Cómo Vamos?
+##### *o "Donde contribuir"*
+
+Item                  | Preguntas | Respuestas
+--------------------- | :-------: | ---------:
+Generales             |    20     |          0
+HTML                  |    15     |         15
+JS                    |    39     |          0
+CSS                   |    32     |          0
+Código/CS             |    20     |          0
+Perfomance            |    0      |          0
+Preguntas Truculentas |    0      |          0

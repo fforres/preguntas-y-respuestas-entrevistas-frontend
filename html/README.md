@@ -15,7 +15,7 @@
 1. [¿Porqué usar tags como `<Section>` o `<Article>` pudiendo usar `<div />`?](#13)
 1. [Si tengo 3 tags estilados exactamente iguales (`<button />`, `<a />` y `<div />`) ¿Qué debería elegir para interactuar con un usuario y porqué?](#14)
 1. [¿Qué es un meta tag?](#17)
-1. [¿Qué es y cuales son las ventajas del Shadow Dom?](#18)
+1. [¿Qué es y Cuáles son las ventajas del Shadow Dom?](#18)
 
 
 ### Respuestas
@@ -86,14 +86,14 @@
   Es un atributo de HTML, un estándar que permite adjuntar o guardar información extra en un elemento.
   ```html
   <div
-    id="unDivCualquiera"
+    id="unDivCuálquiera"
     data-usuario="fforres"
     data-usuario-correo="felipe.torressepulveda@gmail.com" >
   ```
 
   El acceso está estándarizado, puedes acceder a la data de la siguiente manera:
   ```javascript
-    const article = document.getElementById('unDivCualquiera');
+    const article = document.getElementById('unDivCuálquiera');
     article.dataset.usuario // "fforres"
     article.dataset.usuarioCorreo // "felipe.torressepulveda@gmail.com"
   ```
@@ -306,7 +306,7 @@
 
 
 
-- #### [¿Qué es y cuales son las ventajas del Shadow Dom?](#18)
+- #### [¿Qué es y Cuáles son las ventajas del Shadow Dom?](#18)
   <div id="#18" />
   El ShadowDom es una funcionalidad que permite injectar un sub-árbol de elementos DOM (un SUB-DOM) en el documento actualmente renderizado en el navegador.
 
