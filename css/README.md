@@ -5,7 +5,7 @@
 1. [x] [¿Cuál es la diferencia entre selectores de ID o CSS?](#1)
 1. [x] [¿Cuál es la diferencia entre "resetear" y "normalizar" el CSS (reset.css y normalize.css)? ¿Cuándo elegirias uno u otro?](#2)
 1. [ ] [Describe la propiedad "float" y como funciona](#3)
-1. [ ] [¿Como funciona el z-index y el context stacking (contexto de apilamiento) de elementos está formado?](#4)
+1. [ ] [¿Cómo funciona el z-index y el context stacking (contexto de apilamiento) de elementos está formado?](#4)
 1. [ ] [¿Conoces alguna "técnicas de limpieza" de estilos (clearing techniques)?](#6)
 1. [ ] [Como funcionas los sprites de CSS, y como lo podrías implementar?](#7)
 1. [ ] [¿Cuál sería tu approach para solucionar problemas con un browser específico?](#9)
@@ -20,7 +20,7 @@
 1. [ ] [De los preprocesadores que has usado ¿Cuál prefieres y porqué?](#19)
 1. [ ] [¿Cómo implementarías una web que usa fuentes no standar?](#20)
 1. [x] [¿Sabes cómo un browser determina que elementos emparejar con que reglas de CSS?](#21)
-1. [ ] [¿Que son los pseudo-elementos, para que sirven, dónde y cómo se utilizan?](#22)
+1. [ ] [¿Qué son los pseudo-elementos, para que sirven, dónde y cómo se utilizan?](#22)
 1. [ ] [Explica el modelo de cajas.](#23)
 1. [ ] [¿Qué hace: `* { box-sizing: border-box; }`? ¿Cuáles son sus ventajas?](#24)
 1. [ ] [¿Qué valores existen para "display"?](#25)
@@ -69,7 +69,7 @@
 
 
 
-- #### [¿Como funciona el z-index y el context stacking (contexto de apilamiento) de elementos está formado?](#4)
+- #### [¿Cómo funciona el z-index y el context stacking (contexto de apilamiento) de elementos está formado?](#4)
   <div id="4" />
 
 
@@ -203,7 +203,7 @@
   - Adicional, al haber 2 reglas con la misma especificidad, el navegador selecciona la últma regla definida (la "más reciente").
 
 
-- #### [¿Que son los pseudo-elementos, para que sirven, dónde y cómo se utilizan?](#22)
+- #### [¿Qué son los pseudo-elementos, para que sirven, dónde y cómo se utilizan?](#22)
   <div id="22" />
 
 

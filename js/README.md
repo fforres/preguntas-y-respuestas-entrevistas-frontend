@@ -5,8 +5,8 @@
 1. [ ] [Explica la delegación de eventos](#1)
 1. [ ] [Explica como funciona `this` en JavaScript](#2)
 1. [ ] [Explica como funciona la herencia de prototipos](#3)
-1. [ ] [¿Que opiniones tienes de AMD versus CommonJS?](#4)
-1. [ ] [Porqué este snippet no funciona como una funcion autoejecutable: `function hola(){console.log('mundo')}()` si tiene el paréntesis al final? ¿Como debería ser?](#5)
+1. [ ] [¿Qué opiniones tienes de AMD versus CommonJS?](#4)
+1. [ ] [Porqué este snippet no funciona como una funcion autoejecutable: `function hola(){console.log('mundo')}()` si tiene el paréntesis al final? ¿Cómo debería ser?](#5)
 1. [ ] [¿Cuál es la diferencia entre una variable: `null`, `undefined` y no declarada?](#6)
 1. [ ] [¿Qué es un closure? ¿Cómo y porqué usarías uno? ¿Podrías darme un ejemplo de uso?](#7)
 1. [ ] [¿Qué es una función anónima? ¿Dónde usarías una? ¿Cuál es la desventaja de ellas?](#8)
@@ -50,7 +50,7 @@
     Que debería hacer para poder usar la misma funcionalidad pero con promesas?
 
 1. [ ] [¿Porqué debería usar o no usar un lenguaje que transpile o compile a JavaScript? ¿Qué ventajas o desventajas existen?](#29)
-1. [ ] [¿Como debugueas tu código de JavaScript?](#30)
+1. [ ] [¿Cómo debugueas tu código de JavaScript?](#30)
 1. [ ] [¿Cómo puedo iterar sobre un objeto y un array?](#31)
 1. [ ] [¿Conoces como funciona `[].map()`?](#32)
   - Crea una función que realice lo mismo pero para objetos. (Que reciba como 1er parámetro un objeto, y como 2do parametro una función que se ejecutará sobre cada par llave/valor).
@@ -60,10 +60,10 @@
 1. [ ] [Explícame la diferencia entre síncrono y asíncrono.](#34)
 1. [ ] [¿Qué es event loop?](#35)
 1. [ ] [¿Cuál es la diferencia entre `call stack` y `task queue`?](#36)
-1. [ ] [Además de "porque se ve más bonito" ¿Por que debería usar arrow functions `() => {}`?](#37)
+1. [ ] [Además de "porque se ve más bonito" ¿Por qué debería usar arrow functions `() => {}`?](#37)
 1. [ ] [Qué diferencia existe en el uso de `hola` entre `function hola(){}`, `var hola = function(){}` y `var hola = ()=>{}`](#39)
-1. [ ] [¿Qué es y Porqué usar o no Babel?](#39)
-1. [ ] [¿Que proposals de JavaScript es la que más te gustaría/interesa que sea aprobada?](#40)
+1. [ ] [¿Qué es y Porqué usar o no Transpiladores? (Babel, o buble)](#39)
+1. [ ] [¿Qué proposals de JavaScript es la que más te gustaría/interesa que sea aprobada?](#40)
 
 
 
@@ -78,10 +78,10 @@
 1.  [Explica como funciona la herencia de prototipos](#3)
     <div id="3" />
 
-1.  [¿Que opiniones tienes de AMD versus CommonJS?](#4)
+1.  [¿Qué opiniones tienes de AMD versus CommonJS?](#4)
     <div id="4" />
 
-1.  [Porqué este snippet no funciona como una funcion autoejecutable: `function hola(){console.log('mundo')}()` si tiene el paréntesis al final? ¿Como debería ser?](#5)
+1.  [Porqué este snippet no funciona como una funcion autoejecutable: `function hola(){console.log('mundo')}()` si tiene el paréntesis al final? ¿Cómo debería ser?](#5)
     <div id="5" />
 
 1.  [¿Cuál es la diferencia entre una variable: `null`, `undefined` y no declarada?](#6)
@@ -174,7 +174,7 @@
 1.  [¿Porqué debería usar o no usar un lenguaje que transpile o compile a JavaScript? ¿Qué ventajas o desventajas existen?](#29)
     <div id="29" />
 
-1.  [¿Como debugueas tu código de JavaScript?](#30)
+1.  [¿Cómo debugueas tu código de JavaScript?](#30)
     <div id="30" />
 
 1.  [¿Cómo puedo iterar sobre un objeto y un array?](#31)
@@ -198,14 +198,14 @@
 1.  [¿Cuál es la diferencia entre `call stack` y `task queue`?](#36)
     <div id="36" />
 
-1.  [Además de "porque se ve más bonito" ¿Por que debería usar arrow functions `() => {}`?](#37)
+1.  [Además de "porque se ve más bonito" ¿Por qué debería usar arrow functions `() => {}`?](#37)
     <div id="37" />
 
 1.  [Qué diferencia existe en el uso de `hola` entre `function hola(){}`, `var hola = function(){}` y `var hola = ()=>{}`](#39)
     <div id="39" />
 
-1.  [¿Qué es y Porqué usar o no Babel?](#39)
+1.  [¿Qué es y Porqué usar o no Transpiladores (Babel, o buble)?](#39)
     <div id="39" />
 
-1.  [¿Que proposals de JavaScript es la que más te gustaría/interesa que sea aprobada?](#40)
+1.  [¿Qué proposals de JavaScript es la que más te gustaría/interesa que sea aprobada?](#40)
     <div id="40" />

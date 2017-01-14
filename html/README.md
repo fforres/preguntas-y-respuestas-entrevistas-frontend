@@ -7,8 +7,8 @@
 1. [x] [¿Cuál es la diferencia entre `cookie` `localStorage`, `sessionStorage` e `indexedDB`?](#5)
 1. [x] [¿Qué diferencias existen entre `<script>`, `<script async>` y `<script defer>`?](#6)
 1. [x] [¿Puedo poner un tag `<link>` dentro del body?¿Porqué no es recomendado?](#7)
-1. [x] [¿Donde es recomendado poner los tag `<script/>` después o antes del body? ¿Existen excepciones?](#8)
-1. [x] [¿Que es el Rendering Progresivo?](#9)
+1. [x] [¿Dónde es recomendado poner los tag `<script/>` después o antes del body? ¿Existen excepciones?](#8)
+1. [x] [¿Qué es el Rendering Progresivo?](#9)
 1. [x] [¿Qué son y como afectan al performance el `Reflow` y `Repaint`?](#10)
 1. [x] [¿Qué estructura tiene el `DOM`?](#11)
 1. [x] [¿Qué diferencia existe entre `DOM` y `HTML`?](#12)
@@ -194,13 +194,13 @@
 
 
 
-- #### [¿Donde es recomendado poner los tag `<script/>` después o antes del body? ¿Existen excepciones?](#8)
+- #### [¿Dónde es recomendado poner los tag `<script/>` después o antes del body? ¿Existen excepciones?](#8)
   <div id="8" />
   - Depende mucho del contenido y acciones que ejecutarán dichos scripts.
   - Es más una "buena practica legacy" hoy en dia, se colocaban posterior al body para priorizar el mostrar contenido estilado y no detener la ejecución del sitio mientras se descargaba el css.
   - Actualment existen los atributos `async` o `defer`, que nos ayudan a definir descargas, parseos y ejecución diferidos.
 
-- #### [¿Que es el Rendering Progresivo?](#9)
+- #### [¿Qué es el Rendering Progresivo?](#9)
   <div id="9" />
   - Un conjunto de técnicas y decisiones tomadas y aplicadas a fin de priorizar mostrar de una parte del contenido web lo mas rapidamente posible (El contenido de una noticia, el landing en un sitio web), y despriorizar la carga de otras secciones (Footer, banners, side-menus, etc).
 

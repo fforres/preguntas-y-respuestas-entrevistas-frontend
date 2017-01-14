@@ -9,25 +9,25 @@
   var bar = 10 + '20';
   ```
 
-1. [¿Como harías para crear una función `add` que cumpla con lo siguiente?](#2)
+1. [¿Cómo harías para crear una función `add` que cumpla con lo siguiente?](#2)
   ```javascript
   add(2, 5) // retorna: 7
   add(2)(5) // retorna: 7
   ```
 
-1. [¿Que retorna lo siguiente?](#3)
+1. [¿Qué retorna lo siguiente?](#3)
   ```javascript
   "Me gusta JavaScript".split('').reverse().join('');
   ```
 
-1. [¿Que retorna lo siguiente?](#4)
+1. [¿Qué retorna lo siguiente?](#4)
   ```javascript
   "me gusta JavaScript".split(' ').map(function(el) {
     return el.split('').reverse().join('');
   }).join(' ');
   ```
 
-1. [¿Que valor toma `foo` luego de lo siguiente?](#5)
+1. [¿Qué valor toma `foo` luego de lo siguiente?](#5)
   ```javascript
     (window.foo || (window.foo = "bar"))
   ```
@@ -42,7 +42,7 @@
   alert(foo + bar);
   ```
 
-1. [En el siguiente código: ¿Que imprimirán las lineas `console.log(foo.length);`?](#7)
+1. [En el siguiente código: ¿Qué imprimirán las lineas `console.log(foo.length);`?](#7)
   ```javascript
   var foo = [];
   foo.push(1);
@@ -113,24 +113,24 @@
   ```
 
 
-- [¿Como harías para crear una función `add` que cumpla con lo siguiente?](#2)
+- [¿Cómo harías para crear una función `add` que cumpla con lo siguiente?](#2)
   <div id="2" />
   ```javascript
   ```
 
 
-- [¿Que retorna lo siguiente?](#3)
+- [¿Qué retorna lo siguiente?](#3)
   <div id="3" />
   ```javascript
   ```
 
-- [¿Que retorna lo siguiente?](#4)
+- [¿Qué retorna lo siguiente?](#4)
   <div id="4" />
   ```javascript
   ```
 
 
-- [¿Que valor toma `foo` luego de lo siguiente?](#5)
+- [¿Qué valor toma `foo` luego de lo siguiente?](#5)
   <div id="5" />
   ```javascript
   ```
@@ -142,7 +142,7 @@
   ```
 
 
-- [En el siguiente código: ¿Que imprimirán las lineas `console.log(foo.length);`?](#7)
+- [En el siguiente código: ¿Qué imprimirán las lineas `console.log(foo.length);`?](#7)
   <div id="7" />
   ```javascript
   ```

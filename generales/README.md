@@ -22,7 +22,7 @@
 1. [ ] [¿Cómo crearías un slideshow / carrusel de imágenes?](#14)
 1. [ ] [Llegas a tu nuevo trabajo, todo el codebas usa tabs pero tu usas espacios. ¿Qué haces?](#15)
 1. [ ] [¿Qué es el FOUC? (`Flash of unstyled content` o `Flash de Contenido sin Estilar`).](#16)
-1. [ ] [¿Que es `ARIA` y `Screen Readers`?.](#17)
+1. [ ] [¿Qué es `ARIA` y `Screen Readers`?.](#17)
 1. [ ] [¿Cómo haces un sitio web accesible?.](#18)
 1. [ ] [¿Cuáles son los pros y contras de usar animaciones de CSS vs animacioens de JavaScript?.](#19)
 1. [ ] [¿Qué es CORS?.](#20)
@@ -82,7 +82,7 @@
 1. [¿Qué es el FOUC? (`Flash of unstyled content` o `Flash de Contenido sin Estilar`).](#16)
     <div id="16" />
 
-1. [¿Que es `ARIA` y `Screen Readers`?.](#17)
+1. [¿Qué es `ARIA` y `Screen Readers`?.](#17)
     <div id="17" />
 
 1. [¿Cómo haces un sitio web accesible?.](#18)

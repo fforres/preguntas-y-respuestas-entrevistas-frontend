@@ -1,6 +1,6 @@
 # Preguntas para entrevista de frontend
 
-### ¿Como contribuir?
+### ¿Cómo contribuir?
 - Con `Stars`, `forks`.
 - Compartiendo el repo en redes sociales.
   - *Mientras más seamos, mejores preguntas y respuestas.*
@@ -10,7 +10,7 @@
 
 ### Índice
 - [Preguntas Generales](./generales)
-- [HTML (Hyper Text Markup Protocol)](./html)
+- [HTML (Hyper Text Markup Language)](./html)
 - [JS (JavaScript)](./js)
 - [CSS (Cascading Style Sheets)](./css)
 - [Código y CS (Computer Science)](./cs)
