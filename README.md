@@ -1,6 +1,5 @@
 # Preguntas para entrevista de frontend
 
-----
 ### ¿Como contribuir?
 - Con `Stars`, `forks`.
 - Compartiendo el repo en redes sociales.
