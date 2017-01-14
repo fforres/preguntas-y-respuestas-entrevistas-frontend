@@ -265,7 +265,12 @@
 
 - #### [¿Has usado Flexbox o Grid? ¿Qué puedes decirme de ellos?](#30)
   <div id="30" />
+  - [FlexBox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) y [Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) son 2 módulos de CSS creados para diseñar interfaces en la web.
 
+  - Flexbox permite que los elementos se comporten de manera mucho más predecible en diferentes tamaños de pantalla, lo que facilita el diseño de interfaces responsivas.
+
+  - Grid Layout viene siendo la estandarizción de los sistemas de grillas existentes actualmente (boostrap, grid.css, etc).
+    Actualemte es un **working draft**, por lo que no está soportado en producción y su api puede cambiar.
 
 
 - #### [¿Cómo es el diseño `reponsivo` distinto del diseño `adaptable`?](#31)
