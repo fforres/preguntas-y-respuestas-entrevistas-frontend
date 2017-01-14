@@ -1,21 +1,21 @@
 # Preguntas para entrevista de frontend
 ## HTML
 ### Preguntas
-1. [¿Qué hace un `doctype`  (`<!DOCTYPE html>`)?](#1)
-1. [¿Qué elementos componen HTML5?](#2)
-1. [¿Para que sirven los atributos `data-`?](#4)
-1. [¿Cuál es la diferencia entre `cookie` `localStorage`, `sessionStorage` e `indexedDB`?](#5)
-1. [¿Qué diferencias existen entre `<script>`, `<script async>` y `<script defer>`?](#6)
-1. [¿Puedo poner un tag `<link>` dentro del body?¿Porqué no es recomendado?](#7)
-1. [¿Donde es recomendado poner los tag `<script/>` después o antes del body? ¿Existen excepciones?](#8)
-1. [¿Que es el Rendering Progresivo?](#9)
-1. [¿Qué son y como afectan al performance el `Reflow` y `Repaint`?](#10)
-1. [¿Qué estructura tiene el `DOM`?](#11)
-1. [¿Qué diferencia existe entre `DOM` y `HTML`?](#12)
-1. [¿Porqué usar tags como `<Section>` o `<Article>` pudiendo usar `<div />`?](#13)
-1. [Si tengo 3 tags estilados exactamente iguales (`<button />`, `<a />` y `<div />`) ¿Qué debería elegir para interactuar con un usuario y porqué?](#14)
-1. [¿Qué es un meta tag?](#17)
-1. [¿Qué es y Cuáles son las ventajas del Shadow Dom?](#18)
+1. [x] [¿Qué hace un `doctype`  (`<!DOCTYPE html>`)?](#1)
+1. [x] [¿Qué elementos componen HTML5?](#2)
+1. [x] [¿Para que sirven los atributos `data-`?](#4)
+1. [x] [¿Cuál es la diferencia entre `cookie` `localStorage`, `sessionStorage` e `indexedDB`?](#5)
+1. [x] [¿Qué diferencias existen entre `<script>`, `<script async>` y `<script defer>`?](#6)
+1. [x] [¿Puedo poner un tag `<link>` dentro del body?¿Porqué no es recomendado?](#7)
+1. [x] [¿Donde es recomendado poner los tag `<script/>` después o antes del body? ¿Existen excepciones?](#8)
+1. [x] [¿Que es el Rendering Progresivo?](#9)
+1. [x] [¿Qué son y como afectan al performance el `Reflow` y `Repaint`?](#10)
+1. [x] [¿Qué estructura tiene el `DOM`?](#11)
+1. [x] [¿Qué diferencia existe entre `DOM` y `HTML`?](#12)
+1. [x] [¿Porqué usar tags como `<Section>` o `<Article>` pudiendo usar `<div />`?](#13)
+1. [x] [Si tengo 3 tags estilados exactamente iguales (`<button />`, `<a />` y `<div />`) ¿Qué debería elegir para interactuar con un usuario y porqué?](#14)
+1. [x] [¿Qué es un meta tag?](#17)
+1. [x] [¿Qué es y Cuáles son las ventajas del Shadow Dom?](#18)
 
 
 ### Respuestas
