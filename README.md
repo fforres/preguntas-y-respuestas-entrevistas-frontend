@@ -38,7 +38,7 @@ Item                  | Preguntas | Respuestas
 Generales             |    20     |          0
 HTML                  |    15     |         15
 JS                    |    39     |          0
-CSS                   |    32     |          0
+CSS                   |    32     |          4
 Código/CS             |    20     |          0
 Perfomance            |    0      |          0
 Preguntas Truculentas |    0      |          0
