@@ -91,6 +91,13 @@
 
 - #### [¿Cómo desarrollas sitios para features específicas por navegadores?](#10)
   <div id="10" />
+  ** Pregunta Abierta **
+  Algunas solucuiones pueden ser:
+    - Uso de frameworks de css para facilitar la homogeneidad.
+    - Preprocesadores de CSS
+    - Post-procesado del CSS al realizar el build del sito.
+      - Gulp / Grunt / Webpack
+      - PostCSS
 
 
 
