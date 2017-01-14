@@ -20,7 +20,7 @@
 
 ### Respuestas
 - #### [¿Qué hace un `doctype`  (`<!DOCTYPE html>`)?](#1)
-  <div id="#1" />
+  <div id="1" />
   Es una declaración al comienzo de un documento HTML (previo al tag `<html>`), es una instrución que le deja saber al navegador en que version de HTML está este documento para interpretarlo correctamente.
   Definir `<!Doctype html>` le dice al navegador que tiene que parsear el html basándose en el estandar HTML5.
   En el caso de navegadores más viejos, interpretaran el html en un modo "compatible con html5" pero ignorarán las features que no soporten.
@@ -32,7 +32,7 @@
 
 
 - #### [¿Qué elemento componen "HTML5"?](#2)
-    <div id="#2" />
+  <div id="2" />
   - Semántica - Text Markup más semántico (Mejor accesibilidad y descripción en el contenido web ... y facilidad en el SEO).
     - `<footer>`
     - `<canvas>`
@@ -82,7 +82,7 @@
 
 
 - #### [¿Para que sirven los atributos `data-`?](#4)
-  <div id="#4" />
+  <div id="4" />
   Es un atributo de HTML, un estándar que permite adjuntar o guardar información extra en un elemento.
   ```html
   <div
@@ -99,7 +99,7 @@
   ```
 
 - #### [¿Cuál es la diferencia una `cookie` `localStorage` y `sessionStorage`?](#5)
-  <div id="#5" />
+  <div id="5" />
   - ** Cookie: **
     Pequeño set de información enviada por un sitio web y almacenado en el navegador de un usuario.
     Se guarda en el disco, por lo que esta data es persistente.
@@ -161,7 +161,7 @@
 
 
 - #### [¿Qué diferencias existen entre `<script>`, `<script async>` y `<script defer>`?](#6)
-  <div id="#6" />
+  <div id="6" />
   - ** script ** -> Descarga el file y ejecuta el file, pero tnto como la descarga como ejecucuión se desarrollan secuencialmente, por lo tanto detienen el parseo del HTML.
 
   - ** script async ** -> Descarga el file paralelamente a la descarga/parseo del resto del documento/assets, pero al momento de ejecturalo, detiene el parseo del HTML.
@@ -172,7 +172,7 @@
 
 
 - #### [¿Puedo poner un tag `<link>` dentro del body? ¿Porqué no es recomendado?](#7)
-  <div id="#7" />
+  <div id="7" />
   - Si. No es recomendado, aunque posible.
   - Ejemplo de un proceso de descarga de un file html, con un css una imagen y un archivo JS
     - Descarga el "html"
@@ -195,13 +195,13 @@
 
 
 - #### [¿Donde es recomendado poner los tag `<script/>` después o antes del body? ¿Existen excepciones?](#8)
-  <div id="#8" />
+  <div id="8" />
   - Depende mucho del contenido y acciones que ejecutarán dichos scripts.
   - Es más una "buena practica legacy" hoy en dia, se colocaban posterior al body para priorizar el mostrar contenido estilado y no detener la ejecución del sitio mientras se descargaba el css.
   - Actualment existen los atributos `async` o `defer`, que nos ayudan a definir descargas, parseos y ejecución diferidos.
 
 - #### [¿Que es el Rendering Progresivo?](#9)
-  <div id="#9" />
+  <div id="9" />
   - Un conjunto de técnicas y decisiones tomadas y aplicadas a fin de priorizar mostrar de una parte del contenido web lo mas rapidamente posible (El contenido de una noticia, el landing en un sitio web), y despriorizar la carga de otras secciones (Footer, banners, side-menus, etc).
 
 
@@ -209,7 +209,7 @@
 
 
 - #### [¿Qué son y como afectan al performance el `Reflow` y `Paint`/`RePaint` ?](#10)
-  <div id="#10" />
+  <div id="10" />
   - `RePaint` es el nombre que se le da al proceso que ejecuta el navegador cuando realiza cambios visuales a un elemento, pero no cambia su `layout`. (Color de fondo, visibilidad, outline)
 
   - `Reflow` es el proceso que ejecuta el navegador cuando los cambios que realiza a un elemento, cambian su layout (posicion, tamaño, etc) que obligan a recalcular y posiblemente reposicionar otros elementos en el documento.
@@ -221,13 +221,13 @@
   - `RePaint` necesita verificar la visibilidad de todos los otros nodos y como estos afectan a la visibilidad de el/los nodos iniciales.
     - Ejemplo:
 
-      El cambiar el color de fondo de un `<div id="#a" />` sobre el que hay un `<div id="b">` con una opacidad `0.5`, fuerza a recalcular el color de fondo y los efectos que tiene el `<div id="b">` sobre el A
+      El cambiar el color de fondo de un `<div id="a" />` sobre el que hay un `<div id="b">` con una opacidad `0.5`, fuerza a recalcular el color de fondo y los efectos que tiene el `<div id="b">` sobre el A
 
 
 
 
 - #### [¿Qué estructura tiene el `DOM`?](#11)
-  <div id="#11" />
+  <div id="11" />
   - Un árbol
   - Un árbol imperfecto y desbalanceado
 
@@ -237,7 +237,7 @@
 
 
 - #### [¿Qué diferencia existe entre `DOM` y `HTML`?](#12)
-  <div id="#12" />
+  <div id="12" />
   - HTML - (Hyper Text Markup Language) Es un lenguaje de marcado (*markup*) que define una sintaxis específica para representar un cierto tipo de componentes que luego el navegaor interpreta y transforma en el DOM.
   - DOM - (Document Object Model) - Es el modelo de la interpretación de un HTML. El DOM és (y expone) una API para un documento de HTML válido, que permite interactuar realizar acciones programáticas sobre él.
     ejemplo:
@@ -255,7 +255,7 @@
 
 
 - #### [¿Porqué usar tags como `<Section>` o `<Article>` pudiendo usar `<div />`?](#13)
-  <div id="#13" />
+  <div id="13" />
   - En primera instancia, por accesibilidad, utilizar elementos como `<article> <details> <footer> o <nav>` a los screenreaders a mapear e interpretar correctamente el DOM.
   - Tocando el tema de la accesibilidad, de nada sirve usar atributos como `role` o `aria-*` de manera conflictiva.
   ```html
@@ -273,7 +273,7 @@
 
 
 - #### [Si tengo 3 tags estilados exactamente iguales (`<button />`, `<a />` y `<div />`) ¿Qué debería elegir para interactuar con un usuario y porqué?](#14)
-  <div id="#14" />
+  <div id="14" />
   - Una pregunta un poco capciosa, principalmente porque la decisión pasa por accesibilidad más que por otra cosa.
 
     La idea primaria es usar elementos concretos para las interacciones que se realizarán.
@@ -290,7 +290,7 @@
 
 
 - #### [¿Qué es un meta tag?](#17)
-  <div id="#17" />
+  <div id="17" />
   - Son Elementos o Tags, usados en HTML que proveen metadata del sitio. o "Información sobre la información (o el contenido) del mismo sito.
 
   EJEMPLO:
@@ -307,7 +307,7 @@
 
 
 - #### [¿Qué es y Cuáles son las ventajas del Shadow Dom?](#18)
-  <div id="#18" />
+  <div id="18" />
   El ShadowDom es una funcionalidad que permite injectar un sub-árbol de elementos DOM (un SUB-DOM) en el documento actualmente renderizado en el navegador.
 
   *(El Shadow Dom asocia un nuevo tipo de Nodo asociado que se puede asociar con los elementos llamado el "Shadow Root", el elemento al que se le asocia este "Shadow Root" se le dice "Shadow Host")*
