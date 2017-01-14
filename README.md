@@ -17,7 +17,7 @@
 - [Código y CS (Computer Science)](./cs)
 - [Performance]('./performance')
 - [Preguntas Truculentas/Divertidas]('./tricky')
-  - ---
+  ----
 - [Tips para entrevistados]('./tips_interviewees')
 - [Tips para entrevistadores y recruiters]('./tips_interviewers_and_recruiters')
 
