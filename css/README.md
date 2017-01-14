@@ -192,7 +192,8 @@
   ```
   Finalmente, el color del contenido de `<p id="mi_id" style="color: blue"> </p>` es azul.
 
-  OJO: `!important`, toma precedencia por sobre otras reglas del mismo nivel solamente.
+  - OJO: `!important`, toma precedencia por sobre otras reglas del mismo nivel solamente.
+  - Adicional, al haber 2 reglas con la misma especificidad, el navegador selecciona la últma regla definida (la "más reciente").
 
 
 - #### [¿Que son los pseudo-elementos, para que sirven, dónde y cómo se utilizan?](#22)
@@ -202,8 +203,8 @@
 
 - #### [Explica el modelo de cajas.](#23)
   <div id="23" />
-  
-  ![box_model]('.\box_model.png')
+
+  ![box model screenshot](./box.gif)
 
 
 
@@ -230,11 +231,36 @@
 - #### [La 'C' en CSS quiere decir 'Cascading'. Como el browser define la prioridad al asignar estilos? ¿Cómo se puede sacar ventaja de esto?](#28)
   <div id="28" />
 
+  - Relacionado a la [pregunta 21](#21).
+
+  - Una de las ventajas de que las definiciones sean en "cascada" es la posibilidad de encapsular comportamientos y estilos.
+    Gracias a esto es posible usar CSS para definir características superiores y específicas:
+    Por ejemplo:
+    ```css
+    .link {
+      font-size: 1.3em;
+    }
+    .link:hover {
+      font-size: 1.5em;
+    }
+    .mainArea .link {
+      background-color: red;
+    }
+
+    .sideBar .link {
+      background-color: blue;
+    }
+
+    .sideBar .social .link {
+      background-color: teal;
+    }
+    ```
+    Gracias a esta definicion es posible tener en nuestra página, 3 tipos de links con un estilo y funcionalidad en común `font-size` y con estilos diferentes dependiendo del area en el que se encuentren.
 
 
 - #### [¿Qué frameworks de CSS has usado localmente, en producción? ¿Cómo los mejorarías?](#29)
   <div id="29" />
-
+  - ** Pregunta Abierta **
 
 
 - #### [¿Has usado Flexbox o Grid? ¿Qué puedes decirme de ellos?](#30)
