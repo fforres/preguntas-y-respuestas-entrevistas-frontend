@@ -32,7 +32,7 @@
 
 
 - #### [¿Qué elemento componen "HTML5"?](#2)
-    <div id="#2" />
+  <div id="#2" />
   - Semántica - Text Markup más semántico (Mejor accesibilidad y descripción en el contenido web ... y facilidad en el SEO).
     - `<footer>`
     - `<canvas>`
