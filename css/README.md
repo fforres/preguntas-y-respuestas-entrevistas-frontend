@@ -4,15 +4,15 @@
 
 1. [x] [¿Cuál es la diferencia entre selectores de ID o CSS?](#1)
 1. [x] [¿Cuál es la diferencia entre "resetear" y "normalizar" el CSS (reset.css y normalize.css)? ¿Cuándo elegirias uno u otro?](#2)
-1. [ ] [Describe la propiedad "float" y como funciona](#3)
+1. [x] [Describe la propiedad "float" y como funciona](#3)
 1. [ ] [¿Cómo funciona el z-index y el context stacking (contexto de apilamiento) de elementos está formado?](#4)
 1. [ ] [¿Conoces alguna "técnicas de limpieza" de estilos (clearing techniques)?](#6)
-1. [ ] [Como funcionas los sprites de CSS, y como lo podrías implementar?](#7)
+1. [x] [Como funcionas los sprites de CSS, y como lo podrías implementar?](#7)
 1. [ ] [¿Cuál sería tu approach para solucionar problemas con un browser específico?](#9)
 1. [x] [¿Cómo desarrollas sitios para features específicas por navegadores?](#10)
 1. [ ] [¿Cómo visualizas o ocultas visualemente el contenido (o habilitas la visualización solo para sceenreaders)?](#12)
-1. [ ] [¿Has usado un sistema de grid? ¿Cuáles prefieres y porqué?](#13)
-1. [ ] [¿Has usado media-queries? ¿Para qué?](#14)
+1. [x] [¿Has usado un sistema de grid? ¿Cuáles prefieres y porqué?](#13)
+1. [x] [¿Has usado media-queries? ¿Para qué?](#14)
 1. [ ] [¿Has usado o estilado SVG? ¿En que situaciones?](#15)
 1. [ ] [¿Cómo optimizas tu sitio para imprimir?](#16)
 1. [ ] [¿Cuáles son algunos de los "detalles" para escribir CSS eficiente?](#17)
@@ -21,10 +21,10 @@
 1. [ ] [¿Cómo implementarías una web que usa fuentes no standar?](#20)
 1. [x] [¿Sabes cómo un browser determina que elementos emparejar con que reglas de CSS?](#21)
 1. [ ] [¿Qué son los pseudo-elementos, para que sirven, dónde y cómo se utilizan?](#22)
-1. [ ] [Explica el modelo de cajas.](#23)
+1. [x] [Explica el modelo de cajas.](#23)
 1. [ ] [¿Qué hace: `* { box-sizing: border-box; }`? ¿Cuáles son sus ventajas?](#24)
 1. [ ] [¿Qué valores existen para "display"?](#25)
-1. [ ] [¿Cuál es la diferencia entre `inline` and `inline-block`?](#26)
+1. [x] [¿Cuál es la diferencia entre `inline` and `inline-block`?](#26)
 1. [ ] [¿Cuál es la diferencia entre `relative`, `fixed`, `absolute` y `static` al definir la posición de un elemento?](#27)
 1. [x] [La 'C' en CSS quiere decir 'Cascading'. Como el browser define la prioridad al asignar estilos? ¿Cómo se puede sacar ventaja de esto?](#28)
 1. [ ] [¿Qué frameworks de CSS has usado localmente, en producción? ¿Cómo los mejorarías?](#29)
@@ -66,7 +66,9 @@
 
 - #### [Describe la propiedad "float" y como funciona. Hay alguna alternativa?](#3)
   <div id="3" />
+- La propiedad "float" sirve para flotar un elemento, de la cual acepta 3 argumentos, que pueden ser: izquierda (left), derecha (right) o ninguno (none), de está forma, se puede situar un contenedor o elemento al lado que deseas.
 
+- La alternativa para el caso de un menu con listas, podría ser inline-block.
 
 
 - #### [¿Cómo funciona el z-index y el context stacking (contexto de apilamiento) de elementos está formado?](#4)
@@ -81,6 +83,8 @@
 
 - #### [Como funcionas los sprites de CSS, y como lo podrías implementar?](#7)
   <div id="7" />
+Los sprites en CSS hace referencia a una imagen que puede servir para muchas situaciones, para implementarlas se puede llamar tanto a la propiedad background-image con background-position por separado, como llamar directamente a la propiedad background implementada directamente.
+
 
 
 
@@ -108,11 +112,12 @@
 
 - #### [¿Has usado un sistema de grid? ¿Cuáles prefieres y porqué?](#13)
   <div id="13" />
-
+Sí, he ocupado son Semantic y Bootstrap 3 y 4. Personalmente, prefiero Bootstrap por el fácil manejo de grillas y como uno encuentra todo mejor documentado, aparte, es super simple y util de ocupar.
 
 
 - #### [¿Has usado media-queries? ¿Para qué?](#14)
   <div id="14" />
+  Sí, para hacer un diseño adaptable, que a diferencia del responsivo, este último ocupa unidades de tamaño fijo conjunto a media queries. El diseño adaptable, ocupa unidades de medidas relativas.
 
 
 
@@ -207,11 +212,16 @@
   <div id="22" />
 
 
-
 - #### [Explica el modelo de cajas.](#23)
   <div id="23" />
 
   ![box model screenshot](./box.gif)
+  
+  La propiedad padding hace referencía al espacio que está dentro del contenedor o caja, a diferencia de la propiedad margin que está relacionado al espacio que está fuera del contenedor. Pueden ser en cuatros posiciones (top, bottom, left, right) y de diferentes medidas de acuerdo a lo necesitado.
+  
+  En cuanto a la propiedad border, hace referencia al contorno del contenedor, como la traducción literal lo menciona, es un borde como tal.
+  
+  Básicamente, la diferencia está en el espacio que se otorga, mientras que Padding separá desde adentro hacía afuera del contenedor, border da el contorno y finalmente margin separá hacía afuera del contenedor.
 
 
 
@@ -227,6 +237,10 @@
 
 - #### [¿Cuál es la diferencia entre `inline` and `inline-block`?](#26)
   <div id="26" />
+  
+  La diferencia entre la propiedad "inline" e "inline-block" es que la propiedad inline-block puede afectar a otras directamente, ya que está ultima no tiene un largo y ancho definido que no pueda afectar a las demás.
+  
+  Ejemplo practico: http://jsfiddle.net/Mta2b/
 
 
 
@@ -280,7 +294,7 @@
     Actualemte es un **working draft**, por lo que no está soportado en producción y su api puede cambiar.
 
 
-- #### [¿Cómo es el diseño `reponsivo` distinto del diseño `adaptable`?](#31)
+- #### [¿Cómo es el diseño `responsivo` distinto del diseño `adaptable`?](#31)
   <div id="31" />
 
 
