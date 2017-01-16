@@ -21,7 +21,7 @@
 ### Respuestas
 - #### [¿Qué hace un `doctype`  (`<!DOCTYPE html>`)?](#1)
   <div id="1" />
-  Es una declaración al comienzo de un documento HTML (previo al tag `<html>`). Consiste en una instrución que le deja saber al navegador en que versión de HTML está el documento para interpretarlo correctamente.
+  Es una declaración al comienzo de un documento HTML (previo al tag `<html>`). Consiste en una instrución que le deja saber al navegador en qué versión de HTML está el documento para interpretarlo correctamente.
   Definir `<!DOCTYPE html>` le dice al navegador que tiene que parsear el HTML basándose en el estandar HTML5.
   En el caso de navegadores más viejos, interpretarán el HTML en un modo "compatible con HTML5" pero ignorarán las funcionalidades que no soporten.
   `<!DOCTYPE html>` es mucho más simple que las definiciones de doctype anteriores, como por ejemplo:
@@ -165,11 +165,11 @@
 
 - #### [¿Qué diferencias existen entre `<script>`, `<script async>` y `<script defer>`?](#6)
   <div id="6" />
-  - **script** -> Descarga el archivo y lo ejecuta, pero tanto la descarga como la ejecución se desarrollan secuencialmente y por lo mismo detienen el parseo del HTML.
+  - ** script ** -> Descarga el archivo y lo ejecuta, pero tanto la descarga como la ejecución se desarrollan secuencialmente y por lo mismo detienen el parseo del HTML.
 
-  - **script async** -> Descarga el archivo paralelamente a la descarga/parseo del resto del documento/assets, pero al momento de ejecutarlo detiene el parseo del HTML.
+  - ** script async ** -> Descarga el archivo paralelamente a la descarga/parseo del resto del documento/assets, pero al momento de ejecutarlo detiene el parseo del HTML.
 
-  - **script defer** -> Descarga el archivo paralelamente a la descarga/parseo del resto del documento/assets, pero espera hasta que todo el HTML esté parseado antes de ejectuar el script.
+  - ** script defer ** -> Descarga el archivo paralelamente a la descarga/parseo del resto del documento/assets, pero espera hasta que todo el HTML esté parseado antes de ejectuar el script.
 
 
 

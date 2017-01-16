@@ -29,7 +29,6 @@
 1. "OpenSourcear" las respuestas :)
 
 
-
 ### ¿Cómo Vamos?
 ##### *o "Donde contribuir"*
 
