@@ -120,10 +120,11 @@
 1.  [¿Qué es una función anónima? ¿Dónde usarías una? ¿Cuál es la desventaja de ellas?](#8)
     <div id="8" />
 
-1.  [¿Cuál es la diferencia entre un objeto "host" y un objeto "nativo"?]](#9)
+1.  [¿Cuál es la diferencia entre un objeto "host" y un objeto "nativo"?](#9)
     <div id="9" />
-
-// http://stackoverflow.com/questions/7614317/what-is-the-difference-between-native-objects-and-h
+    ```javascript
+    // http://stackoverflow.com/questions/7614317/what-is-the-difference-between-native-objects-and-h
+    ```
 1.  [¿En qué difieren las siguientes expresiones `function Hola() {}`, `var hola = new Hola()` y `var hola = Hola()`?](#10)
     <div id="10" />
 
