@@ -85,6 +85,9 @@
   <div id="7" />
 Los sprites en CSS hace referencia a una imagen que puede servir para muchas situaciones, para implementarlas se puede llamar tanto a la propiedad background-image con background-position por separado, como llamar directamente a la propiedad background implementada directamente.
 
+En esta documentación, se explica el uso de la propiedad background, de la cual desglozando obtenemos por separado el background-image y background-position.
+
+http://www.w3schools.com/css/css_image_sprites.asp
 
 
 
@@ -113,11 +116,17 @@ Los sprites en CSS hace referencia a una imagen que puede servir para muchas sit
 - #### [¿Has usado un sistema de grid? ¿Cuáles prefieres y porqué?](#13)
   <div id="13" />
 Sí, he ocupado son Semantic y Bootstrap 3 y 4. Personalmente, prefiero Bootstrap por el fácil manejo de grillas y como uno encuentra todo mejor documentado, aparte, es super simple y util de ocupar.
+ - [Bootstrap](http://getbootstrap.com/)
+  - [Semantic UI](http://semantic-ui.com/)
 
 
 - #### [¿Has usado media-queries? ¿Para qué?](#14)
   <div id="14" />
-  Sí, para hacer un diseño adaptable, que a diferencia del responsivo, este último ocupa unidades de tamaño fijo conjunto a media queries. El diseño adaptable, ocupa unidades de medidas relativas.
+    Las Media Queries facilitan el desarrollo de un diseño adaptable.
+    Con ellas es posible definir que reglas de CSS respondan a tamaños concretos del viewport.
+
+     Usando Media Queries, es posible realizar un *diseño adaptable* que a diferencia del responsivo, ocupa unidades de tamaño fijo en conjunto a Media Queries. 
+    Puedes aprender más de Media Queries [acá](https://developer.mozilla.org/es/docs/CSS/Media_queries)
 
 
 
