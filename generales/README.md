@@ -37,14 +37,14 @@
     <div id="2" />
     ** Pregunta personal, la idea es con esto generar una conversación **
 
-1. [¿Cuál ha sido el desafío tecnológico mas grande que has enfrentado?](#3)
+1. [¿Cuál ha sido el desafío tecnológico más grande que has enfrentado?](#3)
     <div id="3" />
     ** Pregunta personal, la idea es con esto generar una conversación **
 
-1. [¿Qué consideraciones tendrías que tener para hacer más `performante` tu sitio web?](#4)
+1. [¿Qué consideraciones tendrías que tener para hacer, tu sitio web, que tenga mejor rendimiento?](#4)
     <div id="4" />
 
-1. [¿Qué consideraciones de Seguridad, SEO, Performace, UI, UX, Tecnología, Mantenibilidad y Tamaño debes tener para hacer una webapp?](#5)
+1. [¿Qué consideraciones de Seguridad, SEO, Performance, UI, UX, Tecnología, Mantenibilidad y Tamaño debes tener para hacer una webapp?](#5)
     <div id="5" />
 
 1. [¿Cómo debugueas tu webapp?](#6)
@@ -61,10 +61,10 @@
     <div id="9" />
     ** Pregunta personal, la idea es con esto generar una conversación **
 
-1. [¿Si tuvieras 4 hojas de estilo que tu sitio usa, como las integrarías a tu sitio?](#10)
+1. [Si tuvieras 4 hojas de estilo que tu sitio usa, ¿cómo las integrarías a tu sitio?](#10)
     <div id="10" />
 
-1. [Tu sitio está funcionando lento, ¿Cómo lo arreglas?](#11)
+1. [Tu sitio está funcionando lento, ¿cómo lo arreglas?](#11)
     <div id="11" />
 
 1. [¿Cómo optimizarías los assets de un sitio web? (CSS / JS).](#12)
@@ -76,7 +76,7 @@
 1. [¿Cómo crearías un slideshow / carrusel de imágenes?](#14)
     <div id="14" />
 
-1. [Llegas a tu nuevo trabajo, todo el codebas usa tabs pero tu usas espacios. ¿Qué haces?](#15)
+1. [Llegas a tu nuevo trabajo, todo el codebase usa tabs pero tu usas espacios. ¿Qué haces?](#15)
     <div id="15" />
 
 1. [¿Qué es el FOUC? (`Flash of unstyled content` o `Flash de Contenido sin Estilar`).](#16)
