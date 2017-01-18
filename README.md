@@ -5,7 +5,7 @@
 - Compartiendo el repo en redes sociales.
   - *Mientras más seamos, mejores preguntas y respuestas.*
 - Si tienes alguna idea o sugerencia, [crea un issue](https://github.com/fforres/preguntas-y-respuestas-entrevistas-frontend/issues/new) con el tag `IDEA`
-- Sube un **Pull Request** para sugerir una pregunta nueva, agregar una respuesta, o complementar/fixear una existente.
+- Sube un **Pull Request** para sugerir una pregunta nueva, agregar una respuesta, o complementar/corregir una existente.
 
 
 ### Índice
@@ -27,7 +27,6 @@
 1. Queremos generar un lugar en español donde recolectar preguntas de entrevistas que nos realizaron y que hemos realizado.
 1. Contar con preguntas para realizar en entrevistas para FrontEnd Engineers y Developers.
 1. "OpenSourcear" las respuestas :)
-
 
 
 ### ¿Cómo Vamos?
