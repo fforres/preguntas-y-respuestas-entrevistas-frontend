@@ -44,8 +44,10 @@ Preguntas Truculentas |    0      |          0
 
 
 ### Contribuyentes
-  *** Esta iniciativa no podría ser posible sin la ayuda de:
-
+  Gracias por la ayuda!
+  <div style="text-align: center; padding-bottom: 2em;">
+    [@fforres](http://twitter.com/fforres) - [@hsorellana](https://github.com/hsorellana) - [@alantoro](https://github.com/alantoro) - [@jsDotx3](https://github.com/jsDotx3)
+  </div>
 
 ----
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional</a>.
