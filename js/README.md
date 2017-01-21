@@ -2,7 +2,7 @@
 ### JavaScript
 
 ### Preguntas
-1. [ ] [Explica la delegación de eventos](#1)
+1. [x] [Explica la delegación de eventos](#1)
 1. [ ] [Explica cómo funciona `this` en JavaScript](#2)
 1. [ ] [Explica cómo funciona la herencia de prototipos](#3)
 1. [ ] [¿Qué opiniones tienes de AMD versus CommonJS?](#4)
@@ -84,7 +84,7 @@
     function hola(){}
 
     // expresión 2
-    var hola = function(){} 
+    var hola = function(){}
 
     // expresión 3
     var hola = () => {}
@@ -96,8 +96,75 @@
 
 ### Respuestas
 
-1.  [Explica la delegación de eventos](#1)
+1.  [Explica la delegación de eventos:](#1)
     <div id="1" />
+
+    Es una técnica que permite agregar un *controlador de eventos* (EventHandler) en un elemento padre a fin de no tener que agregar multiples *controladores de eventos* en los hijos.
+
+    ***Explicación extensa:***
+
+    La delegación de eventos en JavaScript hace uso de 2 conceptos existentes, el *Burbujeo de Eventos* (Event Bubbling) y el *Elemento Objetivo* (Target Elemento).
+
+    El Burbujeo de eventos es la funcionalidad de que cualquier evento disparado en un elemento, es tambien disparado en los elementos padres del mismo.
+    ```html
+    <ol id="ol">
+      <li id="li1">item 1</li>
+      <li id="li2">item 2</li>
+    </ol>
+    ```
+    ```javascript
+    document.getElementById('ol').addEventListener('click', () => {
+      console.log('ol clickeado')
+    })
+    document.getElementById('li1').addEventListener('click', () => {
+      console.log('li1 clickeado')
+    })
+    document.getElementById('li2').addEventListener('click', () => {
+      console.log('li2 clickeado')
+    })
+    ```
+    Al clickear un elemento 'li', se disparan ambos eventos (li y ol);
+    [(Ejemplo en JS Bin)](https://jsbin.com/bewosoyobo/edit?html,js,console,output)
+
+    Podemos comprender el elemento objetivo si cambiamos un poco el código de JS
+    ```javascript
+    document.getElementById('ol').addEventListener('click', (e) => console.log(e.target, e.currentTarget))
+    document.getElementById('li1').addEventListener('click', (e) => console.log(e.target, e.currentTarget))
+    document.getElementById('li2').addEventListener('click', (e) => console.log(e.target, e.currentTarget))
+    ```
+    [(Ejemplo en JS Bin)... abre tu consola de desarrollo para verlo mejor](https://jsbin.com/qizezi/edit?html,js,console,output#H:L10)
+    Clickear en `li1` imprime lo siguiente:
+    ![event delegation](./event_delegation.png)
+
+    Por lo que un evento contiene la propiedad `target` como `currentTarget`.
+    `target` es el elemento del cual se disparó el evento, mientras que `currentTarget` es el elemento al cual fue adjuntado el `eventHandler`.
+    (Por eso en el primer `console.log` son iguales, y en el segundo distintos).
+
+    Nos podemos aprovechar de esto para realizar delegación de eventos.
+
+    ```html
+    <ol id="ol">
+      <li id="li1">item 1</li>
+      <li id="li2">item 2</li>
+      <li id="li3">item 3</li>
+      <li id="li4">item 4</li>
+      <li id="li5">item 5</li>
+      <li id="li6">item 6</li>
+    </ol>
+    ```
+    ```javascript
+    document.getElementById('ol').addEventListener('click', (e) => {
+      if (e.target.tagName === 'LI' ) {
+       console.log('desde: ' + e.target.id);
+      }
+    })
+    ```
+    [Ejemplo en JSBin acá](https://jsbin.com/qavexu/2/edit?html,js,console,output)
+
+    En este nuevo ejemplo, necesitamos solo definir un administrar de eventos (Event Handler) para poder realizar acciones con cada uno de los LI.
+
+    A esta técnica se le conoce como "Event Delegation".
+
 
 1.  [Explica como funciona `this` en JavaScript](#2)
     <div id="2" />
