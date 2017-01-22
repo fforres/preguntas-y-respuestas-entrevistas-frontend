@@ -246,6 +246,40 @@
 
 1.  [¿Explícame Hoisting?](#17)
     <div id="17" />
+    Hoisting es una característica de JavaScript que empuja todas las declaraciones (NO las asignaciones) de variables al inicio de su scope (Al momento de interpretar incialmente el código, previo a su ejecución)
+    ```javascript
+    function foo() {
+    	bar();
+    	var x = 1;
+    }
+    ```
+    Es interpretada de la siguiente manera:
+    ```javascript
+
+    function foo() {
+      var x;
+      bar();
+      x = 1;
+    }
+    ```
+    Lo que se "mueve" hacia arriba es la declaración de la variable, no la asignación de un valor a ella.
+
+    En una declaración de funcion (`Function Declaration`), son "movidas" tanto su declaración como asignación, no así en una expresión de función (`Function Expresion`)
+
+    Por ejemplo:
+    ```javascript
+    function ejemploDeHoisting() {
+      bar(); // Esto imprimirá "hola"
+      foo(); // Esto imprimirá "foo is not a function"
+      var foo = function () { // Esto es una `Function Expresion` asignada a la variable Foo.
+    		alert("Mundo");
+    	}
+    	function bar() { // `Function Declaration` con el nombre bar
+    		alert("Hola");
+    	}
+    }
+    ejemploDeHoisting();
+    ```
 
 1.  [¿Cuáles son las ventajas/desventajas de usar clases en ES6?](#18)
     <div id="18" />
