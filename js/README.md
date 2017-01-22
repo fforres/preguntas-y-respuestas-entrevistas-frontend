@@ -14,7 +14,7 @@
     ```
 
 1. [ ] [¿Cuál es la diferencia entre una variable: `null`, `undefined` y no declarada?](#6)
-1. [ ] [¿Qué es un closure? ¿Cómo y porqué usarías uno? ¿Podrías darme un ejemplo de uso?](#7)
+1. [x] [¿Qué es un closure? ¿Cómo y porqué usarías uno? ¿Podrías darme un ejemplo de uso?](#7)
 1. [ ] [¿Qué es una función anónima? ¿Dónde usarías una? ¿Cuál es la desventaja de ellas?](#8)
 1. [ ] [¿Cuál es la diferencia entre un objeto "host" y un objeto "nativo"?](#9) [Revisa aqui](http://stackoverflow.com/questions/7614317/what-is-the-difference-between-native-objects-and-h)
 1. [ ] [¿En qué difieren las siguientes expresiones?](#10)
@@ -183,6 +183,37 @@
 
 1.  [¿Qué es un closure? ¿Cómo y porqué usarías uno? ¿Podrías darme un ejemplo de uso?](#7)
     <div id="7" />
+    Un closure es una característica que tiene JavaScript de que una función al ejecutarse, recuerde el entorno en la que fue creada.
+    Por ejemplo:
+    ```javascript
+    function bar() {
+      var text = 'mundo';
+      function foo() {
+        console.log('hola ' + text);
+      }
+      foo();
+    }
+    bar();
+    ```
+    Esta funcion imprimirá 'hola mundo', sin ningun problema.
+
+    Ahora, consideremos lo siguiente:
+    ```javascript
+    var text = 'fforres';
+    function bar() {
+      var text = 'mundo';
+      function foo() {
+        console.log('hola ' + text);
+      }
+      return foo;
+    }
+    var willItPrint = bar();
+    willItPrint();
+    ```
+    Si bien estamos definiendo en 2 lugares la variable `text`, al momento de definir la función `foo` la variable `text` tiene el valor de 'mundo'.
+    La funcion `foo` la estamos devolviendo y guardando en la variable `willItPrint` por lo que independiente de el momento en el que llamemos a la funcion guardada en esa variable, el resultado será:
+    "hola mundo";
+
 
 1.  [¿Qué es una función anónima? ¿Dónde usarías una? ¿Cuál es la desventaja de ellas?](#8)
     <div id="8" />
