@@ -38,6 +38,15 @@
         "code",
         "question"
       ]
+    },
+    {
+      "login": "alantoro",
+      "name": "Alan Toro",
+      "avatar_url": "https://avatars.githubusercontent.com/u/15242024?v=3",
+      "profile": "https://github.com/alantoro",
+      "contributions": [
+        "doc"
+      ]
     }
   ]
 }
