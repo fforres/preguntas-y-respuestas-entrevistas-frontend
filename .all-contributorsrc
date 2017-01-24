@@ -18,6 +18,16 @@
         "review",
         "doc"
       ]
+    },
+    {
+      "login": "YerkoPalma",
+      "name": "Yerko Palma",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5105812?v=3",
+      "profile": "yerkopalma.me",
+      "contributions": [
+        "code",
+        "question"
+      ]
     }
   ]
 }
