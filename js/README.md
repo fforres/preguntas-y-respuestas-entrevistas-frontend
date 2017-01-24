@@ -3,7 +3,7 @@
 
 ### Preguntas
 1. [x] [Explica la delegación de eventos](#1)
-1. [ ] [Explica cómo funciona `this` en JavaScript](#2)
+1. [x] [Explica cómo funciona `this` en JavaScript](#2)
 1. [ ] [Explica cómo funciona la herencia de prototipos](#3)
 1. [ ] [¿Qué opiniones tienes de AMD versus CommonJS?](#4)
 1. [ ] [¿Porqué este snippet no funciona como una funcion autoejecutable, si tiene el paréntesis al final? ¿Cómo debería ser?](#5)
