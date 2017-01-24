@@ -35,7 +35,7 @@
 1. [ ] [Explícame AJAX.](#14)
 1. [ ] [¿Qué ventajas y desventajas tiene el usar AJAX?](#15)
 1. [ ] [¿Qué es JSONP?](#16)
-1. [ ] [Explícame Hoisting](#17)
+1. [x] [Explícame Hoisting](#17)
 1. [ ] [¿Cuáles son las ventajas/desventajas de usar clases en ES6?](#18)
 1. [ ] [Describe el 'event bubbling'](#19)
 1. [ ] [¿Cuál es la diferencia entre `==` y `===`?](#20)
