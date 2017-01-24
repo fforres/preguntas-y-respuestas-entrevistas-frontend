@@ -1,4 +1,5 @@
 # Preguntas para entrevista de frontend
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
 ### ¿Cómo contribuir?
 - Con `Stars`, `forks`.
@@ -51,3 +52,14 @@ Preguntas Truculentas |    0      |          0
 
 ----
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional</a>.
+
+## Contributors
+
+Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+| [<img src="https://avatars.githubusercontent.com/u/952992?v=3" width="60px;"/><br /><sub>Felipe Torres (fforres)</sub>](http://www.fforr.es)<br />[💻](https://github.com/fforres/preguntas-y-respuestas-entrevistas-frontend/commits?author=fforres) 💁 👀 [📖](https://github.com/fforres/preguntas-y-respuestas-entrevistas-frontend/commits?author=fforres) |
+| :---: |
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!

@@ -1,0 +1,23 @@
+{
+  "projectName": "preguntas-y-respuestas-entrevistas-frontend",
+  "projectOwner": "fforres",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 60,
+  "commit": true,
+  "contributors": [
+    {
+      "login": "fforres",
+      "name": "Felipe Torres (fforres)",
+      "avatar_url": "https://avatars.githubusercontent.com/u/952992?v=3",
+      "profile": "http://www.fforr.es",
+      "contributions": [
+        "code",
+        "question",
+        "review",
+        "doc"
+      ]
+    }
+  ]
+}
