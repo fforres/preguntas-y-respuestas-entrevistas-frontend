@@ -55,11 +55,11 @@ Preguntas Truculentas |    0      |          0
 
 ## Contributors
 
-Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
+Agradecimientos y kudos a estas geniales personas! ([Simbología de Emojis](https://github.com/kentcdodds/all-contributors#emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 | [<img src="https://avatars.githubusercontent.com/u/952992?v=3" width="60px;"/><br /><sub>Felipe Torres (fforres)</sub>](http://www.fforr.es)<br />[💻](https://github.com/fforres/preguntas-y-respuestas-entrevistas-frontend/commits?author=fforres) 💁 👀 [📖](https://github.com/fforres/preguntas-y-respuestas-entrevistas-frontend/commits?author=fforres) | [<img src="https://avatars.githubusercontent.com/u/5105812?v=3" width="60px;"/><br /><sub>Yerko Palma</sub>](yerkopalma.me)<br />[💻](https://github.com/fforres/preguntas-y-respuestas-entrevistas-frontend/commits?author=YerkoPalma) 💁 | [<img src="https://avatars.githubusercontent.com/u/6550470?v=3" width="60px;"/><br /><sub>Jose Nuñez Ahumada</sub>](https://twitter.com/jsDotx3)<br />[💻](https://github.com/fforres/preguntas-y-respuestas-entrevistas-frontend/commits?author=jsDotx3) 💁 | [<img src="https://avatars.githubusercontent.com/u/15242024?v=3" width="60px;"/><br /><sub>Alan Toro</sub>](https://github.com/alantoro)<br />[📖](https://github.com/fforres/preguntas-y-respuestas-entrevistas-frontend/commits?author=alantoro) | [<img src="https://avatars.githubusercontent.com/u/3346428?v=3" width="60px;"/><br /><sub>Hugo Soto</sub>](https://github.com/hsorellana)<br />[📖](https://github.com/fforres/preguntas-y-respuestas-entrevistas-frontend/commits?author=hsorellana) |
 | :---: | :---: | :---: | :---: | :---: |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
+Este proyecto se adhiere a la especicifación de  [all-contributors](https://github.com/kentcdodds/all-contributors) por [@kentcdodds](https://github.com/kentcdodds). Contribuciones de todo tipo son bienvenidas.
