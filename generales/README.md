@@ -26,7 +26,8 @@
 1. [ ] [¿Cómo haces un sitio web accesible?.](#18)
 1. [ ] [¿Cuáles son los pros y contras de usar animaciones de CSS vs animacioens de JavaScript?.](#19)
 1. [ ] [¿Qué es CORS?.](#20)
-
+1. [ ] [¿Puedes escribir el código html/css y JS que resulte en lo siguiente?.](#21)
+  - ![acordeon](./acordeon.gif)
 
 ### Respuestas
 1. [¿Qué es lo que más te gusta de codear / programar?](#1)
@@ -116,3 +117,7 @@
 
 1. [¿Qué es CORS?.](#20)
     <div id="20" />
+
+1. [ ] [¿Puedes escribir el código html/css y JS que resulte en lo siguiente?.](#21)
+- ![acordeon](./acordeon.gif)
+  <div id="21" />
