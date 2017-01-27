@@ -169,11 +169,11 @@
 1.  [Explica como funciona `this` en JavaScript](#2)
     <div id="2" />
     La palabra reservada `this` hace referencia al contexto de ejecución actual, y en la mayoría de los casos, su valor es determinado dependiendo de como se llamó a la función en que se declaró. Existen una serie de factores que cambian el comportamiento de `this`en javascript
-    
+
     **Modo estricto**
-    
+
     En modo estricto (usando `'use strict'`), el valor de `this` es por defecto `undefined`, esto debido a razones de [performance y seguridad](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode#Securing_JavaScript), aunque el valor de `this` aún puede modificarse usando `bind`, `call` o `apply`. Este no es el caso para el modo no estricto. Por ejemplo
-    
+
     ```js
     function f1(){
         return this;
@@ -181,11 +181,11 @@
     // En el browser
     f1() === window; // En modo estricto, esto arroja false   
     ```
-    
+
     **`this` en objetos**
-    
+
     Cuando se usa `this` en el método de un objeto, su valor hace referencia al objeto en que es invocado, **independiente del contexto en que se declara el método**. Por ejemplo,
-    
+
     ```js
     var o = {p: 37};
 
@@ -197,34 +197,34 @@
 
     console.log(o.f()); // 37
     ```
-    
+
     **`bind`, `call` y `apply`**
-    
+
     El valor de `this` puede ser manualmente modificado al momento de ejecutar una función, usando los métodos mencionados. `call` y `apply` funcionan de forma similar, llaman a una función pasando como parametro el valor de `this` de forma explicita
-    
+
     ```js
     function add(c, d){
       return this.a + this.b + c + d;
     }
 
     var o = {a:1, b:3};
-    
+
     add.call(o, 5, 7); // 1 + 3 + 5 + 7 = 16
-    
+
     add.apply(o, [10, 20]); // 1 + 3 + 10 + 20 = 34
     ```
-    
+
     Por otro lado, bind asigna un valor al `this` de una función de forma permanente a una nueva función
-    
+
     ```js
     var add2 = add.bind({a:1, b:3})
     add2(1, 2) // 1 + 3 + 1 + 2 = 7
     ```
-    
+
     **arrow functions**
-    
+
     Las funciones de flecha asignan el valor de `this` al contexto _'padre'_ del contexto de ejecución, independiente de si son llamadas directamente, o como método de un objeto, tampoco se puede cambiar el valor de `this` con las funciones `bind`, `call` y `apply`.
-    
+
 1.  [Explica como funciona la herencia de prototipos](#3)
     <div id="3" />
 
@@ -236,6 +236,24 @@
 
 1.  [¿Cuál es la diferencia entre una variable: `null`, `undefined` y no declarada?](#6)
     <div id="6" />
+
+    **undefined:** Como JavaScript es un lenguaje de programación débilmentee tipado nos permite hacer cosas muy flexibles como por ejemplo declarar una variable sin especificar su tipo. En términos prácticos sería declarar una variable sin valor. (Cabe destacar que JS en tiempo de ejecución asigna el tipo de variable dependiendo del valor que esta tenga) Ej::
+
+    ```javascript
+    var a = 123; // El valor que contiene es un numero por ende JavaScript cataloga a la variable "a" de type Number.
+    var b; // La variable "b" fue declarada pero no fue definido ningun valor en ella, por ende es de caracter undefined.
+    ```
+    En resumen, si declaras una variable en JS y no le asignas valor alguno, por defecto es una variable undefined.
+
+    **null:** El valor null es simple de explicar pero puede ser un poco difícil de entender. Básicamente `null` representa la ausencia de contenido. Esto quiere decir que en sí mismo `null` es un valor el cual no tiene contenido. Por otra parte el interprete de JS a las variables null le asigna el tipo de variable `Object`, pero porque?. Bueno Este es un comportamiento extraño en el que puedes ver una explicación más detallada en el libro de Nicholas C. Zakas "THE PRINCIPLES OF OBJECT-ORIENTED JAVASCRIPT". Aquí un pequeño extracto del libro donde explica un poco este comportamiento:
+
+    *When you run typeof null, the result is "object". But why an object when the type is null? (In fact, this has been acknowledged as an error by TC39, the committee that designs and maintains JavaScript.*
+
+    **no declarada:** Como la expresión lo dice, son variables que no han sido declaradas con la palabra reservada `var`, (en ES6 también podemos declarar variables con `let` y `const`). Si queremos guardar el resultado de una operación en una variable no declarada, JavaScript crea una variable global con el identificador no declarado (nombre de la variable) y le asigna el valor de la operación ej:
+    ```javascript
+    number = 3 + 6; // La variable number no ha sido declarada y por lo que JavaScript crea la variable global `number` y le asigna el resultado de la operación.
+    ```
+    Por otra parte si solo queremos acceder a una variable no declarada sin pasarle ningún valor nuestro código fallara, ya que JavaScript no tiene conocimiento de dicha variable. Puedes hacer la prueba abriendo tu consola del navegador escribir una palabra y darle entrer, deberías ver un mensaje como: `Uncaught ReferenceError: variable_no_declarada is not defined`
 
 1.  [¿Qué es un closure? ¿Cómo y porqué usarías uno? ¿Podrías darme un ejemplo de uso?](#7)
     <div id="7" />
