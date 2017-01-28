@@ -56,6 +56,16 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "alexandereb",
+      "name": "Alexander Espinoza",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7150994?v=3",
+      "profile": "https://twitter.com/alexander_eb",
+      "contributions": [
+        "code",
+        "question"
+      ]
     }
   ]
 }
