@@ -1,4 +1,5 @@
 # Preguntas para entrevista de frontend
+[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors)
 
 ### ¿Cómo contribuir?
 - Con `Stars`, `forks`.
@@ -16,6 +17,7 @@
 - [Código y CS (Computer Science)](./cs)
 - [Performance]('./performance')
 - [Preguntas Truculentas/Divertidas]('./tricky')
+
 
   ----
 
@@ -43,11 +45,17 @@ Perfomance            |    0      |          0
 Preguntas Truculentas |    0      |          0
 
 
-### Contribuyentes
-  Gracias por la ayuda!
-  <div style="text-align: center; padding-bottom: 2em;">
-    [@fforres](http://twitter.com/fforres) - [@hsorellana](https://github.com/hsorellana) - [@alantoro](https://github.com/alantoro) - [@jsDotx3](https://github.com/jsDotx3)
-  </div>
-
 ----
+
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional</a>.
+
+## Contributors
+
+Agradecimientos y kudos a estas geniales personas! ([Simbología de Emojis](https://github.com/kentcdodds/all-contributors#emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+| [<img src="https://avatars.githubusercontent.com/u/952992?v=3" width="60px;"/><br /><sub>Felipe Torres (fforres)</sub>](http://www.fforr.es)<br />[💻](https://github.com/fforres/preguntas-y-respuestas-entrevistas-frontend/commits?author=fforres) 💁 👀 [📖](https://github.com/fforres/preguntas-y-respuestas-entrevistas-frontend/commits?author=fforres) | [<img src="https://avatars.githubusercontent.com/u/5105812?v=3" width="60px;"/><br /><sub>Yerko Palma</sub>](yerkopalma.me)<br />[💻](https://github.com/fforres/preguntas-y-respuestas-entrevistas-frontend/commits?author=YerkoPalma) 💁 | [<img src="https://avatars.githubusercontent.com/u/6550470?v=3" width="60px;"/><br /><sub>Jose Nuñez Ahumada</sub>](https://twitter.com/jsDotx3)<br />[💻](https://github.com/fforres/preguntas-y-respuestas-entrevistas-frontend/commits?author=jsDotx3) 💁 | [<img src="https://avatars.githubusercontent.com/u/15242024?v=3" width="60px;"/><br /><sub>Alan Toro</sub>](https://github.com/alantoro)<br />[📖](https://github.com/fforres/preguntas-y-respuestas-entrevistas-frontend/commits?author=alantoro) | [<img src="https://avatars.githubusercontent.com/u/3346428?v=3" width="60px;"/><br /><sub>Hugo Soto</sub>](https://github.com/hsorellana)<br />[📖](https://github.com/fforres/preguntas-y-respuestas-entrevistas-frontend/commits?author=hsorellana) | [<img src="https://avatars.githubusercontent.com/u/7150994?v=3" width="60px;"/><br /><sub>Alexander Espinoza</sub>](https://twitter.com/alexander_eb)<br />[💻](https://github.com/fforres/preguntas-y-respuestas-entrevistas-frontend/commits?author=alexandereb) 💁 |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+Este proyecto se adhiere a la especicifación de  [all-contributors](https://github.com/kentcdodds/all-contributors) por [@kentcdodds](https://github.com/kentcdodds). Contribuciones de todo tipo son bienvenidas.

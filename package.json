@@ -1,0 +1,18 @@
+{
+  "name": "preguntas-y-respuestas-entrevistas-frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "url": "git@github.com:fforres/preguntas-y-respuestas-entrevistas-frontend.git",
+    "type": "git"
+  },
+  "author": "fetorres <fetorres@groupon.com>",
+  "license": "MIT",
+  "dependencies": {
+    "all-contributors-cli": "^3.0.7"
+  },
+  "scripts": {
+    "add": "all-contributors add",
+    "generate": "all-contributors generate"
+  }
+}
