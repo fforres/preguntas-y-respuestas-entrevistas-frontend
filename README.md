@@ -34,16 +34,25 @@
 ### ¿Cómo Vamos?
 ##### *o "Donde contribuir"*
 
-Item                  | Preguntas | Respuestas
---------------------- | :-------: | ---------:
-Generales             |    20     |          0
-HTML                  |    15     |         15
-JS                    |    39     |          0
-CSS                   |    32     |          4
-Código/CS             |    12     |          0
-Perfomance            |    0      |          0
-Preguntas Truculentas |    0      |          0
+Item                       | Preguntas | Respuestas
+:------------------------- | :-------: | ---------:
+Generales                  |    20     |          1
+HTML                       |    15     |         15
+JS                         |    39     |          4
+CSS                        |    32     |         12
+Código/CS                  |    12     |          0
+Perfomance                 |    0      |          0
+Preguntas Truculentas      |    0      |          0
 
+
+
+Ejemplos Reales
+
+Empresa  | Preguntas | Respuestas
+:------- | :-------: | ---------:
+Amazon   |    x      |          x
+Uber     |    x      |          x
+Groupon  |    x      |          x
 
 ----
 
