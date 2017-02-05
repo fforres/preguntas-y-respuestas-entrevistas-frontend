@@ -4,35 +4,35 @@
 
 ### Preguntas
 
-1. [¿Cuál es el valor de `bar`?](#1)
+1. [ ] [¿Cuál es el valor de `bar`?](#1)
   ```javascript
   var bar = 10 + '20';
   ```
 
-1. [¿Cómo harías para crear una función `add` que cumpla con lo siguiente?](#2)
+1. [ ] [¿Cómo harías para crear una función `add` que cumpla con lo siguiente?](#2)
   ```javascript
   add(2, 5) // retorna: 7
   add(2)(5) // retorna: 7
   ```
 
-1. [¿Qué retorna lo siguiente?](#3)
+1. [ ] [¿Qué retorna lo siguiente?](#3)
   ```javascript
   "Me gusta JavaScript".split('').reverse().join('');
   ```
 
-1. [¿Qué retorna lo siguiente?](#4)
+1. [ ] [¿Qué retorna lo siguiente?](#4)
   ```javascript
   "me gusta JavaScript".split(' ').map(function(el) {
     return el.split('').reverse().join('');
   }).join(' ');
   ```
 
-1. [¿Qué valor toma `foo` luego de lo siguiente?](#5)
+1. [ ] [¿Qué valor toma `foo` luego de lo siguiente?](#5)
   ```javascript
     (window.foo || (window.foo = "bar"))
   ```
 
-1. [¿Qué ocurre al ejecutar lo siguiente?](#6)
+1. [ ] [¿Qué ocurre al ejecutar lo siguiente?](#6)
   ```javascript
   var foo = "Hello";
   (function() {
@@ -42,7 +42,7 @@
   alert(foo + bar);
   ```
 
-1. [En el siguiente código: ¿Qué imprimirán las lineas `console.log(foo.length);`?](#7)
+1. [ ] [En el siguiente código: ¿Qué imprimirán las lineas `console.log(foo.length);`?](#7)
   ```javascript
   var foo = [];
   foo.push(1);
@@ -52,13 +52,13 @@
   console.log(foo.length); // ??
   ```
 
-1. [¿Cuál es el valor de `foo.x`?](#8)
+1. [ ] [¿Cuál es el valor de `foo.x`?](#8)
   ```javascript
   var foo = {n: 1};
   foo.x = foo = {n: 2};
   ```
 
-1. [¿Qué imprime el siguiente código?](#9)
+1. [ ] [¿Qué imprime el siguiente código?](#9)
   ```javascript
   console.log('one');
   setTimeout(function() {
@@ -67,9 +67,9 @@
   console.log('three');
   ```
 
-1. [¿Qué retorna `null === undefined`?](#10)
+1. [ ] [¿Qué retorna `null === undefined`?](#10)
 
-1. [¿Qué imprime el siguiente código?](#11)
+1. [ ] [¿Qué imprime el siguiente código?](#11)
   ```javascript
   console.log('one');
   setTimeout(function() {
@@ -78,7 +78,7 @@
   console.log('three');
   ```
 
-1. [Dado el siguiente input:](#12)
+1. [ ] [Dado el siguiente input:](#12)
   ```javascript
   function ASD() {
     this.text = 'asd';

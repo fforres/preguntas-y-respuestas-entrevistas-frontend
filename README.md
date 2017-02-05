@@ -1,53 +1,62 @@
 # Preguntas para entrevista de frontend
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors)
 
-### ¿Cómo contribuir?
-- Con `Stars`, `forks`.
+## ¿Cómo contribuir?
+
+- Con `stars` o `forks`.
 - Compartiendo el repo en redes sociales.
-  - *Mientras más seamos, mejores preguntas y respuestas.*
-- Si tienes alguna idea o sugerencia, [crea un issue](https://github.com/fforres/preguntas-y-respuestas-entrevistas-frontend/issues/new) con el tag `IDEA`
+
+  > _Mientras más seamos, mejores preguntas y mejores respuestas._
+
+- Si tienes alguna idea o sugerencia, [crea un issue](https://github.com/fforres/preguntas-y-respuestas-entrevistas-frontend/issues/new) con el tag `IDEA`, `PREGUNTA`, o `SUGERENCIA`
+
 - Sube un **Pull Request** para sugerir una pregunta nueva, agregar una respuesta, o complementar/corregir una existente.
 
+## Índice
 
-### Índice
 - [Preguntas Generales](./generales)
 - [HTML (Hyper Text Markup Language)](./html)
 - [JS (JavaScript)](./js)
 - [CSS (Cascading Style Sheets)](./css)
 - [Código y CS (Computer Science)](./cs)
-- [Performance]('./performance')
-- [Preguntas Truculentas/Divertidas]('./tricky')
+- [Performance](./performance)
+- [Preguntas Truculentas/Divertidas](./tricky)
 
-
-  ----
+--------------------------------------------------------------------------------
 
 - [Tips para postulantes]('./tips_interviewees')
 - [Tips para entrevistadores y recruiters]('./tips_interviewers_and_recruiters')
 
+## ¿Por qué este repo?
 
-### ¿Por qué este repo?
 1. Queremos generar un lugar en español donde recolectar preguntas de entrevistas que nos realizaron y que hemos realizado.
-1. Contar con preguntas para realizar en entrevistas para FrontEnd Engineers y Developers.
-1. "OpenSourcear" las respuestas :)
+2. Contar con preguntas para realizar en entrevistas para FrontEnd Engineers y Developers.
+3. "OpenSourcear" las respuestas :)
 
+## ¿Cómo Vamos?
 
-### ¿Cómo Vamos?
-##### *o "Donde contribuir"*
+##### _o "Donde contribuir"_
 
-Item                  | Preguntas | Respuestas
---------------------- | :-------: | ---------:
-Generales             |    20     |          0
-HTML                  |    15     |         15
-JS                    |    39     |          0
-CSS                   |    32     |          4
-Código/CS             |    12     |          0
-Perfomance            |    0      |          0
-Preguntas Truculentas |    0      |          0
+Item                               | Preguntas | Respuestas
+:--------------------------------- | :-------: | ---------:
+[Preguntas Generales](./generales) |    20     |          1
+[HTML](./html)                     |    15     |         15
+[JS](./js)                         |    39     |          4
+[CSS](./css)                       |    32     |         12
+[Codigo/CS](./cs)                  |    12     |          0
+[Perfomance](./performance)        |     0     |          0
+[Preguntas Truculentas](./tricky)  |     0     |          0
 
+[Ejemplos Reales](./ejemplos)
 
-----
+Empresa                       | Preguntas | Respuestas
+:---------------------------- | :-------: | ---------:
+[Amazon](./ejemplos/Amazon)   |     x     |          x
+[Uber](./ejemplos/Uber)       |     x     |          x
+[Groupon](./ejemplos/Groupon) |     x     |          x
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional</a>.
+--------------------------------------------------------------------------------
 
 ## Contributors
 
@@ -59,3 +68,7 @@ Agradecimientos y kudos a estas geniales personas! ([Simbología de Emojis](http
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 Este proyecto se adhiere a la especicifación de  [all-contributors](https://github.com/kentcdodds/all-contributors) por [@kentcdodds](https://github.com/kentcdodds). Contribuciones de todo tipo son bienvenidas.
+
+
+## Licencia
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional</a>.
