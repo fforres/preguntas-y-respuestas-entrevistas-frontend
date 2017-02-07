@@ -39,7 +39,7 @@
 1. [ ] [¿Cuáles son las ventajas/desventajas de usar clases en ES6?](#18)
 1. [ ] [Describe el 'event bubbling'](#19)
 1. [ ] [¿Cuál es la diferencia entre `==` y `===`?](#20)
-1. [ ] [Haz que esto funcione](#21)
+1. [x] [Haz que esto funcione](#21)
     ```javascript
     [2,3,5,6].replicate()   // [2,3,5,6,2,3,5,6]
     [2,3,5,6].replicate(1)  // [2,3,5,6,2,3,5,6]
@@ -371,6 +371,42 @@
     [2,3,5,6].replicate(1)  // [2,3,5,6,2,3,5,6]
     [2,3,5,6].replicate(2)  // [2,3,5,6,2,3,5,6,2,3,5,6]
     ```
+
+    Para hacer funcionar el código anterior, es necesario [extender el prototipo](#3) de los objetos tipo [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array).
+    Es necesario señalar que [es una mala practica extender el prototipo de objetos nativos](https://www.nczonline.net/blog/2010/03/02/maintainable-javascript-dont-modify-objects-you-down-own/), pero solo para este ejemplo mostraremos cómo hacerlo.
+    Para hacerlo, vamos a usar una [polyfill](https://en.wikipedia.org/wiki/Polyfill), que es básicamente, una forma de extender una funcionalidad de un objeto, en caso de que no sea implementada de forma nativa en distintos ambientes (actualmente no existe la función `replicate` para arreglos).
+
+    El código es el siguiente:
+
+    ```js
+    if (!Array.prototype.replicate) { // 1
+        Array.prototype.replicate = function (n) {
+        if (n === undefined) { // 2
+            n = 1
+        }
+        var copy = this.slice(0) // 3
+        var arr = this
+          for(var i = 0; i < n; i++) {
+            arr = arr.concat(copy) // 4
+          }
+        return arr
+        }
+    }
+    ```
+    
+    Repasemos el código de arriba, las secciones relevantes estan marcadas con numeros en los comentarios:
+    
+    1. La primera línea indica que este código solo se ejecutara si **no existe la función `replicate` para los objetos de tipo `Array`**, si bien actualmente no existe dicha función, en un futuro puede ser implementada, y es recomendado siempre preferir las implementaciones nativas.
+    2. La segunda línea asigna un valor por defecto al parametro `n`. Existen distintas formas de asignar valores por defecto, otra forma muy popular para asignar valores por defecto es usando el operador lógico OR (||), en este caso sería
+     ```js
+     n = n || 1
+     ```
+     Ahora bien, esta forma de asignar valores [no es recomendada](http://www.codereadability.com/javascript-default-parameters-with-or-operator/) para este caso, ya que evalua valores que _parecen falsos(falsy)_, entre ellos 0. Si se hubiese escogido ese metodo, se hubiese dado que `[2,3,5,6].replicate(0) === [2,3,5,6].replicate() === [2,3,5,6].replicate(1)`, lo que es incorrecto.
+    3. Usamos el método `slice` para [crear un nuevo arreglo a partir del original](https://davidwalsh.name/javascript-clone-array) y replicarlo.
+    4. Finalmente, concatenamos el arreglo original con la copia, tantas veces como lo indique el parametro `n`.
+
+    Como en todos los programas, es posible que existan mejores implementaciones de código, pero lo anterior cubre lo necesario para implementar de forma segura las funciones requeridas.
+    Como últimas consideraciones, es necesario indicar que: a) el código es compatible con Node y el navegador y b) por compatibilidad, se considero ECMAScript 5, en particular hubiese sido útil el uso de [parametros por defecto](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters) que define ECMAScript 2015.
 
 1.  [¿Tienes un ejemplo de una expresión ternaria? ¿Porqué "ternaria"?](#22)
     <div id="22" />
