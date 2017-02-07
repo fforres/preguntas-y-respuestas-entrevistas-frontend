@@ -398,9 +398,11 @@
     
     1. La primera línea indica que este código solo se ejecutara si **no existe la función `replicate` para los objetos de tipo `Array`**, si bien actualmente no existe dicha función, en un futuro puede ser implementada, y es recomendado siempre preferir las implementaciones nativas.
     2. La segunda línea asigna un valor por defecto al parametro `n`. Existen distintas formas de asignar valores por defecto, otra forma muy popular para asignar valores por defecto es usando el operador lógico OR (||), en este caso sería
+    
      ```js
      n = n || 1
      ```
+     
      Ahora bien, esta forma de asignar valores [no es recomendada](http://www.codereadability.com/javascript-default-parameters-with-or-operator/) para este caso, ya que evalua valores que _parecen falsos(falsy)_, entre ellos 0. Si se hubiese escogido ese metodo, se hubiese dado que `[2,3,5,6].replicate(0) === [2,3,5,6].replicate() === [2,3,5,6].replicate(1)`, lo que es incorrecto.
     3. Usamos el método `slice` para [crear un nuevo arreglo a partir del original](https://davidwalsh.name/javascript-clone-array) y replicarlo.
     4. Finalmente, concatenamos el arreglo original con la copia, tantas veces como lo indique el parametro `n`.
