@@ -1,0 +1,71 @@
+{
+  "projectName": "preguntas-y-respuestas-entrevistas-frontend",
+  "projectOwner": "fforres",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 60,
+  "commit": true,
+  "contributors": [
+    {
+      "login": "fforres",
+      "name": "Felipe Torres (fforres)",
+      "avatar_url": "https://avatars.githubusercontent.com/u/952992?v=3",
+      "profile": "http://www.fforr.es",
+      "contributions": [
+        "code",
+        "question",
+        "review",
+        "doc"
+      ]
+    },
+    {
+      "login": "YerkoPalma",
+      "name": "Yerko Palma",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5105812?v=3",
+      "profile": "https://yerkopalma.me",
+      "contributions": [
+        "code",
+        "question"
+      ]
+    },
+    {
+      "login": "jsDotx3",
+      "name": "Jose Nuñez Ahumada",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6550470?v=3",
+      "profile": "https://twitter.com/jsDotx3",
+      "contributions": [
+        "code",
+        "question"
+      ]
+    },
+    {
+      "login": "alantoro",
+      "name": "Alan Toro",
+      "avatar_url": "https://avatars.githubusercontent.com/u/15242024?v=3",
+      "profile": "https://github.com/alantoro",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "hsorellana",
+      "name": "Hugo Soto",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3346428?v=3",
+      "profile": "https://github.com/hsorellana",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "alexandereb",
+      "name": "Alexander Espinoza",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7150994?v=3",
+      "profile": "https://twitter.com/alexander_eb",
+      "contributions": [
+        "code",
+        "question"
+      ]
+    }
+  ]
+}
