@@ -67,7 +67,7 @@ Agradecimientos y kudos a estas geniales personas! ([Simbología de Emojis](http
 | :---: | :---: | :---: | :---: | :---: | :---: |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-Este proyecto se adhiere a la especicifación de  [all-contributors](https://github.com/kentcdodds/all-contributors) por [@kentcdodds](https://github.com/kentcdodds). Contribuciones de todo tipo son bienvenidas.
+Este proyecto se adhiere a la especificación de  [all-contributors](https://github.com/kentcdodds/all-contributors) por [@kentcdodds](https://github.com/kentcdodds). Contribuciones de todo tipo son bienvenidas.
 
 
 ## Licencia
