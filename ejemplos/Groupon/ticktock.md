@@ -1,3 +1,11 @@
+> `TickTock`, un ejercicio interesante y facilmente "complicable" a medida que avanza el mismo.
+
+> Es necesario realizar este ejercicio on-site y on-whiteboard. (Para poder ver como se desenvuelve el entrevistado).
+
+> Si bien el ejercicio tiene un poco de trivia, por lo que es facil que el entrevistado se incomode, la idea es hacerlo sentir cómodo e intentar eliminar el stress propio de la entrevista (Acentuado por trivia) para que realice preguntas comente el ejercicio y las dudas que tenga.
+
+
+
 ## TickTock
 Puedes crear una función `ticktock` que por cada ves que se ejecute. imprima en consola alternadamente `tick` y luego `tock`
 
@@ -88,5 +96,5 @@ let ticktock = () => {
   a = !a;
 }
 /*Opcion 3 */
-// TODO -> Desarrollar una nueva opción 
+// TODO -> Desarrollar una nueva opción
 ```
