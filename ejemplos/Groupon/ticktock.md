@@ -95,6 +95,23 @@ let ticktock = () => {
   funcs[0+a]();
   a = !a;
 }
-/*Opcion 3 */
-// TODO -> Desarrollar una nueva opción
+
+
+/*
+Opcion 3
+Intercambiando en una variable `funct`, referencias a las funciones `tick` y `tock` con cada ejecución y llamando a 'funct' en la funcion `ticktock`
+*/
+const funct = tick;
+const tick = () => {
+  console.log('tick')
+  funct = tock;
+}
+const tock = () => {
+  console.log('tock');
+  funct = tick;
+}
+
+const ticktock = () => {
+  funct();
+}
 ```
