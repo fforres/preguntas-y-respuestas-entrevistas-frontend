@@ -112,6 +112,8 @@
 
     [Screen readers](https://es.wikipedia.org/wiki/Lector_de_pantalla) es un software que interpreta lo que aparece en la pantalla y lo expresa con voz.
 
+    Puedes aprender algo más de ARIA y Accesibilidad en el siguiente tutorial https://teachaccess.github.io/tutorial/
+
 1. [¿Cómo haces un sitio web accesible?.](#18)
     <div id="18" />
 
