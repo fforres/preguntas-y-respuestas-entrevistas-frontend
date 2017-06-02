@@ -22,7 +22,7 @@
 1. [ ] [¿Cómo crearías un slideshow / carrusel de imágenes?](#14)
 1. [ ] [Llegas a tu nuevo trabajo, todo el codebas usa tabs pero tu usas espacios. ¿Qué haces?](#15)
 1. [ ] [¿Qué es el FOUC? (`Flash of unstyled content` o `Flash de Contenido sin Estilar`).](#16)
-1. [ ] [¿Qué es `ARIA` y `Screen Readers`?.](#17)
+1. [x] [¿Qué es `ARIA` y `Screen Readers`?.](#17)
 1. [ ] [¿Cómo haces un sitio web accesible?.](#18)
 1. [ ] [¿Cuáles son los pros y contras de usar animaciones de CSS vs animacioens de JavaScript?.](#19)
 1. [ ] [¿Qué es CORS?.](#20)
@@ -107,6 +107,12 @@
 
 1. [¿Qué es `ARIA` y `Screen Readers`?.](#17)
     <div id="17" />
+
+    [Aria](https://developer.mozilla.org/es/docs/Web/Accessibility/ARIA) define cómo crear contenido web para personas con discapacidad, para esto usa un conjunto de atributos que se pueden agregar a las etiquetas HTML.
+
+    [Screen readers](https://es.wikipedia.org/wiki/Lector_de_pantalla) es un software que interpreta lo que aparece en la pantalla y lo expresa con voz.
+
+    Puedes aprender algo más de ARIA y Accesibilidad en el siguiente tutorial https://teachaccess.github.io/tutorial/
 
 1. [¿Cómo haces un sitio web accesible?.](#18)
     <div id="18" />
