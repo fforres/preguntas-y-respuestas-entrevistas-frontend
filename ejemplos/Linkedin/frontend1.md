@@ -1,6 +1,6 @@
 ### Question 1
 
-1. Dada las siguientes functiones, podrías decirme cual es el resultado de las últimas 3 líneas?
+1. Dada las siguientes funciones, podrías decirme cual es el resultado de las últimas 3 líneas?
 
   ```javascript
     var Foo = function( a ) {+
@@ -32,7 +32,7 @@
   f.biz(); // a undefined
   ```
 
-2. Podrías modificar el código de f.bar() para que retornara `7` 
+2. Podrías modificar el código de f.bar() para que retornara `7`?
   
   ##### Respuesta
   Solo necesitas agregar `baz` como una función del `this` en el constructor de `Foo`
