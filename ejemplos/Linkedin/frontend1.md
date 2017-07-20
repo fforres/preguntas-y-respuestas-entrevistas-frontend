@@ -1,6 +1,6 @@
 ### Question 1
 
-1. Given the following, would you be able to let me know what the outcome for the last 3 lines is?
+1. Dada las siguientes functiones, podrías decirme cual es el resultado de las últimas 3 líneas?
 
   ```javascript
     var Foo = function( a ) {+
@@ -24,7 +24,7 @@
     f.biz(); // a undefined
   ```
 
-  ##### Answer
+  ##### Respuesta
 
   ```javascript
   f.bar(); // bar funcition is not defined
@@ -32,10 +32,10 @@
   f.biz(); // a undefined
   ```
 
-2. Would you be able to modify the code so f.bar() returned 7?
-
-  ##### Answer
-  You just need to add `baz` as a function to the "this" in the the Foo constructor
+2. Podrías modificar el código de f.bar() para que retornara `7` 
+  
+  ##### Respuesta
+  Solo necesitas agregar `baz` como una función del `this` en el constructor de `Foo`
 
   ```javascript
     var Foo = function( a ) {+
@@ -59,36 +59,38 @@
     f.biz(); // a undefined
   ```
 
-3. Can tou modify the code so f.biz() also returned 7?
+3. Podrías modificar el código para que `f.biz()` también retornara `7`?
 
-    ##### Answer
-    You need to add `a` to the this on the `Foo` constructor.
-    And reference it (`this.a`) on the biz function.
+  ##### Respuesta
+  Necesitas agregar `a` como un parametro del `this` en el constructor de `Foo`.
+  De esa manera puedes acceder `a`, desde la funcion `biz()`, utilizando `this.a`.
 
-    ```javascript
-      var Foo = function( a ) {
-        this.a = a; // Add a reference to A
-        this.bar = function() {
-          return a;
-        };
-        this.baz = function() {
-          return a;
-        };
+  ```javascript
+    var Foo = function( a ) {
+      this.a = a; // Add a reference to A
+      this.bar = function() {
+        return a;
       };
-
-      Foo.prototype = {
-        biz: function() {
-          return this.a;
-        }
+      this.baz = function() {
+        return a;
       };
+    };
 
-      var f = new Foo( 7 );
-      f.bar(); // bar funcition is not defined
-      f.baz(); // 7
-      f.biz(); // a undefined
-    ```
+    Foo.prototype = {
+      biz: function() {
+        return this.a;
+      }
+    };
 
-3. Imagine for some reason weird reason (Aliens...probably), that we cannot assing the `a` variable to anything, so doing `this.a = a`, is not possible. Could you achieve the same thing that in the past question?
+    var f = new Foo( 7 );
+    f.bar(); // bar funcition is not defined
+    f.baz(); // 7
+    f.biz(); // a undefined
+  ```
+
+4. Imagina que por alguna razón (Aliens... 👽 probablemente), que no podemos asigar la variable `a` a nada, por lo que realizar `this.a = a` no es posible.
+Como podríamos obtener el mismo resultado que en la pregunta anterior?
+(Que `f.biz()` retorne `7`);
 
   ```javascript
     var Foo = function( a ) {+
@@ -117,9 +119,10 @@
   ```
 
 
-### Question 2
+### Pregunta 2
 
-Given the following Array of endorsements
+En tu perfil de linkedin la gente puede validar tus habilidades.
+Dado el siguiente array de validaciones:
 ```javascript
 var endorsements = [
   { skill: 'css', user: 'Bill' },
@@ -131,7 +134,7 @@ var endorsements = [
 ];
 ```
 
-How could you sort into something like this:
+Como podrías ordenarlo en algo como lo siguiente:
 ```javascript
 [
   { skill: 'css', users: [ 'Bill', 'Sue', 'Sue' ], count: 2 },
@@ -164,8 +167,9 @@ How could you sort into something like this:
   }
   ```
 
-  > If you remember that objects saved assigned to objects or arrays are just a reference to said object, There's a way of improving that code.
-  > And saving us of a whole iteration :)
+  > Bro tip: 
+  > Un objeto A puede ser asignado en alguna parte a otro objeto B (O un array). Ese nueva asignacion es solo una referencia al objeto A, así que podríamos cambiar el código para que haga uso de esto.
+  > Y salvarnos toooooda una iteración! 💪
 
   ```javascript
   const sortEndorsedArrays = (endorsements) => {
@@ -192,40 +196,46 @@ How could you sort into something like this:
     return modifiedArray;
   }
   ```
-  ##### Explanation
-  We create the an `endorsementObject`, kind of the same as before, but we:
-  1. Save it in the Object.
-    > So we can have the accesst ime  and `key uniqueness` capabilities or benefits of before)
-  2. At the same time, push it in an array
-    > So we can have our final structure ready to go, saving us a whole iteration on the process.
+  ##### Explicacion
+  Creamos el mismo `endorsementObject`, bastante parecido a la versión anterior, salvo que:
+  1. Guardamos `endorsementObject` en el objeto y en el array.
+  2. Esto nos sirve para usar las ventajas de un objeto con por ejemplo tiempos de busqueda (Si usamos una llave única como `ob[el.skill]`)
+  3. Como al mismo tiempo el mismo objeto lo ponemos en un array, asi la estructura final que buscábamos se completa a medida que iteramos sobre el array `endorsements`.
+  4. Esto sucede porque como en ambos lados (`ob` y `modifiedArray`) el mismo objeto apunta a la misma referencia, entonces al al modificarlo en el objeto `ob`, modificamos la referencia, por lo que se aprecian los cambios también en `modifiedArray`
 
-  While it can use more memory, but less computing time, it is a tradeoff you have to consider (And explaint it to your recruiter).
- Sorting 5 elements, it's not the same as sorting 10M
-
+  Lo que si, puede usar un poco más de memoria, pero la contraparte esque nos ahorramos toda una iteración en el array final. 
+  Depende mucho del contexto en el que se use el problema 
+  (Ordenar 10M de elementos en un smartwatch con poca memoria, no es lo mismo que en un server).
 
   -----
 
 
-#### Question 3
+#### Pregunta 3
+Puedes replicar el markup (HTML) de lo siguiente?
 Can you replicate the markup for the following?
   ![](./user_line.png)
 
-> What I'm concerned is one of the rows for a user, not as much as the header/body of the container.
-> We just want the template for a single item, we can asume we'll iterate over an array and print many of them.
+> Lo que nos interesa más en esta ocasión son los rows por usuario, no tanto el header y el body, o el padding del contenedor, etc.
+> Queremos que el template para un solo elemento, podemos asumir que haremos un .map sobre el array y reutilizaremos el template para cada iteración.
 
-This are open questions, vague on purpose, so remember to ask questions to frame your problem.
+Es una pregunta abierta, no tiene una respuesta válida.
+Es mucho más facil usar un approach con flexbox, pero también puedes hacerlo de otras maneras (`position absolute`, `float left y right`, etc)
+Comentar eso es buena idea :)
 
-As an example, you could ask for the following:
+Como pregunta abierta, es siempre util preguntar mucho para acotar el problema, aclarar cosas, y demostrar tu capacidad de análisis pre-código.
 
-- Are there any actions ths markup must perform? Buttons, links, the "close button" for example?
-The idea is for me to write only css + html? Or interaction with JS also?
-Is it responsive?
-Is there any limitations?
+Por ejemplo, podrías preguntar lo siguiente:
+
+- Hay alguna accion que esto tenga que realizar? 
+Si el botón de cerrado (`x`) tiene que eliminar la fila completa, o un efecto on-hover, etc.
+La idea es crear css + html solamente? o JS también?.
+Debe ser resposivo?
+Hay alguna limitación? (Debe ser mobile?)
 
 ###### Tips
-  - Remember your aria / Accesibility
-    - Use "li" instead of "div" for each "item"
-    - use buttons for the "actions"
+  - Recueda tu aria / tips de accesibilidad
+    - Usa `li` para los items de una lista (y no `divs`)
+    - Usa botones para las acciones por sobre `div` o `a`.
 
 ```css
   .row {
