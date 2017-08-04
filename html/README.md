@@ -1,4 +1,4 @@
-# Preguntas para entrevista de frontend
+# Preguntas para entrevistas de frontend
 ## HTML
 ### Preguntas
 1. [x] [¿Qué hace un `doctype`  (`<!DOCTYPE html>`)?](#1)
@@ -19,7 +19,7 @@
 
 
 ### Respuestas
-- #### [¿Qué hace un `doctype`  (`<!DOCTYPE html>`)?](#1)
+- #### [¿Qué hace un `doctype` (`<!DOCTYPE html>`)?](#1)
   <div id="1" />
   Es una declaración al comienzo de un documento HTML (previo al tag `<html>`). Consiste en una instrución que le deja saber al navegador en qué versión de HTML está el documento para interpretarlo correctamente.
   Definir `<!DOCTYPE html>` le dice al navegador que tiene que parsear el HTML basándose en el estandar HTML5.
@@ -142,7 +142,6 @@
     ~5MB de storage por dominio
 
 
-
   - **localStorage:**
     La propiedad `localStorage` permite acceder al objeto local `Storage`
 
@@ -163,8 +162,6 @@
 
 
     **Como nota muy importante:** los datos guardados en `localStorage` y en `sessionStorage` son **específicos al protocolo de la página**. No es lo mismo http://ejemplo.com que https://ejemplo.com, los datos a los que acceden/escriben son distintos.
-
-
 
 
 - #### [¿Qué diferencias existen entre `<script>`, `<script async>` y `<script defer>`?](#6)
