@@ -12,7 +12,7 @@
     "all-contributors-cli": "^3.0.7"
   },
   "scripts": {
-    "add": "all-contributors add",
+    "add-contributor": "all-contributors add",
     "generate": "all-contributors generate"
   }
 }
