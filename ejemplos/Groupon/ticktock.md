@@ -7,25 +7,25 @@
 
 
 ## TickTock
-Puedes crear una función `ticktock` que por cada ves que se ejecute. imprima en consola alternadamente `tick` y luego `tock`
+Puedes crear una función `tickTock`, que por cada vez que se ejecute, imprima en consola alternadamente `tick` y luego `tock`
 
 ```javascript
-ticktock()
+tickTock()
 // 'tick'
-ticktock()
+tickTock()
 // 'tock'
-ticktock()
+tickTock()
 // 'tick'
-ticktock()
+tickTock()
 // 'tock'
-... (y así hasta el infinito!)
+... (y así hasta el infinito)
 
 ```
 
 #### Parte 1
 ```javascript
 let auxiliar = true;
-let ticktock = () => {
+let tickTock = () => {
   if (auxiliar) {
     console.log('tick');
   } else {
@@ -36,11 +36,11 @@ let ticktock = () => {
 ```
 
 #### Parte 2
-Puedes realizar lo mismo, pero sin estructuras de control `if` (normales o ternarios),  `for`, `whiles` (do-whiles)
+Realizar lo mismo, pero sin estructuras de control `if` (normales o ternarios),  `for`, `whiles` (do-whiles)
 ```javascript
 let a = 0;
 let tick = ['tick','tock']
-let ticktock = () => {
+let tickTock = () => {
   console.log(tick[0+a]);
   a = !a;
 }
@@ -59,7 +59,7 @@ var tock = () => {
   console.log('tock');
 }
 const funcs = [tick, tock]
-let ticktock = () => {
+let tickTock = () => {
   funcs[0+a]();
   a = !a;
 }
@@ -67,22 +67,23 @@ let ticktock = () => {
 
 #### Parte 4
 Asume que tienes un PM complicado para trabajar, y que es alérgico a los arrays.
-Como harías el mismo ejercicio anterior ejercicio si no pudieras usar arrays?
+¿Cómo harías el mismo ejercicio anterior si no pudieras usar arrays?
 
 ```javascript
-/*Opcion 1, "usando nuevas funciones + eval". No es un buena practica, pero soluciona el problema*/
+/* Opción 1: Usando nuevas funciones + eval. No es un buena práctica, pero soluciona el problema */
 let a = 0;
 var tick = () => { console.log('tick'); }
 var tock = () => { console.log('tock'); }
 var tick0 = () => { tick() }
 var tick1 = () => { tock() }
-let ticktock = () => {
+let tickTock = () => {
   eval(`tick${0+a}()`)
   a = !a;
 }
 /*
-  Opcion 2, usando "objetos y no de array".
-  Aquí puedes decirle que tampoco puede usar objetos y pasar a la posible 'Opcion   3'*/
+  Opción 2: Usando objetos.
+  Aquí puedes decirle que tampoco puede usar objetos y pasar a la posible 'Opcion 3'
+*/
 let a = 0;
 var tick = () => {
   console.log('tick');
@@ -91,15 +92,13 @@ var tock = () => {
   console.log('tock');
 }
 const funcs = { 0: tick, 1:tock }
-let ticktock = () => {
+let tickTock = () => {
   funcs[0+a]();
   a = !a;
 }
 
-
 /*
-Opcion 3
-Intercambiando en una variable `funct`, referencias a las funciones `tick` y `tock` con cada ejecución y llamando a 'funct' en la funcion `ticktock`
+  Opción 3: Intercambiando en una variable `funct`, referencias a las funciones `tick` y `tock` con cada ejecución y llamando a 'funct' en la funcion `tickTock`
 */
 const funct = tick;
 const tick = () => {
@@ -111,7 +110,7 @@ const tock = () => {
   funct = tick;
 }
 
-const ticktock = () => {
+const tickTock = () => {
   funct();
 }
 ```

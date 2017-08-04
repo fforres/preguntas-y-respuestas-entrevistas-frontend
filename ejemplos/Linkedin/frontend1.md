@@ -1,6 +1,6 @@
-### Question 1
+### Pregunta 1
 
-1. Dada las siguientes funciones, podrías decirme cual es el resultado de las últimas 3 líneas?
+1. Dada las siguientes funciones, ¿podrías decirme cual es el resultado de las últimas 3 líneas?
 
   ```javascript
     var Foo = function( a ) {+
@@ -19,7 +19,7 @@
     };
 
     var f = new Foo( 7 );
-    f.bar(); // bar funcition is not defined
+    f.bar(); // bar function is not defined
     f.baz(); // 7
     f.biz(); // a undefined
   ```
@@ -27,12 +27,12 @@
   ##### Respuesta
 
   ```javascript
-  f.bar(); // bar funcition is not defined
+  f.bar(); // bar function is not defined
   f.baz(); // 7
   f.biz(); // a undefined
   ```
 
-2. Podrías modificar el código de f.bar() para que retornara `7`?
+2. ¿Podrías modificar el código de f.bar() para que retornara `7`?
   
   ##### Respuesta
   Solo necesitas agregar `baz` como una función del `this` en el constructor de `Foo`
@@ -54,15 +54,15 @@
     };
 
     var f = new Foo( 7 );
-    f.bar(); // bar funcition is not defined
+    f.bar(); // bar function is not defined
     f.baz(); // 7
     f.biz(); // a undefined
   ```
 
-3. Podrías modificar el código para que `f.biz()` también retornara `7`?
+3. ¿Podrías modificar el código para que `f.biz()` también retornara `7`?
 
   ##### Respuesta
-  Necesitas agregar `a` como un parametro del `this` en el constructor de `Foo`.
+  Necesitas agregar `a` como un parámetro del `this` en el constructor de `Foo`.
   De esa manera puedes acceder `a`, desde la funcion `biz()`, utilizando `this.a`.
 
   ```javascript
@@ -83,14 +83,13 @@
     };
 
     var f = new Foo( 7 );
-    f.bar(); // bar funcition is not defined
+    f.bar(); // bar function is not defined
     f.baz(); // 7
     f.biz(); // a undefined
   ```
 
-4. Imagina que por alguna razón (Aliens... 👽 probablemente), que no podemos asigar la variable `a` a nada, por lo que realizar `this.a = a` no es posible.
-Como podríamos obtener el mismo resultado que en la pregunta anterior?
-(Que `f.biz()` retorne `7`);
+4. Imagina que por alguna razón (Aliens... 👽 probablemente), no podemos asignar la variable `a` a nada, por lo que realizar `this.a = a` no es posible.
+¿Cómo podríamos obtener el mismo resultado que en la pregunta anterior? (Que `f.biz()` retorne `7`);
 
   ```javascript
     var Foo = function( a ) {+
@@ -113,7 +112,7 @@ Como podríamos obtener el mismo resultado que en la pregunta anterior?
     };
 
     var f = new Foo( 7 );
-    f.bar(); // here bar funcition is not defined
+    f.bar(); // here bar function is not defined
     f.baz(); // 7
     f.biz(); // a undefined
   ```
@@ -121,8 +120,7 @@ Como podríamos obtener el mismo resultado que en la pregunta anterior?
 
 ### Pregunta 2
 
-En tu perfil de linkedin la gente puede validar tus habilidades.
-Dado el siguiente array de validaciones:
+En tu perfil de LinkedIn la gente puede validar tus habilidades. Dado el siguiente array de validaciones:
 ```javascript
 var endorsements = [
   { skill: 'css', user: 'Bill' },
@@ -134,7 +132,7 @@ var endorsements = [
 ];
 ```
 
-Como podrías ordenarlo en algo como lo siguiente:
+¿Cómo podrías ordenarlo de la siguiente forma?:
 ```javascript
 [
   { skill: 'css', users: [ 'Bill', 'Sue', 'Sue' ], count: 2 },
@@ -143,7 +141,7 @@ Como podrías ordenarlo en algo como lo siguiente:
 ]
 ```
 
-  ##### Answer
+  ##### Respuesta
   ```javascript
   const sortEndorsedArrays = (endorsements) => {
     const ob = {};
@@ -168,7 +166,7 @@ Como podrías ordenarlo en algo como lo siguiente:
   ```
 
   > Bro tip: 
-  > Un objeto A puede ser asignado en alguna parte a otro objeto B (O un array). Ese nueva asignacion es solo una referencia al objeto A, así que podríamos cambiar el código para que haga uso de esto.
+  > Un objeto A puede ser asignado en alguna parte a otro objeto B (o un array). Esa nueva asignación es solo una referencia al objeto A, así que podríamos cambiar el código para que haga uso de esto.
   > Y salvarnos toooooda una iteración! 💪
 
   ```javascript
@@ -177,7 +175,7 @@ Como podrías ordenarlo en algo como lo siguiente:
     const modifiedArray = [];
     endorsements.forEach(el => {
       if(!ob[el.skill]) {
-        /*It happen from here: ----> */
+        /* It happen from here: ----> */
         const endorsementObject = {
           skill: el.skill,
           users: [],
@@ -196,23 +194,24 @@ Como podrías ordenarlo en algo como lo siguiente:
     return modifiedArray;
   }
   ```
-  ##### Explicacion
-  Creamos el mismo `endorsementObject`, bastante parecido a la versión anterior, salvo que:
-  1. Guardamos `endorsementObject` en el objeto y en el array.
-  2. Esto nos sirve para usar las ventajas de un objeto con por ejemplo tiempos de busqueda (Si usamos una llave única como `ob[el.skill]`)
-  3. Como al mismo tiempo el mismo objeto lo ponemos en un array, asi la estructura final que buscábamos se completa a medida que iteramos sobre el array `endorsements`.
-  4. Esto sucede porque como en ambos lados (`ob` y `modifiedArray`) el mismo objeto apunta a la misma referencia, entonces al al modificarlo en el objeto `ob`, modificamos la referencia, por lo que se aprecian los cambios también en `modifiedArray`
+  ##### Explicación
 
-  Lo que si, puede usar un poco más de memoria, pero la contraparte esque nos ahorramos toda una iteración en el array final. 
-  Depende mucho del contexto en el que se use el problema 
+  Creamos el mismo `endorsementObject`, bastante parecido a la versión anterior, salvo que:
+  
+  1. Guardamos `endorsementObject` en el objeto y en el array.
+  2. Esto nos sirve para usar las ventajas de un objeto con, por ejemplo, tiempos de busqueda (Si usamos una llave única como `ob[el.skill]`)
+  3. Como al mismo tiempo el mismo objeto lo ponemos en un array, asi la estructura final que buscábamos se completa a medida que iteramos sobre el array `endorsements`.
+  4. Esto sucede porque como en ambos lados (`ob` y `modifiedArray`) el mismo objeto apunta a la misma referencia, entonces al modificarlo en el objeto `ob`, modificamos la referencia, por lo que se aprecian los cambios también en `modifiedArray`
+
+  Lo que si, puede usar un poco más de memoria, pero la ventaja es que nos ahorramos toda una iteración en el array final. 
+  Depende mucho del contexto en el que se use el problema.
   (Ordenar 10M de elementos en un smartwatch con poca memoria, no es lo mismo que en un server).
 
   -----
 
 
 #### Pregunta 3
-Puedes replicar el markup (HTML) de lo siguiente?
-Can you replicate the markup for the following?
+¿Puedes replicar el markup (HTML) de lo siguiente?
   ![](./user_line.png)
 
 > Lo que nos interesa más en esta ocasión son los rows por usuario, no tanto el header y el body, o el padding del contenedor, etc.
@@ -226,14 +225,14 @@ Como pregunta abierta, es siempre util preguntar mucho para acotar el problema, 
 
 Por ejemplo, podrías preguntar lo siguiente:
 
-- Hay alguna accion que esto tenga que realizar? 
+- ¿Hay alguna accion que esto tenga que realizar? 
 Si el botón de cerrado (`x`) tiene que eliminar la fila completa, o un efecto on-hover, etc.
-La idea es crear css + html solamente? o JS también?.
-Debe ser resposivo?
-Hay alguna limitación? (Debe ser mobile?)
+¿La idea es crear CSS + HTML solamente, o JS también?
+¿Debe ser responsivo?
+¿Hay alguna limitación? (¿Debe ser mobile?)
 
 ###### Tips
-  - Recueda tu aria / tips de accesibilidad
+  - Recuerda pensar en accesibilidad.
     - Usa `li` para los items de una lista (y no `divs`)
     - Usa botones para las acciones por sobre `div` o `a`.
 

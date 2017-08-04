@@ -1,4 +1,4 @@
-# Preguntas para entrevista de frontend
+# Preguntas para entrevistas de frontend
 ## CSS
 ### Preguntas
 
@@ -7,33 +7,33 @@
 1. [x] [Describe la propiedad "float" y como funciona](#3)
 1. [ ] [¿Cómo funciona el z-index y el context stacking (contexto de apilamiento) de elementos está formado?](#4)
 1. [ ] [¿Conoces alguna "técnicas de limpieza" de estilos (clearing techniques)?](#6)
-1. [x] [Como funcionas los sprites de CSS, y como lo podrías implementar?](#7)
+1. [x] [¿Cómo funcionan los sprites de CSS, y cómo los podrías implementar?](#7)
 1. [ ] [¿Cuál sería tu approach para solucionar problemas con un browser específico?](#9)
-1. [x] [¿Cómo desarrollas sitios para features específicas por navegadores?](#10)
-1. [ ] [¿Cómo visualizas o ocultas visualemente el contenido (o habilitas la visualización solo para sceenreaders)?](#12)
-1. [x] [¿Has usado un sistema de grid? ¿Cuáles prefieres y porqué?](#13)
+1. [x] [¿Cómo desarrollas sitios con features específicas por navegador?](#10)
+1. [ ] [¿Cómo visualizas o ocultas visualmente el contenido (o habilitas la visualización solo para screen readers)?](#12)
+1. [x] [¿Has usado un sistema de grid? ¿Cuáles prefieres y por qué?](#13)
 1. [x] [¿Has usado media-queries? ¿Para qué?](#14)
-1. [ ] [¿Has usado o estilado SVG? ¿En que situaciones?](#15)
+1. [ ] [¿Has usado o creado estilos con SVG? ¿En qué situaciones?](#15)
 1. [ ] [¿Cómo optimizas tu sitio para imprimir?](#16)
 1. [ ] [¿Cuáles son algunos de los "detalles" para escribir CSS eficiente?](#17)
 1. [ ] [¿Cuáles son las ventajas/desventajas de usar preprocesadores de CSS?](#18)
-1. [ ] [De los preprocesadores que has usado, ¿cuál prefieres y porqué?](#19)
-1. [ ] [¿Cómo implementarías una web que usa fuentes no standard?](#20)
-1. [x] [¿Sabes cómo un browser determina qué elementos emparejar con que reglas de CSS?](#21)
+1. [ ] [De los preprocesadores que has usado, ¿cuál prefieres y por qué?](#19)
+1. [ ] [¿Cómo implementarías un sitio Web que usa tipografías no estándar?](#20)
+1. [x] [¿Sabes cómo un browser determina que elementos emparejar con que reglas de CSS?](#21)
 1. [ ] [¿Qué son los pseudo-elementos, para que sirven, dónde y cómo se utilizan?](#22)
-1. [x] [Explica el modelo de cajas.](#23)
+1. [x] [Explica el modelo de cajas. (box model)](#23)
 1. [ ] [¿Qué hace: `* { box-sizing: border-box; }`? ¿Cuáles son sus ventajas?](#24)
 1. [ ] [¿Qué valores existen para "display"?](#25)
 1. [x] [¿Cuál es la diferencia entre `inline` and `inline-block`?](#26)
 1. [ ] [¿Cuál es la diferencia entre `relative`, `fixed`, `absolute` y `static` al definir la posición de un elemento?](#27)
 1. [x] [La 'C' en CSS quiere decir 'Cascading'. ¿Cómo el browser define la prioridad al asignar estilos? ¿Cómo se puede sacar ventaja de esto?](#28)
-1. [ ] [¿Qué frameworks de CSS has usado localmente, en producción? ¿Cómo los mejorarías?](#29)
+1. [ ] [¿Qué frameworks de CSS has usado localmente y/o en producción? ¿Cómo los mejorarías?](#29)
 1. [x] [¿Has usado Flexbox o Grid? ¿Qué puedes decirme de ellos?](#30)
-1. [ ] [¿Cómo es el diseño `reponsivo` distinto del diseño `adaptable`?](#31)
-1. [ ] [¿Hay alguna razón por la que usarías `translate()` por sobre `positon: absolute` positioning, (o viceversa?](#33)
+1. [ ] [¿En que se diferencia el diseño `responsivo` del diseño `adaptable`?](#31)
+1. [ ] [¿Hay alguna razón por la que usarías `translate()` por sobre `position: absolute`, (o viceversa)?](#33)
 1. [ ] [¿Qué puedes contarme de postCSS?](#34)
 1. [ ] [¿Qué puedes contarme de cssNext?](#35)
-1. [ ] [¿Cómo el CSS afecta al `critical-render-path`? (El proceso de "carga, analisis y renderizado" de un sitio web)](#36)
+1. [ ] [¿Cómo el CSS afecta al `critical-render-path`? (El proceso de "carga, analisis y renderizado" de un sitio Web)](#36)
 
 ### Respuestas
 
@@ -55,23 +55,23 @@
 
   - Un elemento puede tener solo 1 ID, pero múltiples clases.
   - Dentro de un DOM, los ID's son únicos, pero las clases pueden repetirse entre elementos
-  - Los ID's funcionan como identificador único para scrollear una web.
-    - Al entrar a `http://www.ejemplo.com#hola_mundo` el navegador reconocerá el hash value `hola_mundo` e intentará encontrar el elemento con ID `hola_mundo` y scrollear el sitio hasta él.
+  - Los ID's funcionan como identificador único para navegar dentro de una página.
+    - Al entrar a `http://www.ejemplo.com#hola_mundo` el navegador reconocerá el hash value `hola_mundo` e intentará encontrar el elemento con ID `hola_mundo` y scrollear la página hasta el.
   - Al estilar, los ID's tienen precedencia sobre las clases.
 
 - #### [¿Cuál es la diferencia entre "resetear" y "normalizar" el CSS (reset.css y normalize.css)? ¿Cuándo elegirias uno u otro?](#2)
   <div id="2" />
-  - Al *resetear* el css (`reset.css`) se busca remover todo el estilado por defecto que los browsers realizan a un DOM, mientras que al *normalizarlo* (`normalize.css`) busca generar un estilo consistente a lo largo de todos los navegadores.
+  - Al *resetear* el css (`reset.css`) se busca remover todos los estilos por defecto que los navegadores realizan a un DOM, mientras que al *normalizarlo* (`normalize.css`) busca generar un estilo consistente a lo largo de todos los navegadores.
 
 
-- #### [Describe la propiedad "float" y como funciona. Hay alguna alternativa?](#3)
+- #### [Describe la propiedad "float" y como funciona. ¿Hay alguna alternativa?](#3)
   <div id="3" />
-- La propiedad "float" sirve para flotar un elemento, de la cual acepta 3 argumentos, que pueden ser: izquierda (left), derecha (right) o ninguno (none), de está forma, se puede situar un contenedor o elemento al lado que deseas.
+- La propiedad "float" sirve para flotar un elemento, de la cual acepta 3 argumentos, que pueden ser: izquierda (left), derecha (right) o ninguno (none), de esta forma, se puede situar un contenedor o elemento al lado que deseas.
 
 - La alternativa para el caso de un menu con listas, podría ser inline-block.
 
 
-- #### [¿Cómo funciona el z-index y el context stacking (contexto de apilamiento) de elementos está formado?](#4)
+- #### [¿Cómo funciona el z-index y el context stacking (contexto de apilamiento) de elementos?](#4)
   <div id="4" />
 
 
@@ -81,9 +81,9 @@
 
 
 
-- #### [Como funcionas los sprites de CSS, y como lo podrías implementar?](#7)
+- #### [¿Cómo funcionan los sprites de CSS, y cómo los podrías implementar?](#7)
   <div id="7" />
-Los sprites en CSS hace referencia a una imagen que puede servir para muchas situaciones, para implementarlas se puede llamar tanto a la propiedad background-image con background-position por separado, como llamar directamente a la propiedad background implementada directamente.
+Los sprites en CSS hacen referencia a una imagen que puede servir para muchas situaciones. Para implementarlas se puede llamar tanto a la propiedad background-image con background-position por separado, como llamar directamente a la propiedad background implementada directamente.
 
 En esta documentación, se explica el uso de la propiedad background, de la cual desglozando obtenemos por separado el background-image y background-position.
 
@@ -96,19 +96,19 @@ http://www.w3schools.com/css/css_image_sprites.asp
 
 
 
-- #### [¿Cómo desarrollas sitios para features específicas por navegadores?](#10)
+- #### [¿Cómo desarrollas sitios Web con features específicos por navegador?](#10)
   <div id="10" />
   ** Pregunta Abierta **
   Algunas solucuiones pueden ser:
-    - Uso de frameworks de css para facilitar la homogeneidad.
+    - Uso de frameworks de CSS para facilitar la homogeneidad.
     - Preprocesadores de CSS
-    - Post-procesado del CSS al realizar el build del sito.
+    - Post-procesado del CSS al realizar el build del sitio.
       - Gulp / Grunt / Webpack
       - PostCSS
 
 
 
-- #### [¿Cómo visualizas o ocultas visualemente el contenido (o habilitas la visualización solo para sceenreaders)?](#12)
+- #### [¿Cómo visualizas o ocultas visualmente el contenido (o habilitas la visualización solo para screen readers)?](#12)
   <div id="12" />
 
 
@@ -130,7 +130,7 @@ Sí, he ocupado son Semantic y Bootstrap 3 y 4. Personalmente, prefiero Bootstra
 
 
 
-- #### [¿Has usado o estilado SVG? ¿En que situaciones?](#15)
+- #### [¿Has usado o creado estilos con SVGs? ¿En qué situaciones?](#15)
   <div id="15" />
 
 
@@ -150,12 +150,12 @@ Sí, he ocupado son Semantic y Bootstrap 3 y 4. Personalmente, prefiero Bootstra
 
 
 
-- #### [De los preprocesadores que has usado ¿Cuál prefieres y porqué?](#19)
+- #### [De los preprocesadores que has usado ¿Cuál prefieres y por qué?](#19)
   <div id="19" />
 
 
 
-- #### [¿Cómo implementarías una web que usa fuentes no standar?](#20)
+- #### [¿Cómo implementarías un sitio Web que usa tipografías no estándar?](#20)
   <div id="20" />
 
 
@@ -217,11 +217,11 @@ Sí, he ocupado son Semantic y Bootstrap 3 y 4. Personalmente, prefiero Bootstra
   - Adicional, al haber 2 reglas con la misma especificidad, el navegador selecciona la últma regla definida (la "más reciente").
 
 
-- #### [¿Qué son los pseudo-elementos, para que sirven, dónde y cómo se utilizan?](#22)
+- #### [¿Qué son los pseudo-elementos, para qué sirven, dónde y cómo se utilizan?](#22)
   <div id="22" />
 
 
-- #### [Explica el modelo de cajas.](#23)
+- #### [Explica el modelo de cajas. (box model)](#23)
   <div id="23" />
 
   ![box model screenshot](./box.gif)
@@ -247,9 +247,9 @@ Sí, he ocupado son Semantic y Bootstrap 3 y 4. Personalmente, prefiero Bootstra
 - #### [¿Cuál es la diferencia entre `inline` and `inline-block`?](#26)
   <div id="26" />
   
-  La diferencia entre la propiedad "inline" e "inline-block" es que la propiedad inline-block puede afectar a otras directamente, ya que está ultima no tiene un largo y ancho definido que no pueda afectar a las demás.
+  La diferencia entre la propiedad "inline" e "inline-block" es que la propiedad inline-block puede afectar a otras directamente, ya que esta ultima no tiene un largo y ancho definido que no pueda afectar a las demás.
   
-  Ejemplo practico: http://jsfiddle.net/Mta2b/
+  Ejemplo práctico: http://jsfiddle.net/Mta2b/
 
 
 
@@ -258,7 +258,7 @@ Sí, he ocupado son Semantic y Bootstrap 3 y 4. Personalmente, prefiero Bootstra
 
 
 
-- #### [La 'C' en CSS quiere decir 'Cascading'. Como el browser define la prioridad al asignar estilos? ¿Cómo se puede sacar ventaja de esto?](#28)
+- #### [La 'C' en CSS quiere decir 'Cascading'. ¿Cómo el browser define la prioridad al asignar estilos? ¿Cómo se puede sacar ventaja de esto?](#28)
   <div id="28" />
 
   - Relacionado a la [pregunta 21](#21).
@@ -285,10 +285,10 @@ Sí, he ocupado son Semantic y Bootstrap 3 y 4. Personalmente, prefiero Bootstra
       background-color: teal;
     }
     ```
-    Gracias a esta definicion es posible tener en nuestra página, 3 tipos de links con un estilo y funcionalidad en común `font-size` y con estilos diferentes dependiendo del area en el que se encuentren.
+    Gracias a esta definición es posible tener en nuestra página 3 tipos de links con un estilo y funcionalidad en común `font-size` y con estilos diferentes dependiendo del área en el que se encuentren.
 
 
-- #### [¿Qué frameworks de CSS has usado localmente, en producción? ¿Cómo los mejorarías?](#29)
+- #### [¿Qué frameworks de CSS has usado localmente y/o en producción? ¿Cómo los mejorarías?](#29)
   <div id="29" />
   - ** Pregunta Abierta **
 
@@ -299,16 +299,16 @@ Sí, he ocupado son Semantic y Bootstrap 3 y 4. Personalmente, prefiero Bootstra
 
   - Flexbox permite que los elementos se comporten de manera mucho más predecible en diferentes tamaños de pantalla, lo que facilita el diseño de interfaces responsivas.
 
-  - Grid Layout viene siendo la estandarizción de los sistemas de grillas existentes actualmente (boostrap, grid.css, etc).
-    Actualemte es un **working draft**, por lo que no está soportado en producción y su api puede cambiar.
+  - Grid Layout viene siendo la estandarización de los sistemas de grillas existentes actualmente (boostrap, grid.css, etc).
+    Actualmente es un **working draft**, por lo que no está soportado en producción y su API puede cambiar.
 
 
-- #### [¿Cómo es el diseño `responsivo` distinto del diseño `adaptable`?](#31)
+- #### [¿En qué se diferencia el diseño `responsivo` del diseño `adaptable`?](#31)
   <div id="31" />
 
 
 
-- #### [¿Hay alguna razón por la que usarías `translate()` por sobre `positon: absolute` positioning, (o viceversa?](#33)
+- #### [¿Hay alguna razón por la que usarías `translate()` por sobre `position: absolute`, (o viceversa)?](#33)
   <div id="33" />
 
 
@@ -323,5 +323,5 @@ Sí, he ocupado son Semantic y Bootstrap 3 y 4. Personalmente, prefiero Bootstra
 
 
 
-- #### [¿Cómo el CSS afecta al `critical-render-path`? (El proceso de "carga, analisis y renderizado" de un sitio web)](#36)
+- #### [¿Cómo el CSS afecta al `critical-render-path`? (El proceso de "carga, analisis y renderizado" de un sitio Web)](#36)
   <div id="36" />
