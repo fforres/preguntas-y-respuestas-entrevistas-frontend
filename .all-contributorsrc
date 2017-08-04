@@ -83,12 +83,9 @@
       "profile": "http://xabadu.com",
       "contributions": [
         "question",
-        "bug",
         "code",
         "doc",
-        "example",
-        "review",
-        "translation"
+        "review"
       ]
     }
   ]
