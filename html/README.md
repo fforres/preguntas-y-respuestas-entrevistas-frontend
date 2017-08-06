@@ -1,4 +1,4 @@
-# Preguntas para entrevista de frontend
+# Preguntas para entrevistas de frontend
 ## HTML
 ### Preguntas
 1. [x] [¿Qué hace un `doctype`  (`<!DOCTYPE html>`)?](#1)
@@ -19,7 +19,7 @@
 
 
 ### Respuestas
-- #### [¿Qué hace un `doctype`  (`<!DOCTYPE html>`)?](#1)
+- #### [¿Qué hace un `doctype` (`<!DOCTYPE html>`)?](#1)
   <div id="1" />
   Es una declaración al comienzo de un documento HTML (previo al tag `<html>`). Consiste en una instrución que le deja saber al navegador en qué versión de HTML está el documento para interpretarlo correctamente.
   Definir `<!DOCTYPE html>` le dice al navegador que tiene que parsear el HTML basándose en el estandar HTML5.
@@ -84,6 +84,7 @@
 - #### [¿Para qué sirven los atributos `data-`?](#4)
   <div id="4" />
   Es un atributo de HTML, un estándar que permite adjuntar o guardar información extra en un elemento.
+
   ```html
   <div
     id="unDivCualquiera"
@@ -92,6 +93,7 @@
   ```
 
   El acceso está estándarizado, puedes acceder a la data de la siguiente manera:
+
   ```javascript
     const article = document.getElementById('unDivCualquiera');
     article.dataset.usuario // "fforres"
@@ -104,6 +106,7 @@
     Pequeño set de información enviada por un sitio web y almacenado en el navegador de un usuario.
     Se guarda en el disco, por lo que esta data es persistente.
     Es posible guardar y recuperar la data usando JS de la siguiente manera:
+
     ```javascript
     document.cookie = "username=fforres";
     /*O darle una fecha de expiración*/
@@ -125,6 +128,7 @@
     La data sobrevive a recargas de página.
 
     Una nueva "tab" o "ventana" genera una nueva sesión.
+
     ```javascript
     sessionStorage.setItem('usuario', 'fforres');
     /* guarda en la llave "usuario" el valor "fforres" */
@@ -136,7 +140,6 @@
     sessionStorage.clear() //remueve toda la data de la sesión.
     ```
     ~5MB de storage por dominio
-
 
 
   - **localStorage:**
@@ -155,22 +158,19 @@
 
     ~5MB de storage por dominio.
 
-    Las propiedades del `localStorage` solo pueden ser accedidas por páginas con el mismo dominio que la página que definió (set o *seteó*) las propiedades. Por ejemplo, si una página como ejemplo.com *setea* algo en el `localStorage` puede ser accedida por ejemplo.com/xxxxx, ejemplo.com/yyyyy, ejemplo.com/xxxxx/zzzzz y así. 
+    Las propiedades del `localStorage` solo pueden ser accedidas por páginas con el mismo dominio que la página que definió (set o *seteó*) las propiedades. Por ejemplo, si una página como ejemplo.com *setea* algo en el `localStorage` puede ser accedida por ejemplo.com/xxxxx, ejemplo.com/yyyyy, ejemplo.com/xxxxx/zzzzz y así.
 
 
     **Como nota muy importante:** los datos guardados en `localStorage` y en `sessionStorage` son **específicos al protocolo de la página**. No es lo mismo http://ejemplo.com que https://ejemplo.com, los datos a los que acceden/escriben son distintos.
 
 
-
-
 - #### [¿Qué diferencias existen entre `<script>`, `<script async>` y `<script defer>`?](#6)
   <div id="6" />
-  - ** script ** -> Descarga el archivo y lo ejecuta, pero tanto la descarga como la ejecución se desarrollan secuencialmente y por lo mismo detienen el parseo del HTML.
+  - **script** -> Descarga el archivo y lo ejecuta, pero tanto la descarga como la ejecución se desarrollan secuencialmente y por lo mismo detienen el parseo del HTML.
 
-  - ** script async ** -> Descarga el archivo paralelamente a la descarga/parseo del resto del documento/assets, pero al momento de ejecutarlo detiene el parseo del HTML.
+  - **script async** -> Descarga el archivo paralelamente a la descarga/parseo del resto del documento/assets, pero al momento de ejecutarlo detiene el parseo del HTML.
 
-  - ** script defer ** -> Descarga el archivo paralelamente a la descarga/parseo del resto del documento/assets, pero espera hasta que todo el HTML esté parseado antes de ejectuar el script.
-
+  - **script defer** -> Descarga el archivo paralelamente a la descarga/parseo del resto del documento/assets, pero espera hasta que todo el HTML esté parseado antes de ejecutar el script.
 
 
 

@@ -1,4 +1,4 @@
-# Preguntas para entrevista de frontend
+# Preguntas para entrevistas de Frontend
 ## Coding / CS
 
 

@@ -1,12 +1,12 @@
 Puesto: Front End Engineer.
-### Preguntas
-1. [ ] En una matriz de NxN, con M puntos puestos en la matriz al azar.
-Encontrar todos los puntos que pasan por una linea cualquiera.
 
-1. [ ] si tengo las siguientes funciónes:
+### Preguntas
+1. [ ] En una matriz de NxN, con M puntos puestos en la matriz al azar, encontrar todos los puntos que pasan por una linea cualquiera.
+
+1. [ ] Si tengo las siguientes funciónes:
 ```javascript
 function buscarEnFacebook(texto, callback) {
-  /*Hace algunas cosas y las guarda en "result"*/
+  /* Hace algunas cosas y las guarda en "result" */
   if (result.error) {
     callback(error, result.error)
   } else {
@@ -14,7 +14,7 @@ function buscarEnFacebook(texto, callback) {
   }
 }
 function buscarEnGithub(texto, callback) {
-  /*Hace algunas cosas y las guarda en "result"*/
+  /* Hace algunas cosas y las guarda en "result" */
   if (result.error) {
     callback(error, result.error)
   } else {
@@ -23,7 +23,7 @@ function buscarEnGithub(texto, callback) {
 }
 ```
 
-  - ¿Que debería hacer para usar la funcionalidad con promesas y no callbacks?
+  - ¿Qué debería hacer para usar la funcionalidad con promesas y no callbacks?
   - ¿Puedes replicar la siguiente API?
     ```javascript
     buscador('hola')

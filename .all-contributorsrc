@@ -66,6 +66,27 @@
         "code",
         "question"
       ]
+    },
+    {
+      "login": "yeion7",
+      "name": "Yeison Daza",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/9127504?v=3",
+      "profile": "yeion7.now.sh",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "Xabadu",
+      "name": "Fernando Larrañaga",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/3161019?v=4",
+      "profile": "http://xabadu.com",
+      "contributions": [
+        "question",
+        "code",
+        "doc",
+        "review"
+      ]
     }
   ]
 }
