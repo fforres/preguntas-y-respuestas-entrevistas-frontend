@@ -42,7 +42,7 @@
   alert(foo + bar);
   ```
 
-1. [ ] [En el siguiente código: ¿Qué imprimirán las lineas `console.log(foo.length);`?](#7)
+1. [ ] [En el siguiente código: ¿Qué imprimirán las líneas `console.log(foo.length);`?](#7)
   ```javascript
   var foo = [];
   foo.push(1);
