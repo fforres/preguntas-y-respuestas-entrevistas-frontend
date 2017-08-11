@@ -6,7 +6,7 @@
 1. [x] [Explica cómo funciona `this` en JavaScript](#2)
 1. [ ] [Explica cómo funciona la herencia de prototipos](#3)
 1. [ ] [¿Qué opiniones tienes de AMD versus CommonJS?](#4)
-1. [ ] [¿Por qué este snippet no funciona como una función autoejecutable, si tiene el paréntesis al final? ¿Cómo debería ser?](#5)
+1. [x] [¿Por qué este snippet no funciona como una función autoejecutable, si tiene el paréntesis al final? ¿Cómo debería ser?](#5)
     ```javascript
     function hola(){
         console.log('mundo');
@@ -233,6 +233,14 @@
 
 1.  [¿Por qué este snippet no funciona como una función autoejecutable: `function hola(){console.log('mundo')}()` si tiene el paréntesis al final? ¿Cómo debería ser?](#5)
     <div id="5" />
+    Para solucionar este probllema es necesario hacer la diferenciación entre una declaración de función y una expresión de función (`Function declaration` y `Function expression`)
+
+    **Function declaration**
+    -
+
+    **Function expression**
+    - 
+
 
 1.  [¿Cuál es la diferencia entre una variable: `null`, `undefined` y no declarada?](#6)
     <div id="6" />
@@ -407,16 +415,14 @@
         }
     }
     ```
-    
-    Repasemos el código de arriba, las secciones relevantes están marcadas con números en los comentarios:
-    
+    Repasemos el código de arriba, las secciones relevantes estan marcadas con numeros en los comentarios:
+
     1. La primera línea indica que este código solo se ejecutara si **no existe la función `replicate` para los objetos de tipo `Array`**, si bien actualmente no existe dicha función, en un futuro puede ser implementada, y es recomendado siempre preferir las implementaciones nativas.
-    2. La segunda línea asigna un valor por defecto al parámetro `n`. Existen distintas formas de asignar valores por defecto (otra forma muy popular para asignar valores por defecto es usando el operador lógico OR (||)), pero en este caso sería
-    
+    2. La segunda línea asigna un valor por defecto al parametro `n`. Existen distintas formas de asignar valores por defecto, otra forma muy popular para asignar valores por defecto es usando el operador lógico OR (||), en este caso sería
      ```js
      n = n || 1
      ```
-     
+
      Ahora bien, esta forma de asignar valores [no es recomendada](http://www.codereadability.com/javascript-default-parameters-with-or-operator/) para este caso, ya que evalua valores que _parecen falsos(falsy)_, entre ellos 0. Si se hubiese escogido ese metodo, se hubiese dado que `[2,3,5,6].replicate(0) === [2,3,5,6].replicate() === [2,3,5,6].replicate(1)`, lo que es incorrecto.
     3. Usamos el método `slice` para [crear un nuevo arreglo a partir del original](https://davidwalsh.name/javascript-clone-array) y replicarlo.
     4. Finalmente, concatenamos el arreglo original con la copia, tantas veces como lo indique el parametro `n`.
