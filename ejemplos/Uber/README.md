@@ -1,9 +1,10 @@
 Puesto: Front End Engineer.
 
 ### Preguntas
-1. [ ] En una matriz de NxN, con M puntos puestos en la matriz al azar, encontrar todos los puntos que pasan por una linea cualquiera.
+1. [ ] En una matriz de NxN, con M puntos puestos en la matriz al azar, encontrar todos los puntos que pasan por una línea cualquiera.
 
-1. [ ] Si tengo las siguientes funciónes:
+1. [ ] Si tengo las siguientes funciones:
+
 ```javascript
 function buscarEnFacebook(texto, callback) {
   /* Hace algunas cosas y las guarda en "result" */
@@ -28,14 +29,14 @@ function buscarEnGithub(texto, callback) {
     ```javascript
     buscador('hola')
     .facebook()
-    .guithub()
+    .github()
     .then((data) => {
-      // data[0] = data de facebook
-      // data[1] = data de github
+      // data[0] = data de Facebook
+      // data[1] = data de GitHub
     })
     .catch(error => {
-      // error[0] = error de facebook
-      // error[1] de github
+      // error[0] = error de Facebook
+      // error[1] de GitHub
     })
     ```
   - A la solución anterior
@@ -43,4 +44,4 @@ function buscarEnGithub(texto, callback) {
     - ¿Cómo podrías agregarle otra búsqueda?
     - ¿Cómo solucionas el problema de si una API entrega un error, mientras las otras devuelven data?
 
-1. ¿Qué puntos debiles mejorarías de JavaScript?
+1. ¿Qué puntos débiles mejorarías de JavaScript?

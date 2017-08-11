@@ -1,6 +1,6 @@
 ### Pregunta 1
 
-1. Dada las siguientes funciones, ¿podrías decirme cual es el resultado de las últimas 3 líneas?
+1. Dada las siguientes funciones, ¿podrías decirme cuál es el resultado de las últimas 3 líneas?
 
   ```javascript
     var Foo = function( a ) {+
@@ -32,7 +32,7 @@
   f.biz(); // a undefined
   ```
 
-2. ¿Podrías modificar el código de f.bar() para que retornara `7`?
+2. ¿Podrías modificar el código de f.bar() para que retorne `7`?
   
   ##### Respuesta
   Solo necesitas agregar `baz` como una función del `this` en el constructor de `Foo`
@@ -59,11 +59,11 @@
     f.biz(); // a undefined
   ```
 
-3. ¿Podrías modificar el código para que `f.biz()` también retornara `7`?
+3. ¿Podrías modificar el código para que `f.biz()` también retorne `7`?
 
   ##### Respuesta
   Necesitas agregar `a` como un parámetro del `this` en el constructor de `Foo`.
-  De esa manera puedes acceder `a`, desde la funcion `biz()`, utilizando `this.a`.
+  De esa manera puedes acceder `a` desde la funcion `biz()`, utilizando `this.a`.
 
   ```javascript
     var Foo = function( a ) {
@@ -88,7 +88,7 @@
     f.biz(); // a undefined
   ```
 
-4. Imagina que por alguna razón (Aliens... 👽 probablemente), no podemos asignar la variable `a` a nada, por lo que realizar `this.a = a` no es posible.
+4. Imagina que por alguna razón (Aliens 👽 probablemente), no podemos asignar la variable `a` a nada, por lo que realizar `this.a = a` no es posible.
 ¿Cómo podríamos obtener el mismo resultado que en la pregunta anterior? (Que `f.biz()` retorne `7`);
 
   ```javascript
@@ -121,6 +121,7 @@
 ### Pregunta 2
 
 En tu perfil de LinkedIn la gente puede validar tus habilidades. Dado el siguiente array de validaciones:
+
 ```javascript
 var endorsements = [
   { skill: 'css', user: 'Bill' },
@@ -133,6 +134,7 @@ var endorsements = [
 ```
 
 ¿Cómo podrías ordenarlo de la siguiente forma?:
+
 ```javascript
 [
   { skill: 'css', users: [ 'Bill', 'Sue', 'Sue' ], count: 2 },
@@ -194,12 +196,13 @@ var endorsements = [
     return modifiedArray;
   }
   ```
+  
   ##### Explicación
 
   Creamos el mismo `endorsementObject`, bastante parecido a la versión anterior, salvo que:
   
   1. Guardamos `endorsementObject` en el objeto y en el array.
-  2. Esto nos sirve para usar las ventajas de un objeto con, por ejemplo, tiempos de busqueda (Si usamos una llave única como `ob[el.skill]`)
+  2. Esto nos sirve para usar las ventajas de un objeto con, por ejemplo, tiempos de búsqueda (Si usamos una llave única como `ob[el.skill]`)
   3. Como al mismo tiempo el mismo objeto lo ponemos en un array, asi la estructura final que buscábamos se completa a medida que iteramos sobre el array `endorsements`.
   4. Esto sucede porque como en ambos lados (`ob` y `modifiedArray`) el mismo objeto apunta a la misma referencia, entonces al modificarlo en el objeto `ob`, modificamos la referencia, por lo que se aprecian los cambios también en `modifiedArray`
 
@@ -221,7 +224,7 @@ Es una pregunta abierta, no tiene una respuesta válida.
 Es mucho más facil usar un approach con flexbox, pero también puedes hacerlo de otras maneras (`position absolute`, `float left y right`, etc)
 Comentar eso es buena idea :)
 
-Como pregunta abierta, es siempre util preguntar mucho para acotar el problema, aclarar cosas, y demostrar tu capacidad de análisis pre-código.
+Como pregunta abierta, es siempre útil preguntar mucho para acotar el problema, aclarar cosas, y demostrar tu capacidad de análisis pre-código.
 
 Por ejemplo, podrías preguntar lo siguiente:
 
@@ -261,6 +264,7 @@ Si el botón de cerrado (`x`) tiene que eliminar la fila completa, o un efecto o
     /* bold */
   }
 ```
+
 ```html
   <li class="row">
     <div class="image">

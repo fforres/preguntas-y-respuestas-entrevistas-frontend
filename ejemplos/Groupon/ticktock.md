@@ -2,8 +2,7 @@
 
 > Es necesario realizar este ejercicio on-site y on-whiteboard. (Para poder ver como se desenvuelve el entrevistado).
 
-> Si bien el ejercicio tiene un poco de trivia, por lo que es facil que el entrevistado se incomode, la idea es hacerlo sentir cómodo e intentar eliminar el stress propio de la entrevista (Acentuado por trivia) para que realice preguntas comente el ejercicio y las dudas que tenga.
-
+> Si bien el ejercicio tiene un poco de trivia, por lo que es fácil que el entrevistado se incomode. La idea es hacerlo sentir cómodo e intentar eliminar el estrés propio de la entrevista (acentuado por trivia) para que realice preguntas, comente el ejercicio y las dudas que tenga.
 
 
 ## TickTock
@@ -23,6 +22,7 @@ tickTock()
 ```
 
 #### Parte 1
+
 ```javascript
 let auxiliar = true;
 let tickTock = () => {
@@ -36,7 +36,8 @@ let tickTock = () => {
 ```
 
 #### Parte 2
-Realizar lo mismo, pero sin estructuras de control `if` (normales o ternarios),  `for`, `whiles` (do-whiles)
+Realizar lo mismo, pero sin estructuras de control `if` (normales o ternarios), `for` y/o `whiles` (do-whiles)
+
 ```javascript
 let a = 0;
 let tick = ['tick','tock']
@@ -47,9 +48,9 @@ let tickTock = () => {
 ```
 
 #### Parte 3
-Pongámosnos en el caso de que ahora "tick" y "tock", son 2 funciones que manejan otros 2 equipos.
-La función `tick()`, devuelve `'tick'` y La función `tock()`, devuelve `'tock'`.
-Podrías modificar tu código para trabajar con esas funciones y no con los strings 'tick' y 'tock'
+Pongámosnos en el caso de que ahora "tick" y "tock", son 2 funciones que manejan otros 2 equipos. La función `tick()`, devuelve `'tick'` y La función `tock()`, devuelve `'tock'`. 
+¿Podrías modificar tu código para trabajar con esas funciones y no con los strings 'tick' y 'tock'?
+
 ```javascript
 let a = 0;
 var tick = () => {
@@ -70,7 +71,11 @@ Asume que tienes un PM complicado para trabajar, y que es alérgico a los arrays
 ¿Cómo harías el mismo ejercicio anterior si no pudieras usar arrays?
 
 ```javascript
-/* Opción 1: Usando nuevas funciones + eval. No es un buena práctica, pero soluciona el problema */
+
+/* 
+  Opción 1: Usando nuevas funciones + eval. No es un buena práctica, pero soluciona el problema 
+*/
+
 let a = 0;
 var tick = () => { console.log('tick'); }
 var tock = () => { console.log('tock'); }
