@@ -1,6 +1,6 @@
 Puesto: Front End Engineer.
 ### Preguntas
-1. [ ] Existe un div#main con 2 sub-divs(#div1, #div2) exactamente iguales en estructura.
+1. [ ] Existe un div#main con 2 sub-divs (#div1, #div2) exactamente iguales en estructura.
   ```html
   <div id="main">
     <div id="div1">
@@ -35,7 +35,7 @@ Puesto: Front End Engineer.
   Crea una función (o varias) que encuentre si la posición de `span#mi-otro-span` coincide con la posición de `span#mi-span` en sus respectivos "sub-dom".
 
   Extensiones:
-    - ¿Qué pasa si agrego 2 divs en cualquier parte del `div#2`, cómo modifico la(s) función(es) para que me alerten de incosistencias en el DOM?
+    - ¿Qué pasa si agrego 2 divs en cualquier parte del `div#2`?, ¿cómo modifico la(s) función(es) para que me alerten de incosistencias en el DOM?
     - Recursividad
       - (Si usó recursividad): ¿Puedes eliminar la recursividad?
       - (Si no usó recursividad): ¿Puedes volverlo recursivo?
@@ -72,7 +72,7 @@ Puesto: Front End Engineer.
       presion: '128',
       viento: '110'
     }, { ... }]
-    city: "Santiago"
+    city: 'Santiago'
   }
   ```
 
