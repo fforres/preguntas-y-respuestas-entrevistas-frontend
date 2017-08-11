@@ -5,8 +5,8 @@
 1. [x] [¿Cuál es la diferencia entre selectores de ID o CSS?](#1)
 1. [x] [¿Cuál es la diferencia entre "resetear" y "normalizar" el CSS (reset.css y normalize.css)? ¿Cuándo elegirias uno u otro?](#2)
 1. [x] [Describe la propiedad "float" y como funciona](#3)
-1. [ ] [¿Cómo funciona el z-index y el context stacking (contexto de apilamiento) de elementos está formado?](#4)
-1. [ ] [¿Conoces alguna "técnicas de limpieza" de estilos (clearing techniques)?](#6)
+1. [ ] [¿Cómo funciona el z-index y el context stacking (contexto de apilamiento) de elementos?](#4)
+1. [ ] [¿Conoces alguna de las "técnicas de limpieza" de estilos (clearing techniques)?](#6)
 1. [x] [¿Cómo funcionan los sprites de CSS, y cómo los podrías implementar?](#7)
 1. [ ] [¿Cuál sería tu approach para solucionar problemas con un browser específico?](#9)
 1. [x] [¿Cómo desarrollas sitios con features específicas por navegador?](#10)
@@ -20,7 +20,7 @@
 1. [ ] [De los preprocesadores que has usado, ¿cuál prefieres y por qué?](#19)
 1. [ ] [¿Cómo implementarías un sitio Web que usa tipografías no estándar?](#20)
 1. [x] [¿Sabes cómo un browser determina que elementos emparejar con que reglas de CSS?](#21)
-1. [ ] [¿Qué son los pseudo-elementos, para que sirven, dónde y cómo se utilizan?](#22)
+1. [ ] [¿Qué son los pseudo-elementos, para qué sirven, dónde y cómo se utilizan?](#22)
 1. [x] [Explica el modelo de cajas. (box model)](#23)
 1. [ ] [¿Qué hace: `* { box-sizing: border-box; }`? ¿Cuáles son sus ventajas?](#24)
 1. [ ] [¿Qué valores existen para "display"?](#25)
@@ -29,7 +29,7 @@
 1. [x] [La 'C' en CSS quiere decir 'Cascading'. ¿Cómo el browser define la prioridad al asignar estilos? ¿Cómo se puede sacar ventaja de esto?](#28)
 1. [ ] [¿Qué frameworks de CSS has usado localmente y/o en producción? ¿Cómo los mejorarías?](#29)
 1. [x] [¿Has usado Flexbox o Grid? ¿Qué puedes decirme de ellos?](#30)
-1. [ ] [¿En que se diferencia el diseño `responsivo` del diseño `adaptable`?](#31)
+1. [ ] [¿En qué se diferencia el diseño `responsivo` del diseño `adaptable`?](#31)
 1. [ ] [¿Hay alguna razón por la que usarías `translate()` por sobre `position: absolute`, (o viceversa)?](#33)
 1. [ ] [¿Qué puedes contarme de postCSS?](#34)
 1. [ ] [¿Qué puedes contarme de cssNext?](#35)
@@ -66,9 +66,9 @@
 
 - #### [Describe la propiedad "float" y como funciona. ¿Hay alguna alternativa?](#3)
   <div id="3" />
-- La propiedad "float" sirve para flotar un elemento, de la cual acepta 3 argumentos, que pueden ser: izquierda (left), derecha (right) o ninguno (none), de esta forma, se puede situar un contenedor o elemento al lado que deseas.
+- La propiedad "float" sirve para posicionar horizontalmente un elemento y acepta 3 argumentos, que pueden ser: izquierda (left), derecha (right) o ninguno (none). De esta forma, se puede situar un contenedor o elemento al lado que deseas.
 
-- La alternativa para el caso de un menu con listas, podría ser inline-block.
+- La alternativa para el caso de un menú con listas, podría ser inline-block.
 
 
 - #### [¿Cómo funciona el z-index y el context stacking (contexto de apilamiento) de elementos?](#4)
@@ -76,16 +76,16 @@
 
 
 
-- #### [¿Conoces alguna "técnicas de limpieza" de estilos (clearing techniques)?](#6)
+- #### [¿Conoces alguna de las "técnicas de limpieza" de estilos (clearing techniques)?](#6)
   <div id="6" />
 
 
 
 - #### [¿Cómo funcionan los sprites de CSS, y cómo los podrías implementar?](#7)
   <div id="7" />
-Los sprites en CSS hacen referencia a una imagen que puede servir para muchas situaciones. Para implementarlas se puede llamar tanto a la propiedad background-image con background-position por separado, como llamar directamente a la propiedad background implementada directamente.
+Los sprites en CSS hacen referencia a una imagen que puede servir para muchas situaciones. Para implementarlas se puede llamar tanto a la propiedad background-image con background-position por separado, como llamar directamente a la propiedad background y asignar todos los valores en la misma línea.
 
-En esta documentación, se explica el uso de la propiedad background, de la cual desglozando obtenemos por separado el background-image y background-position.
+En esta documentación, se explica el uso de la propiedad background, de la cual obtenemos por separado el background-image y background-position.
 
 http://www.w3schools.com/css/css_image_sprites.asp
 
@@ -107,10 +107,8 @@ http://www.w3schools.com/css/css_image_sprites.asp
       - PostCSS
 
 
-
 - #### [¿Cómo visualizas o ocultas visualmente el contenido (o habilitas la visualización solo para screen readers)?](#12)
   <div id="12" />
-
 
 
 - #### [¿Has usado un sistema de grid? ¿Cuáles prefieres y porqué?](#13)
@@ -125,7 +123,7 @@ Sí, he ocupado son Semantic y Bootstrap 3 y 4. Personalmente, prefiero Bootstra
     Las Media Queries facilitan el desarrollo de un diseño adaptable.
     Con ellas es posible definir que reglas de CSS respondan a tamaños concretos del viewport.
 
-     Usando Media Queries, es posible realizar un *diseño adaptable* que a diferencia del responsivo, ocupa unidades de tamaño fijo en conjunto a Media Queries. 
+    Usando Media Queries, es posible realizar un *diseño adaptable* que a diferencia del responsivo, ocupa unidades de tamaño fijo en conjunto a Media Queries. 
     Puedes aprender más de Media Queries [acá](https://developer.mozilla.org/es/docs/CSS/Media_queries)
 
 
@@ -214,7 +212,7 @@ Sí, he ocupado son Semantic y Bootstrap 3 y 4. Personalmente, prefiero Bootstra
   Finalmente, el color del contenido de `<p id="mi_id" style="color: blue"> </p>` es azul.
 
   - OJO: `!important`, toma precedencia por sobre otras reglas del mismo nivel solamente.
-  - Adicional, al haber 2 reglas con la misma especificidad, el navegador selecciona la últma regla definida (la "más reciente").
+  - Adicionalmente, al haber 2 reglas con la misma especificidad, el navegador selecciona la últma regla definida (la "más reciente").
 
 
 - #### [¿Qué son los pseudo-elementos, para qué sirven, dónde y cómo se utilizan?](#22)
@@ -226,11 +224,24 @@ Sí, he ocupado son Semantic y Bootstrap 3 y 4. Personalmente, prefiero Bootstra
 
   ![box model screenshot](./box.gif)
   
-  La propiedad padding hace referencía al espacio que está dentro del contenedor o caja, a diferencia de la propiedad margin que está relacionado al espacio que está fuera del contenedor. Pueden ser en cuatros posiciones (top, bottom, left, right) y de diferentes medidas de acuerdo a lo necesitado.
+  La propiedad padding hace referencia al espacio que está dentro del contenedor, o caja, a diferencia de la propiedad margin que está relacionada al espacio que está fuera del contenedor. 
   
   En cuanto a la propiedad border, hace referencia al contorno del contenedor, como la traducción literal lo menciona, es un borde como tal.
+
+  Todas pueden ser definidas en cuatros posiciones (top, bottom, left, right) y de diferentes medidas de acuerdo a lo necesitado. Adicionalmente, puede usarse una definición corta e indicar los 4 valores en el mismo orden. Ejemplo: 
   
-  Básicamente, la diferencia está en el espacio que se otorga, mientras que Padding separá desde adentro hacía afuera del contenedor, border da el contorno y finalmente margin separá hacía afuera del contenedor.
+  `border: 10px 15px 20px 30px` 
+  
+  sería igual a
+
+  ```CSS
+  border-top: 10px
+  border-right: 15px
+  border-bottom: 20px
+  border-left: 30px
+  ```
+
+  Básicamente, la diferencia está en el espacio que se otorga, mientras que Padding separa desde adentro hacia afuera del contenedor, border da el contorno y finalmente margin separa hacia afuera del contenedor.
 
 
 
@@ -247,7 +258,7 @@ Sí, he ocupado son Semantic y Bootstrap 3 y 4. Personalmente, prefiero Bootstra
 - #### [¿Cuál es la diferencia entre `inline` and `inline-block`?](#26)
   <div id="26" />
   
-  La diferencia entre la propiedad "inline" e "inline-block" es que la propiedad inline-block puede afectar a otras directamente, ya que esta ultima no tiene un largo y ancho definido que no pueda afectar a las demás.
+  La diferencia entre la propiedad "inline" e "inline-block" es que la segunda puede afectar a otras directamente, ya que no tiene un largo y ancho definido que no pueda afectar a las demás.
   
   Ejemplo práctico: http://jsfiddle.net/Mta2b/
 
@@ -258,7 +269,7 @@ Sí, he ocupado son Semantic y Bootstrap 3 y 4. Personalmente, prefiero Bootstra
 
 
 
-- #### [La 'C' en CSS quiere decir 'Cascading'. ¿Cómo el browser define la prioridad al asignar estilos? ¿Cómo se puede sacar ventaja de esto?](#28)
+- #### [La 'C' en CSS quiere decir 'Cascading'. ¿Cómo el browser define la prioridad al asignar estilos? ¿Cómo se puede sacar ventaja de ésto?](#28)
   <div id="28" />
 
   - Relacionado a la [pregunta 21](#21).
@@ -295,11 +306,11 @@ Sí, he ocupado son Semantic y Bootstrap 3 y 4. Personalmente, prefiero Bootstra
 
 - #### [¿Has usado Flexbox o Grid? ¿Qué puedes decirme de ellos?](#30)
   <div id="30" />
-  - [FlexBox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) y [Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) son 2 módulos de CSS creados para diseñar interfaces en la web.
+  - [FlexBox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) y [Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) son 2 módulos de CSS creados para diseñar interfaces en la Web.
 
   - Flexbox permite que los elementos se comporten de manera mucho más predecible en diferentes tamaños de pantalla, lo que facilita el diseño de interfaces responsivas.
 
-  - Grid Layout viene siendo la estandarización de los sistemas de grillas existentes actualmente (boostrap, grid.css, etc).
+  - Grid Layout viene siendo la estandarización de los sistemas de grillas existentes actualmente (Bootstrap, GridCSS, etc).
     Actualmente es un **working draft**, por lo que no está soportado en producción y su API puede cambiar.
 
 
