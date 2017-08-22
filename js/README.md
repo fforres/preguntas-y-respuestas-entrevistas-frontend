@@ -99,13 +99,13 @@
 1.  [Explica la delegación de eventos:](#1)
     <div id="1" />
 
-    Es una técnica que permite agregar un *controlador de eventos* (EventHandler) en un elemento padre a fin de no tener que agregar multiples *controladores de eventos* en los hijos.
+    Es una técnica que permite agregar un *controlador de eventos* (EventHandler) en un elemento padre a fin de no tener que agregar múltiples *controladores de eventos* en los hijos.
 
     ***Explicación extensa:***
 
     La delegación de eventos en JavaScript hace uso de 2 conceptos existentes, el *Burbujeo de Eventos* (Event Bubbling) y el *Elemento Objetivo* (Target Elemento).
 
-    El Burbujeo de eventos es la funcionalidad de que cualquier evento disparado en un elemento, es tambien disparado en los elementos padres del mismo.
+    El Burbujeo de eventos es la funcionalidad de que cualquier evento disparado en un elemento, es también disparado en los elementos padres del mismo.
     ```html
     <ol id="ol">
       <li id="li1">item 1</li>
@@ -247,7 +247,7 @@
     ```
     En resumen, si declaras una variable en JS y no le asignas valor alguno, por defecto es una variable undefined.
 
-    **null:** Representa la ausencia de contenido. Esto quiere decir que en sí mismo `null` es un valor el cual no tiene contenido. Por otra parte el interprete de JS a las variables null le asigna el tipo de variable `Object`. Este es un comportamiento extraño en el que puedes ver una explicación más detallada en el libro de Nicholas C. Zakas "THE PRINCIPLES OF OBJECT-ORIENTED JAVASCRIPT". Aquí un pequeño extracto del libro donde explica un poco este comportamiento:
+    **null:** Representa la ausencia de contenido. Esto quiere decir que en sí mismo `null` es un valor el cual no tiene contenido. Por otra parte el intérprete de JS a las variables null le asigna el tipo de variable `Object`. Este es un comportamiento extraño en el que puedes ver una explicación más detallada en el libro de Nicholas C. Zakas "THE PRINCIPLES OF OBJECT-ORIENTED JAVASCRIPT". Aquí un pequeño extracto del libro donde explica un poco este comportamiento:
 
     *When you run typeof null, the result is "object". But why an object when the type is null? (In fact, this has been acknowledged as an error by TC39, the committee that designs and maintains JavaScript.*
 
@@ -327,9 +327,9 @@
 1.  [¿Qué es JSONP?](#16)
     <div id="16" />
 
-1.  [¿Explícame Hoisting?](#17)
+1.  [Explícame Hoisting](#17)
     <div id="17" />
-    Hoisting es una característica de JavaScript que empuja todas las declaraciones (NO las asignaciones) de variables al inicio de su scope (Al momento de interpretar incialmente el código, previo a su ejecución)
+    Hoisting es una característica de JavaScript que empuja todas las declaraciones (no las asignaciones) de variables al inicio de su scope (Al momento de interpretar incialmente el código, previo a su ejecución)
 
     ```javascript
     function foo() {
@@ -386,9 +386,9 @@
     ```
 
     Para hacer funcionar el código anterior, es necesario [extender el prototipo](#3) de los objetos tipo [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array).
-    Es necesario señalar que [es una mala practica extender el prototipo de objetos nativos](https://www.nczonline.net/blog/2010/03/02/maintainable-javascript-dont-modify-objects-you-down-own/), pero solo para este ejemplo mostraremos cómo hacerlo.
+    Es necesario señalar que [es una mala practica extender el prototipo de objetos nativos](https://www.nczonline.net/blog/2010/03/02/maintainable-javascript-dont-modify-objects-you-down-own/), pero solo para este ejemplo mostraremos como hacerlo.
 
-    Para hacerlo, vamos a usar una [polyfill](https://en.wikipedia.org/wiki/Polyfill), que es básicamente, una forma de extender una funcionalidad de un objeto, en caso de que no sea implementada de forma nativa en distintos ambientes (actualmente no existe la función `replicate` para arreglos).
+    Para hacerlo, vamos a usar un [polyfill](https://en.wikipedia.org/wiki/Polyfill), que es básicamente, una forma de extender una funcionalidad de un objeto, en caso de que no sea implementada de forma nativa en distintos ambientes (actualmente no existe la función `replicate` para arreglos).
 
     El código es el siguiente:
 
@@ -410,7 +410,7 @@
     
     Repasemos el código de arriba, las secciones relevantes están marcadas con números en los comentarios:
     
-    1. La primera línea indica que este código solo se ejecutara si **no existe la función `replicate` para los objetos de tipo `Array`**, si bien actualmente no existe dicha función, en un futuro puede ser implementada, y es recomendado siempre preferir las implementaciones nativas.
+    1. La primera línea indica que este código solo se ejecutará si **no existe la función `replicate` para los objetos de tipo `Array`**. Si bien actualmente no existe dicha función, en un futuro puede ser implementada, y es recomendado siempre preferir las implementaciones nativas.
     2. La segunda línea asigna un valor por defecto al parámetro `n`. Existen distintas formas de asignar valores por defecto (otra forma muy popular para asignar valores por defecto es usando el operador lógico OR (||)), pero en este caso sería
     
      ```js

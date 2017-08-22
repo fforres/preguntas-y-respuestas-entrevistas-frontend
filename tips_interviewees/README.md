@@ -1,2 +1,2 @@
-# Preguntas para entrevistas de frontend
+# Preguntas para entrevistas de Frontend
 ## Tips para postulantes
