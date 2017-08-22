@@ -1,13 +1,13 @@
 # Preguntas para entrevistas de frontend
 ## HTML
 ### Preguntas
-1. [x] [¿Qué hace un `doctype`  (`<!DOCTYPE html>`)?](#1)
+1. [x] [¿Qué hace un `doctype` (`<!DOCTYPE html>`)?](#1)
 1. [x] [¿Qué nuevos elementos componen HTML5?](#2)
-1. [x] [¿Para que sirven los atributos `data-`?](#4)
+1. [x] [¿Para qué sirven los atributos `data-`?](#4)
 1. [x] [¿Cuál es la diferencia entre `cookie` `localStorage`, `sessionStorage` e `indexedDB`?](#5)
 1. [x] [¿Qué diferencias existen entre `<script>`, `<script async>` y `<script defer>`?](#6)
 1. [x] [¿Puedo poner un tag `<link>` dentro del body? ¿Por qué no es recomendado?](#7)
-1. [x] [¿Dónde es recomendado poner los tag `<script/>` después o antes del body? ¿Existen excepciones?](#8)
+1. [x] [¿Dónde es recomendado poner los tag `<script/>`? ¿Después o antes del body? ¿Existen excepciones?](#8)
 1. [x] [¿Qué es el Rendering Progresivo?](#9)
 1. [x] [¿Qué son y cómo afectan al performance el `Reflow` y `Repaint`?](#10)
 1. [x] [¿Qué estructura tiene el `DOM`?](#11)
@@ -21,7 +21,7 @@
 ### Respuestas
 - #### [¿Qué hace un `doctype` (`<!DOCTYPE html>`)?](#1)
   <div id="1" />
-  Es una declaración al comienzo de un documento HTML (previo al tag `<html>`). Consiste en una instrución que le deja saber al navegador en qué versión de HTML está el documento para interpretarlo correctamente.
+  Es una declaración al comienzo de un documento HTML (previo al tag `<html>`). Consiste en una instrucción que le deja saber al navegador en que versión de HTML está el documento para interpretarlo correctamente.
   Definir `<!DOCTYPE html>` le dice al navegador que tiene que parsear el HTML basándose en el estandar HTML5.
   En el caso de navegadores más viejos, interpretarán el HTML en un modo "compatible con HTML5" pero ignorarán las funcionalidades que no soporten.
   `<!DOCTYPE html>` es mucho más simple que las definiciones de doctype anteriores, como por ejemplo:
@@ -33,7 +33,7 @@
 
 - #### [¿Qué nuevos elementos componen "HTML5"?](#2)
   <div id="2" />
-  - Semántica - Un marcado de texto (Text Markup) más semántico. Lo que agrega mejor accesibilidad, más herramientas para la descripción de el contenido web y mayor facilidad para el SEO.
+  - Semántica - Un marcado de texto (Text Markup) más semántico. Lo que agrega mejor accesibilidad, más herramientas para la descripción de el contenido Web y mayor facilidad para el SEO.
     - `<footer>`
     - `<canvas>`
     - `<article>`
@@ -79,8 +79,6 @@
     - WebVR
   - CSS3
 
-
-
 - #### [¿Para qué sirven los atributos `data-`?](#4)
   <div id="4" />
   Es un atributo de HTML, un estándar que permite adjuntar o guardar información extra en un elemento.
@@ -92,7 +90,7 @@
     data-usuario-correo="felipe.torressepulveda@gmail.com" >
   ```
 
-  El acceso está estándarizado, puedes acceder a la data de la siguiente manera:
+  El acceso está estandarizado, puedes acceder a la data de la siguiente manera:
 
   ```javascript
     const article = document.getElementById('unDivCualquiera');
@@ -103,7 +101,7 @@
 - #### [¿Cuál es la diferencia entre una `cookie`, `localStorage` y una `sessionStorage`?](#5)
   <div id="5" />
   - **Cookie:**
-    Pequeño set de información enviada por un sitio web y almacenado en el navegador de un usuario.
+    Pequeño set de información enviada por un sitio Web y almacenado en el navegador de un usuario.
     Se guarda en el disco, por lo que esta data es persistente.
     Es posible guardar y recuperar la data usando JS de la siguiente manera:
 
@@ -161,7 +159,7 @@
     Las propiedades del `localStorage` solo pueden ser accedidas por páginas con el mismo dominio que la página que definió (set o *seteó*) las propiedades. Por ejemplo, si una página como ejemplo.com *setea* algo en el `localStorage` puede ser accedida por ejemplo.com/xxxxx, ejemplo.com/yyyyy, ejemplo.com/xxxxx/zzzzz y así.
 
 
-    **Como nota muy importante:** los datos guardados en `localStorage` y en `sessionStorage` son **específicos al protocolo de la página**. No es lo mismo http://ejemplo.com que https://ejemplo.com, los datos a los que acceden/escriben son distintos.
+    **Como nota muy importante:** los datos guardados en `localStorage` y en `sessionStorage` son **específicos al protocolo de la página**. No es lo mismo http://ejemplo.com que https://ejemplo.com, por lo que los datos a los que acceden/escriben son distintos.
 
 
 - #### [¿Qué diferencias existen entre `<script>`, `<script async>` y `<script defer>`?](#6)
@@ -183,7 +181,7 @@
     - Se inicia la descarga de la imagen.
     - El navegador decide que no puede mostrar la página sin antes descargar el CSS y JS.
       - Esta decisión se toma porque ambos archivos podrían alterar la visualización del DOM causando Reflow o Repaint si el CSS tuviese un `display: none` o el JS un `Node.remove()`, por ejemplo.
-    - Descarga por orden de aparicion (CSS o JS).
+    - Descarga por orden de aparición (CSS o JS).
     - Al descargar el CSS, lo lee, parsea, y se asegura que no llame nada más (un `@import` o `background:url('./imagen.jpg')`).
     - Al descargar el JS, lo lee, interpreta y ejecuta.
     - El navegador decide que ahora sí puede mostrar el DOM, por lo que empieza a pintar y estilar el DOM.
@@ -192,22 +190,18 @@
 
   Luego de eso vuelve a resumir el trabajo con el DOM y aplicar estilos de ser necesario.
 
-  + Mas info sobre el Critical Rendering Path [acá](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/) y [acá](https://varvy.com/pagespeed/critical-render-path.html)
+  + Más información sobre el Critical Rendering Path [acá](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/) y [acá](https://varvy.com/pagespeed/critical-render-path.html)
 
 
 
 
-- #### [¿Dónde es recomendado poner los tag `<script/>` después o antes del body? ¿Existen excepciones?](#8)
+- #### [¿Dónde es recomendado poner los tag `<script/>`? ¿Después o antes del body? ¿Existen excepciones?](#8)
   <div id="8" />
   - Depende mucho del contenido y acciones que ejecutarán dichos scripts. En antaño los `<script/>` se colocaban posterior al body para priorizar el mostrar la estructura del contenido (HTML), estilarlo (CSS) y después agregar la interactividad con los scripts. Pero actualmente existen los atributos `async` o `defer` que nos ayudan a definir descargas, parseos y ejecución diferidos.
 
 - #### [¿Qué es el Rendering Progresivo?](#9)
   <div id="9" />
-  - Un conjunto de técnicas y decisiones tomadas y aplicadas a fin de priorizar qué contenido o elemento se debería cargar primero (el contenido de una noticia, el landing en un sitio web) y despriorizar la carga de otras secciones (footer, banners, side-menus, etc).
-
-
-
-
+  - Un conjunto de técnicas y decisiones tomadas y aplicadas a fin de priorizar qué contenido o elemento se debería cargar primero (el contenido de una noticia, el landing en un sitio Web) y despriorizar la carga de otras secciones (footer, banners, side-menus, etc).
 
 - #### [¿Qué son y cómo afectan al performance el `Reflow` y `Paint`/`RePaint` ?](#10)
   <div id="10" />
@@ -224,18 +218,12 @@
 
       El cambiar el color de fondo de un `<div id="a" />` sobre el que hay un `<div id="b">` con una opacidad `0.5`, fuerza a recalcular el color de fondo y los efectos que tiene el `<div id="b">` sobre el A
 
-
-
-
 - #### [¿Qué estructura tiene el `DOM`?](#11)
   <div id="11" />
   - Un árbol.
   - Un árbol imperfecto y desbalanceado.
 
-  *Puede ser interesante tomarse de este tema para iniciar una conversacion sobre CS (Computer Science), estructuras de datos. El porqué usualmente los frontend engineers y frontend developers no buscan conocimientos de CS (Computer Science))*
-
-
-
+  *Puede ser interesante tomarse de este tema para iniciar una conversacion sobre CS (Computer Science), estructuras de datos. El porque usualmente los frontend engineers y frontend developers no buscan conocimientos de CS (Computer Science))*
 
 - #### [¿Qué diferencia existe entre `DOM` y `HTML`?](#12)
   <div id="12" />
@@ -251,13 +239,9 @@
 
   + Más información [acá (Mozilla)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) y [acá (w3.org)](https://www.w3.org/TR/DOM-Level-2-Core/introduction.html)
 
-
-
-
-
 - #### [¿Por qué usar tags como `<Section>` o `<Article>` pudiendo usar `<div />`?](#13)
   <div id="13" />
-  - En primera instancia, por accesibilidad. Utilizar elementos como `<article>`, `<details>`, `<footer>` o `<nav>` ayuda a los screenreaders a mapear e interpretar correctamente el DOM.
+  - En primera instancia, por accesibilidad. Utilizar elementos como `<article>`, `<details>`, `<footer>` o `<nav>` ayuda a los screen readers a mapear e interpretar correctamente el DOM.
   - Tocando el tema de la accesibilidad, de nada sirve usar atributos como `role` o `aria-*` de manera conflictiva.
   ```html
     <!-- MAL! :( -->
@@ -275,20 +259,16 @@
 
 - #### [Si tengo 3 tags estilados exactamente iguales (`<button />`, `<a />` y `<div />`) ¿Qué debería elegir para interactuar con un usuario y por qué?](#14)
   <div id="14" />
-  - Una pregunta un poco capciosa, principalmente porque la decisión pasa por accesibilidad más que por otra cosa.
+  - Una pregunta un poco truculenta, principalmente porque la decisión pasa por accesibilidad más que por otra cosa.
 
     La idea primaria es usar elementos concretos para las interacciones que se realizarán.
     Por ejemplo, si se busca hacer un submit a un formulario, es mejor usar un `<button />` que un `<span />` estilado.
-    En el ejemplo anterior, aunque ambos realicen la acción mediante una función de JavaScript, screenreaders pueden considerar de manera distinta ambos elementos.
+    En el ejemplo anterior, aunque ambos realicen la acción mediante una función de JavaScript, screen readers pueden considerar de manera distinta ambos elementos.
 
-    Como caveat, es posible usar atributos como `role=""` o `aria-*` para especificar el rol de un elemento, pero no es bueno usarlos de manera conflictiva.
+    Como excepción, es posible usar atributos como `role=""` o `aria-*` para especificar el rol de un elemento, pero no es bueno usarlos de manera conflictiva.
 
 
   + Para conocer más de [Aria y document conformance, acá](https://www.w3.org/TR/html-aria/#docconformance)
-
-
-
-
 
 - #### [¿Qué es un meta tag?](#17)
   <div id="17" />
@@ -313,7 +293,7 @@
 
   *(El Shadow DOM asocia un nuevo tipo de nodo asociado que se puede asociar con los elementos llamado el "Shadow Root", el elemento al que se le asocia este "Shadow Root" se le dice "Shadow Host")*
 
-  La idea del Shadow DOM es crear elementos web con estilo y funcionalidades auto-contenidos (o encapsulados), por lo que reglas de estilo como `#contenedor { background: red; }` definidas dentro del Shadow DOM, no afectará elementos que cumplan con esa condición que estén fuera de él.
+  La idea del Shadow DOM es crear elementos Web con estilo y funcionalidades auto-contenidos (o encapsulados), por lo que reglas de estilo como `#contenedor { background: red; }` definidas dentro del Shadow DOM, no afectará elementos que cumplan con esa condición que estén fuera de el.
 
   Ejemplo:
 
@@ -343,7 +323,7 @@
       color: red;
     }
     </style>
-    <h1 id="shadow">Hello Shadow DOM</h1>`; // Could also use appendChild().
+    <h1 id="shadow">Hello Shadow DOM</h1>`; // También se podría usar appendChild().
   document.body.appendChild(header);
   ```
 

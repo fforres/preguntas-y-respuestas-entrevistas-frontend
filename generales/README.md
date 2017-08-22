@@ -15,17 +15,17 @@
 1. [ ] [¿Qué aprendiste esta semana?](#7)
 1. [ ] [¿Cuál es tu stack de desarrollo actual?](#8)
 1. [ ] [¿Cuál es tu stack de desarrollo preferido?](#9)
-1. [ ] [¿Si tuvieras 4 hojas de estilo que tu sitio usa, ¿cómo las integrarías?](#10)
+1. [ ] [Si tuvieras 4 hojas de estilo que tu sitio usa, ¿cómo las integrarías?](#10)
 1. [ ] [Tu sitio está funcionando lento, ¿Cómo lo arreglas?](#11)
 1. [ ] [¿Cómo optimizarías los assets de un sitio Web? (CSS / JS).](#12)
 1. [ ] [Nombra 3 maneras de disminuir el tiempo de carga de un sitio Web (Tiempo de carga real o el percibido por el usuario).](#13)
 1. [ ] [¿Cómo crearías un slideshow / carrusel de imágenes?](#14)
-1. [ ] [Llegas a tu nuevo trabajo y ves que todo el codebase usa tabs pero tú usas espacios. ¿Qué haces?](#15)
+1. [ ] [Llegas a tu nuevo trabajo y ves que todo el codebase usa tabs, pero tú usas espacios. ¿Qué haces?](#15)
 1. [ ] [¿Qué es el FOUC? (`Flash of unstyled content` o `Flash de Contenido sin Estilar`).](#16)
-1. [x] [¿Qué es `ARIA` y `Screen Readers`?.](#17)
-1. [ ] [¿Cómo haces un sitio Web accesible?.](#18)
-1. [ ] [¿Cuáles son los pros y contras de usar animaciones de CSS vs animaciones de JavaScript?.](#19)
-1. [ ] [¿Qué es CORS?.](#20)
+1. [x] [¿Qué es `ARIA` y `Screen Readers`?](#17)
+1. [ ] [¿Cómo haces un sitio Web accesible?](#18)
+1. [ ] [¿Cuáles son los pros y contras de usar animaciones de CSS vs animaciones de JavaScript?](#19)
+1. [ ] [¿Qué es CORS?](#20)
 
 
 ### Respuestas
@@ -43,10 +43,10 @@
 
 1. [¿Qué consideraciones tendrías que tener para hacer para que tu sitio Web tenga mejor rendimiento?](#4)
     <div id="4" />
-    Existen muchas preguntas correctas, sobretodo considerando que en una entrevista no tienes 3 horas para hablar de todas las formas en que podrías mejorar el rendimiento de una aplicación.
-    (Ojo, que esta pregunta no se trata de decir "Usaría a google-pagespeed y seguiría las recomendaciones")
+    Existen muchas respuestas correctas, sobretodo considerando que en una entrevista no tienes 3 horas para hablar de todas las formas en que podrías mejorar el rendimiento de una aplicación.
+    (Ojo, que esta pregunta no se trata de decir "Usaría google-pagespeed y seguiría las recomendaciones")
 
-    Algunas sugerencias temas que impactan al rendimiento:
+    Algunas sugerencias de temas que impactan al rendimiento:
     - Relacionado a la Red
       - Revisar la compresión de los archivos que estás descargando (¿Tu servidor los comprime previamente?)
       - ¿Está el navegador cacheando archivos que no cambiarán tan seguido?
@@ -108,17 +108,17 @@
 1. [¿Qué es `ARIA` y `Screen Readers`?.](#17)
     <div id="17" />
 
-    [Aria](https://developer.mozilla.org/es/docs/Web/Accessibility/ARIA) define cómo crear contenido web para personas con discapacidad, para esto usa un conjunto de atributos que se pueden agregar a las etiquetas HTML.
+    [Aria](https://developer.mozilla.org/es/docs/Web/Accessibility/ARIA) define como crear contenido Web para personas con discapacidad, para esto usa un conjunto de atributos que se pueden agregar a las etiquetas HTML.
 
     [Screen readers](https://es.wikipedia.org/wiki/Lector_de_pantalla) es un software que interpreta lo que aparece en la pantalla y lo expresa con voz.
 
     Puedes aprender algo más de ARIA y Accesibilidad en el siguiente tutorial https://teachaccess.github.io/tutorial/
 
-1. [¿Cómo haces un sitio Web accesible?.](#18)
+1. [¿Cómo haces un sitio Web accesible?](#18)
     <div id="18" />
 
-1. [¿Cuáles son los pros y contras de usar animaciones de CSS vs animaciones de JavaScript?.](#19)
+1. [¿Cuáles son los pros y contras de usar animaciones de CSS vs animaciones de JavaScript?](#19)
     <div id="19" />
 
-1. [¿Qué es CORS?.](#20)
+1. [¿Qué es CORS?](#20)
     <div id="20" />
