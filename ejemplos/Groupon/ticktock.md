@@ -103,19 +103,16 @@ let tickTock = () => {
 }
 
 /*
-  Opción 3: Intercambiando en una variable `funct`, referencias a las funciones `tick` y `tock` con cada ejecución y llamando a 'funct' en la funcion `tickTock`
+  Opción 3: Aprovechando la coerción de tipos `boolean` a `number`, para transformar valores decimales a caracteres y así poder usar `Function`
 */
-const funct = tick;
-const tick = () => {
-  console.log('tick')
-  funct = tock;
-}
-const tock = () => {
-  console.log('tock');
-  funct = tick;
-}
+let aux = true;
+const tick = () => { console.log('tick'); }
+const tock = () => { console.log('tock'); }
 
 const tickTock = () => {
-  funct();
+  const f = new Function(`t${String.fromCharCode(aux * 6 + 105)}ck()`);
+  f();
+
+  aux = !aux;
 }
 ```
